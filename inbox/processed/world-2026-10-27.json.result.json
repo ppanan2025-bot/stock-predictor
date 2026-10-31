@@ -1,0 +1,671 @@
+{
+  "file": "news/world-2026-10-27.json",
+  "kind": "news",
+  "dry_run": false,
+  "at": "2026-10-30T13:40:36.691Z",
+  "fatal": null,
+  "totals": {
+    "verified": 8,
+    "corroborated": 1,
+    "pending": 3,
+    "rejected": 0,
+    "by_reason": {
+      "verified:ok": 8,
+      "pending:source_unreachable": 3,
+      "corroborated:corroborated": 1
+    }
+  },
+  "items": [
+    {
+      "line": null,
+      "index": 0,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": null,
+        "scope": "macro",
+        "url": "https://npr.org/2026/10/25/nx-s1-6016299/brazil-lula-bolsonaro-election",
+        "title": "Brazil's left-wing President Lula elected for fourth term",
+        "published_at": "2026-10-26",
+        "outlet": "NPR",
+        "author": "Catherine Osborn",
+        "references": [
+          {
+            "title": "BBC News"
+          },
+          {
+            "title": "The Guardian"
+          }
+        ],
+        "inbox_file": "news/world-2026-10-27.json"
+      },
+      "result": {
+        "ticker": null,
+        "scope": "macro",
+        "url": "https://npr.org/2026/10/25/nx-s1-6016299/brazil-lula-bolsonaro-election",
+        "title": "Brazil's left-wing President Lula elected for fourth term",
+        "published_at": "2026-10-26",
+        "news_item_id": 41,
+        "duplicate": false,
+        "source_id": 41,
+        "source_status": "verified",
+        "source_reason": "ok",
+        "status": "verified",
+        "reason": "ok",
+        "message": null,
+        "title_similarity": 1,
+        "matched_title": "Brazil's left-wing President Lula elected for fourth term",
+        "date_delta_hours": 0,
+        "page_published_at": "2026-10-26T00:35:00.000Z",
+        "wire_copy": false,
+        "corroboration": {
+          "count": 0,
+          "independent_groups": [],
+          "source_ids": [],
+          "not_independent": []
+        },
+        "references": [],
+        "references_without_url": 2,
+        "references_note": "references without a URL are recorded only; they never count toward corroboration",
+        "upgraded_items": []
+      }
+    },
+    {
+      "line": null,
+      "index": 1,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": null,
+        "scope": "macro",
+        "url": "https://bbc.co.uk/news/videos/cmp8g0x4l11yo",
+        "title": "Watch: How President Lula turned it around to beat Flávio Bolsonaro",
+        "published_at": "2026-10-26",
+        "outlet": "BBC News",
+        "references": [
+          {
+            "title": "NPR"
+          },
+          {
+            "title": "The Guardian"
+          }
+        ],
+        "inbox_file": "news/world-2026-10-27.json"
+      },
+      "result": {
+        "ticker": null,
+        "scope": "macro",
+        "url": "https://bbc.co.uk/news/videos/cmp8g0x4l11yo",
+        "title": "Watch: How President Lula turned it around to beat Flávio Bolsonaro",
+        "published_at": "2026-10-26",
+        "news_item_id": 42,
+        "duplicate": false,
+        "source_id": 42,
+        "source_status": "verified",
+        "source_reason": "ok",
+        "status": "verified",
+        "reason": "ok",
+        "message": null,
+        "title_similarity": 1,
+        "matched_title": "Watch: How President Lula turned it around to beat Flávio Bolsonaro",
+        "date_delta_hours": 0,
+        "page_published_at": "2026-10-26T02:53:00.960Z",
+        "wire_copy": false,
+        "corroboration": {
+          "count": 0,
+          "independent_groups": [],
+          "source_ids": [],
+          "not_independent": []
+        },
+        "references": [],
+        "references_without_url": 2,
+        "references_note": "references without a URL are recorded only; they never count toward corroboration",
+        "upgraded_items": []
+      }
+    },
+    {
+      "line": null,
+      "index": 2,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": null,
+        "scope": "macro",
+        "url": "https://cbsnews.com/news/jordan-deadly-attack-greek-orthodox-church-3-arrests",
+        "title": "Jordan says 3 arrested in deadly attack on Greek Orthodox church",
+        "published_at": "2026-10-26",
+        "outlet": "CBS News",
+        "references": [
+          {
+            "title": "BBC News"
+          },
+          {
+            "title": "France 24"
+          }
+        ],
+        "inbox_file": "news/world-2026-10-27.json"
+      },
+      "result": {
+        "ticker": null,
+        "scope": "macro",
+        "url": "https://cbsnews.com/news/jordan-deadly-attack-greek-orthodox-church-3-arrests",
+        "title": "Jordan says 3 arrested in deadly attack on Greek Orthodox church",
+        "published_at": "2026-10-26",
+        "news_item_id": 43,
+        "duplicate": false,
+        "source_id": 43,
+        "source_status": "verified",
+        "source_reason": "ok",
+        "status": "verified",
+        "reason": "ok",
+        "message": null,
+        "title_similarity": 1,
+        "matched_title": "Jordan says 3 arrested in deadly attack on Greek Orthodox church",
+        "date_delta_hours": 0,
+        "page_published_at": "2026-10-26T07:10:00.000Z",
+        "wire_copy": false,
+        "corroboration": {
+          "count": 0,
+          "independent_groups": [],
+          "source_ids": [],
+          "not_independent": []
+        },
+        "references": [],
+        "references_without_url": 2,
+        "references_note": "references without a URL are recorded only; they never count toward corroboration",
+        "upgraded_items": []
+      }
+    },
+    {
+      "line": null,
+      "index": 3,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": null,
+        "scope": "macro",
+        "url": "https://dw.com/en/venezuelan-opposition-leader-machado-returns-from-exile/a-79759187",
+        "title": "Venezuelan opposition leader Machado returns from exile",
+        "published_at": "2026-10-26",
+        "outlet": "Deutsche Welle",
+        "references": [
+          {
+            "title": "BBC News"
+          },
+          {
+            "title": "CBS News"
+          }
+        ],
+        "inbox_file": "news/world-2026-10-27.json"
+      },
+      "result": {
+        "ticker": null,
+        "scope": "macro",
+        "url": "https://dw.com/en/venezuelan-opposition-leader-machado-returns-from-exile/a-79759187",
+        "title": "Venezuelan opposition leader Machado returns from exile",
+        "published_at": "2026-10-26",
+        "news_item_id": 44,
+        "duplicate": false,
+        "source_id": 44,
+        "source_status": "verified",
+        "source_reason": "ok",
+        "status": "verified",
+        "reason": "ok",
+        "message": null,
+        "title_similarity": 1,
+        "matched_title": "Venezuelan opposition leader Machado returns from exile",
+        "date_delta_hours": 0,
+        "page_published_at": "2026-10-26T09:08:03.738Z",
+        "wire_copy": false,
+        "corroboration": {
+          "count": 0,
+          "independent_groups": [],
+          "source_ids": [],
+          "not_independent": []
+        },
+        "references": [],
+        "references_without_url": 2,
+        "references_note": "references without a URL are recorded only; they never count toward corroboration",
+        "upgraded_items": []
+      }
+    },
+    {
+      "line": null,
+      "index": 4,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": null,
+        "scope": "macro",
+        "url": "https://theguardian.com/world/live/2026/oct/25/brazil-election-runoff-live-updates-flavio-bolsonaro-lula",
+        "title": "Brazil runoff as it happened: world leaders congratulate Lula on historic election win as Bolsonaro refuses to concede",
+        "published_at": "2026-10-26",
+        "outlet": "The Guardian",
+        "references": [
+          {
+            "title": "BBC News"
+          },
+          {
+            "title": "NPR"
+          },
+          {
+            "title": "The New York Times"
+          }
+        ],
+        "inbox_file": "news/world-2026-10-27.json"
+      },
+      "result": {
+        "ticker": null,
+        "scope": "macro",
+        "url": "https://theguardian.com/world/live/2026/oct/25/brazil-election-runoff-live-updates-flavio-bolsonaro-lula",
+        "title": "Brazil runoff as it happened: world leaders congratulate Lula on historic election win as Bolsonaro refuses to concede",
+        "published_at": "2026-10-26",
+        "news_item_id": 45,
+        "duplicate": false,
+        "source_id": 45,
+        "source_status": "verified",
+        "source_reason": "ok",
+        "status": "verified",
+        "reason": "ok",
+        "message": null,
+        "title_similarity": 1,
+        "matched_title": "Brazil runoff as it happened: world leaders congratulate Lula on historic election win as Bolsonaro refuses to concede",
+        "date_delta_hours": 0,
+        "page_published_at": "2026-10-26T17:10:31.000Z",
+        "wire_copy": false,
+        "corroboration": {
+          "count": 0,
+          "independent_groups": [],
+          "source_ids": [],
+          "not_independent": []
+        },
+        "references": [],
+        "references_without_url": 3,
+        "references_note": "references without a URL are recorded only; they never count toward corroboration",
+        "upgraded_items": []
+      }
+    },
+    {
+      "line": null,
+      "index": 5,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": null,
+        "scope": "macro",
+        "url": "https://abcnews.com/International/wireStory/vatican-confirms-pope-leos-latin-america-trip-after-137577740",
+        "title": "Vatican confirms Pope Leo's Latin America trip after post-surgery checkup",
+        "published_at": "2026-10-26",
+        "outlet": "ABC News (US)",
+        "references": [
+          {
+            "title": "CBS News"
+          },
+          {
+            "title": "Sky News"
+          }
+        ],
+        "inbox_file": "news/world-2026-10-27.json"
+      },
+      "result": {
+        "ticker": null,
+        "scope": "macro",
+        "url": "https://abcnews.com/International/wireStory/vatican-confirms-pope-leos-latin-america-trip-after-137577740",
+        "title": "Vatican confirms Pope Leo's Latin America trip after post-surgery checkup",
+        "published_at": "2026-10-26",
+        "news_item_id": 46,
+        "duplicate": false,
+        "source_id": 46,
+        "source_status": "verified",
+        "source_reason": "ok",
+        "status": "verified",
+        "reason": "ok",
+        "message": null,
+        "title_similarity": 1,
+        "matched_title": "Vatican confirms Pope Leo's Latin America trip after post-surgery checkup",
+        "date_delta_hours": 0,
+        "page_published_at": "2026-10-26T16:53:00.000Z",
+        "wire_copy": true,
+        "corroboration": {
+          "count": 0,
+          "independent_groups": [],
+          "source_ids": [],
+          "not_independent": []
+        },
+        "references": [],
+        "references_without_url": 2,
+        "references_note": "references without a URL are recorded only; they never count toward corroboration",
+        "upgraded_items": []
+      }
+    },
+    {
+      "line": null,
+      "index": 6,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": null,
+        "scope": "macro",
+        "url": "https://bbc.co.uk/news/articles/cq8ezg6dy6xlo",
+        "title": "Jordan carries out deadly strike in Syria in retaliation for church attack",
+        "published_at": "2026-10-27",
+        "outlet": "BBC News",
+        "references": [
+          {
+            "title": "CBS News"
+          },
+          {
+            "title": "France 24"
+          },
+          {
+            "title": "The New York Times"
+          }
+        ],
+        "inbox_file": "news/world-2026-10-27.json"
+      },
+      "result": {
+        "ticker": null,
+        "scope": "macro",
+        "url": "https://bbc.co.uk/news/articles/cq8ezg6dy6xlo",
+        "title": "Jordan carries out deadly strike in Syria in retaliation for church attack",
+        "published_at": "2026-10-27",
+        "news_item_id": 47,
+        "duplicate": false,
+        "source_id": 47,
+        "source_status": "verified",
+        "source_reason": "ok",
+        "status": "verified",
+        "reason": "ok",
+        "message": null,
+        "title_similarity": 1,
+        "matched_title": "Jordan carries out deadly strike in Syria in retaliation for church attack",
+        "date_delta_hours": 0,
+        "page_published_at": "2026-10-27T02:40:17.204Z",
+        "wire_copy": false,
+        "corroboration": {
+          "count": 1,
+          "independent_groups": [
+            "paramount"
+          ],
+          "source_ids": [
+            43
+          ],
+          "not_independent": []
+        },
+        "references": [],
+        "references_without_url": 3,
+        "references_note": "references without a URL are recorded only; they never count toward corroboration",
+        "upgraded_items": []
+      }
+    },
+    {
+      "line": null,
+      "index": 7,
+      "status": "pending",
+      "reason": "source_unreachable",
+      "input": {
+        "ticker": null,
+        "scope": "macro",
+        "url": "https://news.sky.com/story/french-football-star-kylian-mbappe-dropped-by-chinese-brands-after-dictator-remark-13604279",
+        "title": "Mbappe apologises for 'ill-judged' Mao remark after being dropped by Chinese brands",
+        "published_at": "2026-10-27",
+        "outlet": "Sky News",
+        "references": [
+          {
+            "title": "Al Jazeera English"
+          },
+          {
+            "title": "BBC News"
+          }
+        ],
+        "inbox_file": "news/world-2026-10-27.json"
+      },
+      "result": {
+        "ticker": null,
+        "scope": "macro",
+        "url": "https://news.sky.com/story/french-football-star-kylian-mbappe-dropped-by-chinese-brands-after-dictator-remark-13604279",
+        "title": "Mbappe apologises for 'ill-judged' Mao remark after being dropped by Chinese brands",
+        "published_at": "2026-10-27",
+        "news_item_id": 48,
+        "duplicate": false,
+        "source_id": 48,
+        "source_status": "unreachable",
+        "source_reason": "http_error",
+        "status": "pending",
+        "reason": "source_unreachable",
+        "message": "source fetch failed (http_error HTTP 403); retry later",
+        "title_similarity": null,
+        "matched_title": null,
+        "date_delta_hours": null,
+        "page_published_at": null,
+        "wire_copy": false,
+        "corroboration": null,
+        "references": [],
+        "references_without_url": 2,
+        "references_note": "references without a URL are recorded only; they never count toward corroboration",
+        "upgraded_items": []
+      }
+    },
+    {
+      "line": null,
+      "index": 8,
+      "status": "corroborated",
+      "reason": "corroborated",
+      "input": {
+        "ticker": null,
+        "scope": "macro",
+        "url": "https://france24.com/en/jordan-launches-airstrikes-in-syria-after-church-attack",
+        "title": "Jordan launches airstrikes in Syria after church attack",
+        "published_at": "2026-10-27",
+        "outlet": "France 24",
+        "references": [
+          {
+            "title": "BBC News"
+          },
+          {
+            "title": "CBS News"
+          }
+        ],
+        "inbox_file": "news/world-2026-10-27.json"
+      },
+      "result": {
+        "ticker": null,
+        "scope": "macro",
+        "url": "https://france24.com/en/jordan-launches-airstrikes-in-syria-after-church-attack",
+        "title": "Jordan launches airstrikes in Syria after church attack",
+        "published_at": "2026-10-27",
+        "news_item_id": 49,
+        "duplicate": false,
+        "source_id": 49,
+        "source_status": "verified",
+        "source_reason": "ok",
+        "status": "corroborated",
+        "reason": "corroborated",
+        "message": null,
+        "title_similarity": 1,
+        "matched_title": "Jordan launches airstrikes in Syria after church attack",
+        "date_delta_hours": 0,
+        "page_published_at": "2026-10-27T10:59:14.000Z",
+        "wire_copy": false,
+        "corroboration": {
+          "count": 2,
+          "independent_groups": [
+            "bbc",
+            "paramount"
+          ],
+          "source_ids": [
+            43,
+            47
+          ],
+          "not_independent": []
+        },
+        "references": [],
+        "references_without_url": 2,
+        "references_note": "references without a URL are recorded only; they never count toward corroboration",
+        "upgraded_items": [
+          {
+            "news_item_id": 43,
+            "from": "verified",
+            "to": "corroborated"
+          },
+          {
+            "news_item_id": 47,
+            "from": "verified",
+            "to": "corroborated"
+          }
+        ]
+      }
+    },
+    {
+      "line": null,
+      "index": 9,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": null,
+        "scope": "macro",
+        "url": "https://france24.com/en/middle-east/20261027-syria-slams-deadly-jordan-strikes-as-unacceptable-breach-of-airspace",
+        "title": "Syria slams deadly Jordan strikes as 'unacceptable' breach of airspace",
+        "published_at": "2026-10-27",
+        "outlet": "France 24",
+        "references": [
+          {
+            "title": "BBC News"
+          },
+          {
+            "title": "The New York Times"
+          }
+        ],
+        "inbox_file": "news/world-2026-10-27.json"
+      },
+      "result": {
+        "ticker": null,
+        "scope": "macro",
+        "url": "https://france24.com/en/middle-east/20261027-syria-slams-deadly-jordan-strikes-as-unacceptable-breach-of-airspace",
+        "title": "Syria slams deadly Jordan strikes as 'unacceptable' breach of airspace",
+        "published_at": "2026-10-27",
+        "news_item_id": 50,
+        "duplicate": false,
+        "source_id": 50,
+        "source_status": "verified",
+        "source_reason": "ok",
+        "status": "verified",
+        "reason": "ok",
+        "message": null,
+        "title_similarity": 1,
+        "matched_title": "Syria slams deadly Jordan strikes as 'unacceptable' breach of airspace",
+        "date_delta_hours": 0,
+        "page_published_at": "2026-10-27T11:02:18.000Z",
+        "wire_copy": false,
+        "corroboration": {
+          "count": 0,
+          "independent_groups": [],
+          "source_ids": [],
+          "not_independent": []
+        },
+        "references": [],
+        "references_without_url": 2,
+        "references_note": "references without a URL are recorded only; they never count toward corroboration",
+        "upgraded_items": []
+      }
+    },
+    {
+      "line": null,
+      "index": 10,
+      "status": "pending",
+      "reason": "source_unreachable",
+      "input": {
+        "ticker": null,
+        "scope": "macro",
+        "url": "https://nytimes.com/2026/10/27/world/middleeast/israel-elections-key-issues.html",
+        "title": "The Key Election Issues Dividing Israelis as They Vote",
+        "published_at": "2026-10-27",
+        "outlet": "The New York Times",
+        "author": "Aaron Boxerman",
+        "references": [
+          {
+            "title": "BBC News"
+          },
+          {
+            "title": "France 24"
+          }
+        ],
+        "inbox_file": "news/world-2026-10-27.json"
+      },
+      "result": {
+        "ticker": null,
+        "scope": "macro",
+        "url": "https://nytimes.com/2026/10/27/world/middleeast/israel-elections-key-issues.html",
+        "title": "The Key Election Issues Dividing Israelis as They Vote",
+        "published_at": "2026-10-27",
+        "news_item_id": 51,
+        "duplicate": false,
+        "source_id": 51,
+        "source_status": "unreachable",
+        "source_reason": "http_error",
+        "status": "pending",
+        "reason": "source_unreachable",
+        "message": "source fetch failed (http_error HTTP 403); retry later",
+        "title_similarity": null,
+        "matched_title": null,
+        "date_delta_hours": null,
+        "page_published_at": null,
+        "wire_copy": false,
+        "corroboration": null,
+        "references": [],
+        "references_without_url": 2,
+        "references_note": "references without a URL are recorded only; they never count toward corroboration",
+        "upgraded_items": []
+      }
+    },
+    {
+      "line": null,
+      "index": 11,
+      "status": "pending",
+      "reason": "source_unreachable",
+      "input": {
+        "ticker": null,
+        "scope": "macro",
+        "url": "https://nytimes.com/2026/10/27/world/middleeast/jordan-syria-strikes-attack.html",
+        "title": "Jordan Says Its Deadly Strikes in Syria Targeted Islamic State",
+        "published_at": "2026-10-27",
+        "outlet": "The New York Times",
+        "author": "Raja Abdulrahim",
+        "references": [
+          {
+            "title": "BBC News"
+          },
+          {
+            "title": "France 24"
+          }
+        ],
+        "inbox_file": "news/world-2026-10-27.json"
+      },
+      "result": {
+        "ticker": null,
+        "scope": "macro",
+        "url": "https://nytimes.com/2026/10/27/world/middleeast/jordan-syria-strikes-attack.html",
+        "title": "Jordan Says Its Deadly Strikes in Syria Targeted Islamic State",
+        "published_at": "2026-10-27",
+        "news_item_id": 52,
+        "duplicate": false,
+        "source_id": 52,
+        "source_status": "unreachable",
+        "source_reason": "http_error",
+        "status": "pending",
+        "reason": "source_unreachable",
+        "message": "source fetch failed (http_error HTTP 403); retry later",
+        "title_similarity": null,
+        "matched_title": null,
+        "date_delta_hours": null,
+        "page_published_at": null,
+        "wire_copy": false,
+        "corroboration": null,
+        "references": [],
+        "references_without_url": 2,
+        "references_note": "references without a URL are recorded only; they never count toward corroboration",
+        "upgraded_items": []
+      }
+    }
+  ]
+}

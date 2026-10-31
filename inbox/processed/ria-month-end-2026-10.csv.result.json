@@ -1,0 +1,206 @@
+{
+  "file": "prices/ria-month-end-2026-10.csv",
+  "kind": "prices",
+  "dry_run": false,
+  "at": "2026-10-31T03:57:55.642Z",
+  "fatal": null,
+  "totals": {
+    "verified": 4,
+    "corroborated": 0,
+    "pending": 0,
+    "rejected": 0,
+    "by_reason": {
+      "verified:ok": 4
+    }
+  },
+  "items": [
+    {
+      "line": 2,
+      "index": 0,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "GOOGL",
+        "month": "2026-10",
+        "trade_date": "2026-10-30",
+        "close": "279.84",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2026-10.csv"
+      },
+      "result": {
+        "ticker": "GOOGL",
+        "month": "2026-10",
+        "trade_date": "2026-10-30",
+        "submitted_close": "279.84",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 362,
+        "price_id": 362,
+        "close": "279.8400",
+        "detail": {
+          "expected_date": "2026-10-30",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/GOOGL/historical?assetclass=stocks&fromdate=2026-10-01&todate=2026-10-31&limit=36",
+            "date": "2026-10-30",
+            "close": "279.8400",
+            "fetched_at": "2026-10-31T03:57:46.278Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/GOOGL/1D/20261001000000/20261031235959/adjusted/EST5EDT.json",
+            "date": "2026-10-30",
+            "close": "279.8400",
+            "fetched_at": "2026-10-31T03:57:46.289Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "279.8400",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 3,
+      "index": 1,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AMZN",
+        "month": "2026-10",
+        "trade_date": "2026-10-30",
+        "close": "240.35",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2026-10.csv"
+      },
+      "result": {
+        "ticker": "AMZN",
+        "month": "2026-10",
+        "trade_date": "2026-10-30",
+        "submitted_close": "240.35",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 363,
+        "price_id": 363,
+        "close": "240.3500",
+        "detail": {
+          "expected_date": "2026-10-30",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AMZN/historical?assetclass=stocks&fromdate=2026-10-01&todate=2026-10-31&limit=36",
+            "date": "2026-10-30",
+            "close": "240.3500",
+            "fetched_at": "2026-10-31T03:57:49.450Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AMZN/1D/20261001000000/20261031235959/adjusted/EST5EDT.json",
+            "date": "2026-10-30",
+            "close": "240.3500",
+            "fetched_at": "2026-10-31T03:57:47.638Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "240.3500",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 4,
+      "index": 2,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AAPL",
+        "month": "2026-10",
+        "trade_date": "2026-10-30",
+        "close": "344.63",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2026-10.csv"
+      },
+      "result": {
+        "ticker": "AAPL",
+        "month": "2026-10",
+        "trade_date": "2026-10-30",
+        "submitted_close": "344.63",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 364,
+        "price_id": 364,
+        "close": "344.6300",
+        "detail": {
+          "expected_date": "2026-10-30",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AAPL/historical?assetclass=stocks&fromdate=2026-10-01&todate=2026-10-31&limit=36",
+            "date": "2026-10-30",
+            "close": "344.6300",
+            "fetched_at": "2026-10-31T03:57:52.510Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AAPL/1D/20261001000000/20261031235959/adjusted/EST5EDT.json",
+            "date": "2026-10-30",
+            "close": "344.6300",
+            "fetched_at": "2026-10-31T03:57:49.523Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "344.6300",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 5,
+      "index": 3,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "SPCX",
+        "month": "2026-10",
+        "trade_date": "2026-10-30",
+        "close": "134.72",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2026-10.csv"
+      },
+      "result": {
+        "ticker": "SPCX",
+        "month": "2026-10",
+        "trade_date": "2026-10-30",
+        "submitted_close": "134.72",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 365,
+        "price_id": 365,
+        "close": "134.7200",
+        "detail": {
+          "expected_date": "2026-10-30",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/SPCX/historical?assetclass=stocks&fromdate=2026-10-01&todate=2026-10-31&limit=36",
+            "date": "2026-10-30",
+            "close": "134.7200",
+            "fetched_at": "2026-10-31T03:57:55.576Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/SPCX/1D/20261001000000/20261031235959/adjusted/EST5EDT.json",
+            "date": "2026-10-30",
+            "close": "134.7200",
+            "fetched_at": "2026-10-31T03:57:52.597Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "134.7200",
+          "submitted_diff": "0.0000"
+        }
+      }
+    }
+  ]
+}

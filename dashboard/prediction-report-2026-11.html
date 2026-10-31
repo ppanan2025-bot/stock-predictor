@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stock Predictor: November 2026 prediction report</title>
+<style>
+.viz-root{color-scheme:light;--surface-0:#f4f3f0;--surface-1:#fcfcfb;--border:#e2e0da;--grid:#ecebe6;--text-primary:#0b0b0b;--text-secondary:#52514e;--text-muted:#7a7974;--series-1:#2a78d6;--band:rgba(42,120,214,.16);--band-edge:rgba(42,120,214,.55);--cons:#0b0b0b}
+@media (prefers-color-scheme:dark){:root:where(:not([data-theme="light"])) .viz-root{color-scheme:dark;--surface-0:#121211;--surface-1:#1a1a19;--border:#33322f;--grid:#2a2927;--text-primary:#f0efec;--text-secondary:#c3c2b7;--text-muted:#8f8e86;--series-1:#3987e5;--band:rgba(57,135,229,.22);--band-edge:rgba(57,135,229,.7);--cons:#f0efec}}
+:root[data-theme="dark"] .viz-root{color-scheme:dark;--surface-0:#121211;--surface-1:#1a1a19;--border:#33322f;--grid:#2a2927;--text-primary:#f0efec;--text-secondary:#c3c2b7;--text-muted:#8f8e86;--series-1:#3987e5;--band:rgba(57,135,229,.22);--band-edge:rgba(57,135,229,.7);--cons:#f0efec}
+*{box-sizing:border-box}
+body{margin:0}
+.viz-root{background:var(--surface-0);color:var(--text-primary);font:14px/1.45 system-ui,-apple-system,"Segoe UI",sans-serif;min-height:100vh;padding:24px}
+.wrap{max-width:1180px;margin:0 auto}
+h1{font-size:22px;margin:0 0 4px}
+.sub{color:var(--text-secondary);margin:0 0 20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:16px}
+.card{background:var(--surface-1);border:1px solid var(--border);border-radius:10px;padding:16px}
+.card h2{font-size:16px;margin:0}
+.muted{color:var(--text-muted)}
+.sec{color:var(--text-secondary)}
+.tiles{display:flex;gap:18px;margin:10px 0 6px;flex-wrap:wrap}
+.tile .v{font-size:22px;font-weight:650;font-variant-numeric:tabular-nums}
+.tile .l{font-size:12px;color:var(--text-muted)}
+.pill{display:inline-block;font-size:12px;border:1px solid var(--border);border-radius:99px;padding:1px 8px;margin-left:6px;color:var(--text-secondary)}
+svg text{fill:var(--text-secondary);font-size:11px}
+svg .t-strong{fill:var(--text-primary);font-weight:600}
+.tip{position:fixed;pointer-events:none;background:var(--surface-1);border:1px solid var(--border);border-radius:6px;padding:6px 9px;font-size:12px;box-shadow:0 4px 14px rgba(0,0,0,.15);display:none;z-index:9;font-variant-numeric:tabular-nums}
+.note{font-size:13px;color:var(--text-secondary);margin:8px 0 0}
+.views{margin-top:6px}
+details{margin-top:10px}
+summary{cursor:pointer;color:var(--text-secondary);font-size:13px}
+table{border-collapse:collapse;width:100%;font-size:12.5px;font-variant-numeric:tabular-nums;margin-top:6px}
+th,td{text-align:left;padding:4px 6px;border-bottom:1px solid var(--grid)}
+th{color:var(--text-muted);font-weight:500}
+.wide{grid-column:1/-1}
+.refs li{margin:2px 0;font-size:12.5px;color:var(--text-secondary)}
+.disc{margin-top:18px;font-size:13px;color:var(--text-secondary);border-top:1px solid var(--border);padding-top:12px}
+.toggle{float:right;font:inherit;font-size:12px;background:var(--surface-1);color:var(--text-secondary);border:1px solid var(--border);border-radius:6px;padding:4px 10px;cursor:pointer}
+</style>
+</head>
+<body>
+<div class="viz-root">
+<div class="wrap">
+<button class="toggle" id="theme">Theme</button>
+<h1>November 2026 prediction report</h1>
+<p class="sub">Run 1 · as of the verified 2026-10-30 close · target month 2026-11 · reports are final v1 (validator pass, finalize gate held). Every number below comes from the stored reports and stockdb chart data.</p>
+
+<div class="card wide" style="margin-bottom:16px">
+  <h2>November range per stock, as % change from the October close</h2>
+  <p class="note" style="margin-top:2px">Bar = consensus range (low to high); tick = mid; dashed = deterministic baseline range. Hover for values.</p>
+  <svg id="overview" width="100%" height="190" role="img" aria-label="Consensus ranges for GOOGL, AMZN, AAPL"></svg>
+</div>
+
+<div class="grid" id="cards"></div>
+
+<div class="card wide" style="margin-top:16px">
+  <h2>SPCX <span class="pill">no prediction issued</span></h2>
+  <p class="note">The report was written but <code>save_prediction</code> refused it with <code>baseline_mismatch</code>. SPCX has only 5 verified closes (listed 2026-06-12), so its baseline is null; the server's baseline recompute doesn't handle a null short-history baseline. This is a harness bug, not a data problem, and no SPCX prediction is stored.</p>
+</div>
+
+<div class="card wide" style="margin-top:16px">
+  <h2>How the run went</h2>
+  <svg id="pipeline" width="100%" height="120" role="img" aria-label="Agent pipeline"></svg>
+  <p class="note">34 agent tasks: 1 planner, 20 analyzers (5 per stock), 4 validators, 4 reporter-designers, 4 drawers, 1 project manager. The validator rejected 4 analyses (AMZN news_sentiment, GOOGL risk_skeptic, SPCX news_sentiment and macro_sector), and all 4 were accepted on the redo.</p>
+</div>
+
+<p class="disc">This report is an automated statistical and research summary, not investment advice. The baseline model's backtest sign hit rate (58.3%) equals the base rate, so the direction call has no demonstrated skill; read the ranges, not the direction.</p>
+</div>
+<div class="tip" id="tip"></div>
+</div>
+<script>
+const DATA = {"GOOGL": {"call": {"direction": "flat", "p_up": "0.5489", "low": "-0.124979", "mid": "0.004496", "high": "0.152971", "confidence_label": "low"}, "pred": {"prediction_id": 3, "version": 1, "pack_id": 3, "report_sha256": "fb5b76b53535b658c54f5115004d57b8c933fb2d69e94c1ef5028c72a117c7c3"}, "analyses": [{"agent": "fundamental", "lo": "-0.060000", "hi": "0.080000", "mid": "0.010000", "confidence": "0.350"}, {"agent": "technical", "lo": "-0.080000", "hi": "0.100000", "mid": "0.010000", "confidence": "0.300"}, {"agent": "news_sentiment", "lo": "-0.080000", "hi": "0.060000", "mid": "-0.010000", "confidence": "0.250"}, {"agent": "macro_sector", "lo": "-0.080000", "hi": "0.080000", "mid": "0.000000", "confidence": "0.250"}, {"agent": "risk_skeptic", "lo": "-0.160000", "hi": "0.120000", "mid": "-0.020000", "confidence": "0.250"}], "points": [["2025-10", 281.19], ["2025-11", 320.18], ["2025-12", 313.0], ["2026-01", 338.0], ["2026-02", 311.76], ["2026-03", 287.56], ["2026-04", 384.8], ["2026-05", 380.34], ["2026-06", 357.37], ["2026-07", 356.13], ["2026-08", 339.35], ["2026-09", 344.08], ["2026-10", 279.84]]}, "AMZN": {"call": {"direction": "flat", "p_up": "0.5310", "low": "-0.104495", "mid": "0.003703", "high": "0.124924", "confidence_label": "low"}, "pred": {"prediction_id": 2, "version": 1, "pack_id": 4, "report_sha256": "d8d2f76766412c015835575681f9000e88deb1d652db1d4b7c33c6260299bcf2"}, "analyses": [{"agent": "fundamental", "lo": "-0.040000", "hi": "0.070000", "mid": "0.015000", "confidence": "0.350"}, {"agent": "technical", "lo": "-0.070000", "hi": "0.065000", "mid": "-0.002500", "confidence": "0.300"}, {"agent": "news_sentiment", "lo": "-0.060000", "hi": "0.070000", "mid": "0.005000", "confidence": "0.100"}, {"agent": "macro_sector", "lo": "-0.070000", "hi": "0.070000", "mid": "0.000000", "confidence": "0.250"}, {"agent": "risk_skeptic", "lo": "-0.120000", "hi": "0.080000", "mid": "-0.020000", "confidence": "0.200"}], "points": [["2025-10", 244.22], ["2025-11", 233.22], ["2025-12", 230.82], ["2026-01", 239.3], ["2026-02", 210.0], ["2026-03", 208.27], ["2026-04", 265.06], ["2026-05", 270.64], ["2026-06", 238.34], ["2026-07", 271.58], ["2026-08", 259.77], ["2026-09", 249.15], ["2026-10", 240.35]]}, "AAPL": {"call": {"direction": "flat", "p_up": "0.5907", "low": "-0.058535", "mid": "0.005689", "high": "0.074265", "confidence_label": "low"}, "pred": {"prediction_id": 1, "version": 1, "pack_id": 5, "report_sha256": "dbc9c1e0b28492c8d42b13d5ccd5916bd20d0d3b1f15169a28e1a2e8bd8f825f"}, "analyses": [{"agent": "fundamental", "lo": "-0.050000", "hi": "0.060000", "mid": "0.005000", "confidence": "0.250"}, {"agent": "technical", "lo": "-0.040000", "hi": "0.070000", "mid": "0.015000", "confidence": "0.350"}, {"agent": "news_sentiment", "lo": "-0.050000", "hi": "0.040000", "mid": "-0.005000", "confidence": "0.300"}, {"agent": "macro_sector", "lo": "-0.050000", "hi": "0.050000", "mid": "0.000000", "confidence": "0.250"}, {"agent": "risk_skeptic", "lo": "-0.080000", "hi": "0.060000", "mid": "-0.010000", "confidence": "0.300"}], "points": [["2025-10", 270.37], ["2025-11", 278.85], ["2025-12", 271.86], ["2026-01", 259.48], ["2026-02", 264.18], ["2026-03", 253.79], ["2026-04", 271.35], ["2026-05", 312.06], ["2026-06", 289.36], ["2026-07", 308.91], ["2026-08", 316.85], ["2026-09", 333.02], ["2026-10", 344.63]]}};
+const META = {
+  GOOGL:{name:"Alphabet", close:279.84, mid$:281.10, lo$:244.87, hi$:322.65, conf:"0.09", base:{dir:"flat",lo:-11.8,mid:1.2,hi:16.0,p:"0.55"},
+    gist:"All five analyzers call flat. Alphabet's strong Q3 release [S62] is weighed against the October selloff the BBC ties to AI search hurting ad sales [S60].",
+    refs:["[S60] BBC: Google value plunges by $500bn as its own AI search hits ad sales (2026-10-29, verified)","[S61] CBS: Alphabet sees massive stock plunge (2026-10-30, verified)","[S62] SEC: Alphabet Q3 2026 earnings exhibit 99.1 (verified)","[S63] SEC: Alphabet 8-K (verified)"]},
+  AMZN:{name:"Amazon", close:240.35, mid$:241.24, lo$:215.23, hi$:270.38, conf:"0.08", base:{dir:"flat",lo:-10.1,mid:0.7,hi:12.8,p:"0.52"},
+    gist:"Analyzers split: fundamental leans up on AWS growth and Q4 guidance [S53], risk_skeptic leans down on lower net income and three lower month-end closes.",
+    refs:["[S53] Amazon IR: Amazon.com announces third quarter results (2026-10-29, verified)"]},
+  AAPL:{name:"Apple", close:344.63, mid$:346.59, lo$:324.46, hi$:370.22, conf:"0.14", base:{dir:"up",lo:-5.2,mid:1.2,hi:8.1,p:"0.57"},
+    gist:"Baseline leans up on momentum (close at a one-year high); four of five analyzers pull it to flat because of the iPhone Duo screen-crack story [S37] [S40].",
+    refs:["[S37] Guardian: iPhone Duo owners report cracks (2026-10-26, corroborated)","[S39] CBS: Apple's new foldable iPhone hits a snag (2026-10-27, verified)","[S40] BBC: Apple to replace affected handsets (2026-10-27, verified)","[S58] CBS: iPhone Duo broke within hours (2026-10-28, verified)"]}
+};
+const ORDER=["GOOGL","AMZN","AAPL"];
+const NS="http://www.w3.org/2000/svg";
+const el=(n,a={},p)=>{const e=document.createElementNS(NS,n);for(const k in a)e.setAttribute(k,a[k]);if(p)p.appendChild(e);return e};
+const pct=(x,d=1)=>(x>0?"+":x<0?"−":"")+Math.abs(x).toFixed(d)+"%";
+const usd=x=>"$"+x.toFixed(2);
+const tip=document.getElementById("tip");
+function hover(node,html){node.addEventListener("mousemove",e=>{tip.innerHTML=html;tip.style.display="block";tip.style.left=Math.min(e.clientX+14,innerWidth-240)+"px";tip.style.top=(e.clientY+14)+"px"});node.addEventListener("mouseleave",()=>tip.style.display="none")}
+
+/* ---------- overview range chart ---------- */
+function overview(){
+  const s=document.getElementById("overview");s.innerHTML="";
+  const W=s.clientWidth||900,H=190,L=70,R=20,T=14,B=28,dom=[-14,18];
+  const x=v=>L+(v-dom[0])/(dom[1]-dom[0])*(W-L-R);
+  for(let v=-12;v<=18;v+=4){el("line",{x1:x(v),x2:x(v),y1:T,y2:H-B,stroke:"var(--grid)"},s);const t=el("text",{x:x(v),y:H-10,"text-anchor":"middle"},s);t.textContent=pct(v,0)}
+  el("line",{x1:x(0),x2:x(0),y1:T,y2:H-B,stroke:"var(--text-muted)","stroke-width":1},s);
+  const rowH=(H-T-B)/ORDER.length;
+  ORDER.forEach((t,i)=>{
+    const c=DATA[t].call,m=META[t],y=T+rowH*i+rowH/2;
+    const lo=+c.low*100,hi=+c.high*100,mid=+c.mid*100;
+    const lab=el("text",{x:8,y:y+4,class:"t-strong"},s);lab.textContent=t;
+    el("line",{x1:x(m.base.lo),x2:x(m.base.hi),y1:y-11,y2:y-11,stroke:"var(--text-muted)","stroke-dasharray":"3 3","stroke-width":1.5},s);
+    el("rect",{x:x(lo),y:y-6,width:x(hi)-x(lo),height:12,rx:4,fill:"var(--band)",stroke:"var(--band-edge)"},s);
+    el("line",{x1:x(mid),x2:x(mid),y1:y-9,y2:y+9,stroke:"var(--series-1)","stroke-width":3},s);
+    const a=el("text",{x:x(lo)-6,y:y+4,"text-anchor":"end"},s);a.textContent=pct(lo);
+    const b=el("text",{x:x(hi)+6,y:y+4},s);b.textContent=pct(hi);
+    const hit=el("rect",{x:L,y:y-rowH/2,width:W-L-R,height:rowH,fill:"transparent"},s);
+    hover(hit,`<b>${t}</b> · call <b>${c.direction}</b><br>consensus ${pct(lo)} to ${pct(hi)}, mid ${pct(mid)}<br>baseline ${pct(m.base.lo)} to ${pct(m.base.hi)}, mid ${pct(m.base.mid)}<br>p_up ${(+c.p_up).toFixed(2)} · confidence ${m.conf} (low)`);
+  });
+}
+
+/* ---------- per-stock card ---------- */
+function card(t){
+  const d=DATA[t],m=META[t],c=d.call;
+  const div=document.createElement("div");div.className="card";
+  div.innerHTML=`<h2>${t} <span class="muted" style="font-weight:400">${m.name}</span><span class="pill">${c.direction}</span><span class="pill">confidence ${m.conf} low</span></h2>
+  <div class="tiles"><div class="tile"><div class="v">${usd(m.close)}</div><div class="l">Oct close (2026-10-30)</div></div>
+  <div class="tile"><div class="v">${pct(+c.mid*100)}</div><div class="l">Nov mid · ${usd(m.mid$)}</div></div>
+  <div class="tile"><div class="v" style="font-size:16px;padding-top:5px">${usd(m.lo$)} – ${usd(m.hi$)}</div><div class="l">Nov range (${pct(+c.low*100)} to ${pct(+c.high*100)})</div></div>
+  <div class="tile"><div class="v">${(+c.p_up).toFixed(2)}</div><div class="l">p_up</div></div></div>
+  <svg class="line" width="100%" height="230" role="img" aria-label="${t} month-end closes and November range"></svg>
+  <p class="note">${m.gist}</p>
+  <div class="views"><div class="muted" style="font-size:12px;margin-top:10px">Analyzer ranges (accepted views), % change in November</div>
+  <svg class="views-svg" width="100%" height="150" role="img" aria-label="${t} analyzer ranges"></svg></div>
+  <details><summary>Table view and sources</summary>
+  <table><tr><th>Month</th><th>Verified close</th></tr>${d.points.map(p=>`<tr><td>${p[0]}</td><td>${usd(p[1])}</td></tr>`).join("")}
+  <tr><td>2026-11 (predicted)</td><td>${usd(m.lo$)} / ${usd(m.mid$)} / ${usd(m.hi$)}</td></tr></table>
+  <table><tr><th>Analyzer</th><th>Low</th><th>Mid</th><th>High</th><th>Conf.</th></tr>${d.analyses.map(a=>`<tr><td>${a.agent}</td><td>${pct(a.lo*100)}</td><td>${pct(a.mid*100)}</td><td>${pct(a.hi*100)}</td><td>${(+a.confidence).toFixed(2)}</td></tr>`).join("")}</table>
+  <ul class="refs">${m.refs.map(r=>`<li>${r}</li>`).join("")}</ul>
+  <div class="muted" style="font-size:11.5px">prediction_id ${d.pred.prediction_id} v${d.pred.version} · pack ${d.pred.pack_id} · report sha256 ${d.pred.report_sha256.slice(0,12)}…</div></details>`;
+  document.getElementById("cards").appendChild(div);
+  lineChart(div.querySelector("svg.line"),t);
+  viewsChart(div.querySelector("svg.views-svg"),t);
+}
+
+function lineChart(s,t){
+  s.innerHTML="";
+  const d=DATA[t],m=META[t],pts=d.points,n=pts.length;
+  const W=s.clientWidth||520,H=230,L=48,R=56,T=12,B=26;
+  const vals=pts.map(p=>p[1]).concat([m.lo$,m.hi$]);
+  let mn=Math.min(...vals),mx=Math.max(...vals);const pad=(mx-mn)*.08;mn-=pad;mx+=pad;
+  const x=i=>L+i/(n)*(W-L-R), y=v=>T+(mx-v)/(mx-mn)*(H-T-B);
+  const step=Math.pow(10,Math.floor(Math.log10((mx-mn)/4)));const st=[1,2,2.5,5,10].map(k=>k*step).find(k=>(mx-mn)/k<=5);
+  for(let v=Math.ceil(mn/st)*st;v<=mx;v+=st){el("line",{x1:L,x2:W-R,y1:y(v),y2:y(v),stroke:"var(--grid)"},s);const tx=el("text",{x:L-6,y:y(v)+4,"text-anchor":"end"},s);tx.textContent="$"+Math.round(v)}
+  pts.forEach((p,i)=>{if(i%3===0){const tx=el("text",{x:x(i),y:H-8,"text-anchor":"middle"},s);tx.textContent=p[0].slice(2)}});
+  const tx=el("text",{x:x(n),y:H-8,"text-anchor":"middle",class:"t-strong"},s);tx.textContent="26-11";
+  // prediction fan
+  const lx=x(n-1),ly=y(pts[n-1][1]),fx=x(n);
+  el("path",{d:`M${lx},${ly} L${fx},${y(m.hi$)} L${fx},${y(m.lo$)} Z`,fill:"var(--band)",stroke:"none"},s);
+  el("line",{x1:fx,x2:fx,y1:y(m.hi$),y2:y(m.lo$),stroke:"var(--band-edge)","stroke-width":2,"stroke-linecap":"round"},s);
+  el("line",{x1:lx,x2:fx,y1:ly,y2:y(m.mid$),stroke:"var(--series-1)","stroke-width":2,"stroke-dasharray":"4 3"},s);
+  // history
+  el("path",{d:pts.map((p,i)=>(i?"L":"M")+x(i)+","+y(p[1])).join(" "),fill:"none",stroke:"var(--series-1)","stroke-width":2,"stroke-linejoin":"round"},s);
+  el("circle",{cx:lx,cy:ly,r:4,fill:"var(--series-1)",stroke:"var(--surface-1)","stroke-width":2},s);
+  el("circle",{cx:fx,cy:y(m.mid$),r:4,fill:"var(--surface-1)",stroke:"var(--series-1)","stroke-width":2},s);
+  [[m.hi$,"high"],[m.mid$,"mid"],[m.lo$,"low"]].forEach(([v,k])=>{const a=el("text",{x:fx+7,y:y(v)+4},s);a.textContent=usd(v)});
+  // crosshair hover
+  const cross=el("line",{y1:T,y2:H-B,stroke:"var(--text-muted)","stroke-width":1,opacity:0},s);
+  const hit=el("rect",{x:L,y:T,width:W-L-R+20,height:H-T-B,fill:"transparent"},s);
+  hit.addEventListener("mousemove",e=>{
+    const r=s.getBoundingClientRect(),px=e.clientX-r.left;let i=Math.round((px-L)/(W-L-R)*n);i=Math.max(0,Math.min(n,i));
+    cross.setAttribute("x1",x(i));cross.setAttribute("x2",x(i));cross.setAttribute("opacity",1);
+    tip.innerHTML=i<n?`<b>${pts[i][0]}</b> verified close ${usd(pts[i][1])}`:`<b>2026-11 predicted</b><br>mid ${usd(m.mid$)} (${pct(+d.call.mid*100)})<br>range ${usd(m.lo$)} – ${usd(m.hi$)}`;
+    tip.style.display="block";tip.style.left=Math.min(e.clientX+14,innerWidth-240)+"px";tip.style.top=(e.clientY+14)+"px"});
+  hit.addEventListener("mouseleave",()=>{tip.style.display="none";cross.setAttribute("opacity",0)});
+}
+
+function viewsChart(s,t){
+  s.innerHTML="";
+  const d=DATA[t],c=d.call,rows=d.analyses.concat([{agent:"consensus",lo:c.low,hi:c.high,mid:c.mid,confidence:null}]);
+  const W=s.clientWidth||520,H=150,L=104,R=14,T=6,B=18,dom=[-17,17];
+  const x=v=>L+(v-dom[0])/(dom[1]-dom[0])*(W-L-R),rh=(H-T-B)/rows.length;
+  for(let v=-15;v<=15;v+=5){el("line",{x1:x(v),x2:x(v),y1:T,y2:H-B,stroke:v===0?"var(--text-muted)":"var(--grid)"},s);const tx=el("text",{x:x(v),y:H-4,"text-anchor":"middle"},s);tx.textContent=pct(v,0)}
+  rows.forEach((a,i)=>{
+    const y=T+rh*i+rh/2,lo=a.lo*100,hi=a.hi*100,mid=a.mid*100,isC=a.agent==="consensus";
+    const lb=el("text",{x:L-8,y:y+4,"text-anchor":"end",class:isC?"t-strong":""},s);lb.textContent=a.agent.replace("_","-");
+    el("line",{x1:x(lo),x2:x(hi),y1:y,y2:y,stroke:isC?"var(--cons)":"var(--series-1)","stroke-width":isC?4:3,"stroke-linecap":"round",opacity:isC?1:.85},s);
+    el("circle",{cx:x(mid),cy:y,r:4,fill:"var(--surface-1)",stroke:isC?"var(--cons)":"var(--series-1)","stroke-width":2},s);
+    const hit=el("rect",{x:0,y:y-rh/2,width:W,height:rh,fill:"transparent"},s);
+    hover(hit,`<b>${a.agent}</b><br>${pct(lo)} to ${pct(hi)}, mid ${pct(mid)}${a.confidence!=null?`<br>confidence ${(+a.confidence).toFixed(2)}`:""}`);
+  });
+}
+
+/* ---------- pipeline ---------- */
+function pipeline(){
+  const s=document.getElementById("pipeline");s.innerHTML="";
+  const W=s.clientWidth||900,steps=[["planner","1 task","done"],["analyzers ×5","20 tasks · 4 redo","done"],["validator A","accept/reject","done"],["reporter-designer","3 saved · SPCX refused","part"],["drawer","3 charts","part"],["validator B","3 pass","part"],["finalize","3 final v1","part"]];
+  const gap=10,w=(W-gap*(steps.length-1))/steps.length;
+  steps.forEach(([n,sub,st],i)=>{
+    const x=i*(w+gap);
+    el("rect",{x:x+1,y:20,width:w-2,height:64,rx:8,fill:"var(--surface-1)",stroke:st==="done"?"var(--series-1)":"var(--band-edge)","stroke-width":st==="done"?2:1.5,"stroke-dasharray":st==="done"?"":"5 3"},s);
+    const a=el("text",{x:x+w/2,y:46,"text-anchor":"middle",class:"t-strong"},s);a.textContent=n;
+    const b=el("text",{x:x+w/2,y:66,"text-anchor":"middle"},s);b.textContent=sub;
+    if(i<steps.length-1)el("path",{d:`M${x+w-2},52 l${gap+2},0`,stroke:"var(--text-muted)","stroke-width":1.5},s);
+  });
+  const k=el("text",{x:0,y:108},s);k.textContent="Solid border: all 4 stocks done · dashed: 3 of 4 (SPCX blocked at save_prediction)";
+}
+
+ORDER.forEach(card);
+function drawAll(){overview();pipeline();ORDER.forEach((t,i)=>{const c=document.querySelectorAll("#cards .card")[i];lineChart(c.querySelector("svg.line"),t);viewsChart(c.querySelector("svg.views-svg"),t)})}
+drawAll();addEventListener("resize",drawAll);
+document.getElementById("theme").onclick=()=>{const r=document.documentElement,cur=r.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");r.dataset.theme=cur==="dark"?"light":"dark"};
+</script>
+</body>
+</html>

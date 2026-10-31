@@ -1,0 +1,158 @@
+{
+  "_comment": "Labelled dev-DB pairs (stockdb 3310 news_items, 2026-10-31). same_event = human label (same real-world event). score/shared_salient from src/verify/similarity.mjs compare(); body_keyword_jaccard_top25 from the cached page texts. 39-40 is a known false negative of the rule (conservative).",
+  "pairs": [
+    {
+      "pair": "37-39",
+      "same_event": true,
+      "a": {
+        "id": 37,
+        "domain": "theguardian.com",
+        "title": "iPhone Duo owners report cracks in Apple's first foldable handset"
+      },
+      "b": {
+        "id": 39,
+        "domain": "bbc.co.uk",
+        "title": "iPhone Duo: Apple to replace handsets affected by screen issues"
+      },
+      "score": 0.38,
+      "shared_salient": 4,
+      "body_keyword_jaccard_top25": 0.389
+    },
+    {
+      "pair": "37-40",
+      "same_event": true,
+      "a": {
+        "id": 37,
+        "domain": "theguardian.com",
+        "title": "iPhone Duo owners report cracks in Apple's first foldable handset"
+      },
+      "b": {
+        "id": 40,
+        "domain": "cbsnews.com",
+        "title": "Apple's new foldable iPhone hits a snag"
+      },
+      "score": 0.4442,
+      "shared_salient": 3,
+      "body_keyword_jaccard_top25": 0.042
+    },
+    {
+      "pair": "39-40",
+      "same_event": true,
+      "a": {
+        "id": 39,
+        "domain": "bbc.co.uk",
+        "title": "iPhone Duo: Apple to replace handsets affected by screen issues"
+      },
+      "b": {
+        "id": 40,
+        "domain": "cbsnews.com",
+        "title": "Apple's new foldable iPhone hits a snag"
+      },
+      "score": 0.2582,
+      "shared_salient": 2,
+      "body_keyword_jaccard_top25": 0.042
+    },
+    {
+      "pair": "43-47",
+      "same_event": false,
+      "a": {
+        "id": 43,
+        "domain": "cbsnews.com",
+        "title": "Jordan says 3 arrested in deadly attack on Greek Orthodox church"
+      },
+      "b": {
+        "id": 47,
+        "domain": "bbc.co.uk",
+        "title": "Jordan says 'terrorists' killed in Syria in retaliatory strike over church attack"
+      },
+      "score": 0.3572,
+      "shared_salient": 3,
+      "body_keyword_jaccard_top25": 0.22
+    },
+    {
+      "pair": "43-49",
+      "same_event": false,
+      "a": {
+        "id": 43,
+        "domain": "cbsnews.com",
+        "title": "Jordan says 3 arrested in deadly attack on Greek Orthodox church"
+      },
+      "b": {
+        "id": 49,
+        "domain": "france24.com",
+        "title": "Jordan launches airstrikes in Syria after church attack"
+      },
+      "score": 0.42,
+      "shared_salient": 3,
+      "body_keyword_jaccard_top25": 0.02
+    },
+    {
+      "pair": "47-49",
+      "same_event": true,
+      "a": {
+        "id": 47,
+        "domain": "bbc.co.uk",
+        "title": "Jordan says 'terrorists' killed in Syria in retaliatory strike over church attack"
+      },
+      "b": {
+        "id": 49,
+        "domain": "france24.com",
+        "title": "Jordan launches airstrikes in Syria after church attack"
+      },
+      "score": 0.56,
+      "shared_salient": 4,
+      "body_keyword_jaccard_top25": 0
+    },
+    {
+      "pair": "47-50",
+      "same_event": false,
+      "a": {
+        "id": 47,
+        "domain": "bbc.co.uk",
+        "title": "Jordan says 'terrorists' killed in Syria in retaliatory strike over church attack"
+      },
+      "b": {
+        "id": 50,
+        "domain": "france24.com",
+        "title": "Syria slams deadly Jordan strikes as 'unacceptable' breach of airspace"
+      },
+      "score": 0.2072,
+      "shared_salient": 2,
+      "body_keyword_jaccard_top25": 0.22
+    },
+    {
+      "pair": "49-50",
+      "same_event": false,
+      "a": {
+        "id": 49,
+        "domain": "france24.com",
+        "title": "Jordan launches airstrikes in Syria after church attack"
+      },
+      "b": {
+        "id": 50,
+        "domain": "france24.com",
+        "title": "Syria slams deadly Jordan strikes as 'unacceptable' breach of airspace"
+      },
+      "score": 0.2667,
+      "shared_salient": 2,
+      "body_keyword_jaccard_top25": 0.064
+    },
+    {
+      "pair": "43-50",
+      "same_event": false,
+      "a": {
+        "id": 43,
+        "domain": "cbsnews.com",
+        "title": "Jordan says 3 arrested in deadly attack on Greek Orthodox church"
+      },
+      "b": {
+        "id": 50,
+        "domain": "france24.com",
+        "title": "Syria slams deadly Jordan strikes as 'unacceptable' breach of airspace"
+      },
+      "score": 0.2329,
+      "shared_salient": 2,
+      "body_keyword_jaccard_top25": 0.163
+    }
+  ]
+}

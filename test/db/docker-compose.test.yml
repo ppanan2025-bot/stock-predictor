@@ -1,0 +1,18 @@
+# Throwaway MySQL for integration tests (127.0.0.1:3320, tmpfs, test-only credentials, report_host marker sp-test-db).
+name: stock-predictor-test
+services:
+  mysql:
+    image: mysql:8.4
+    env_file: ./test.env
+    environment:
+      MYSQL_DATABASE: stockdb
+    command: ["--character-set-server=utf8mb4","--collation-server=utf8mb4_0900_ai_ci","--default-time-zone=+00:00","--report-host=sp-test-db"]
+    ports: ["127.0.0.1:3320:3306"]
+    tmpfs: ["/var/lib/mysql"]
+    volumes:
+      - ../../db/init:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL","mysql -h 127.0.0.1 -ustock_ro -p$$SP_RO_PASSWORD -e 'SELECT 1 FROM stockdb.companies LIMIT 1' stockdb"]
+      interval: 2s
+      timeout: 3s
+      retries: 90

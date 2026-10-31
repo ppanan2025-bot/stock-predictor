@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "stockdb": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["mcp-server/index.mjs"],
+      "env": { "SP_DB_HOST": "127.0.0.1", "SP_DB_PORT": "3310", "SP_DB_DATABASE": "stockdb" }
+    }
+  }
+}

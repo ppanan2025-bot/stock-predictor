@@ -1,0 +1,224 @@
+{
+  "file": "news/company-GOOGL-2026-10.json",
+  "kind": "news",
+  "dry_run": false,
+  "at": "2026-10-30T16:36:13.913Z",
+  "fatal": null,
+  "totals": {
+    "verified": 2,
+    "corroborated": 0,
+    "pending": 1,
+    "rejected": 0,
+    "by_reason": {
+      "pending:source_unreachable": 1,
+      "verified:ok": 2
+    }
+  },
+  "items": [
+    {
+      "line": null,
+      "index": 0,
+      "status": "pending",
+      "reason": "source_unreachable",
+      "input": {
+        "ticker": "GOOGL",
+        "url": "https://news.sky.com/story/google-parent-alphabet-takes-500bn-hit-on-ai-worries-13605428",
+        "title": "Why Google stock has plunged $500bn in a single day",
+        "published_at": "2026-10-29",
+        "outlet": "Sky News",
+        "summary": "Shares in Google's parent company Alphabet have suffered their worst-ever day on the US stock market, falling more than 12% and knocking around half a trillion dollars off its value.",
+        "references": [
+          {
+            "url": "https://bbc.co.uk/news/articles/cm9qzdqpxy48o",
+            "title": "BBC News: Google value plunges by $500bn as its own AI search hits ad sales"
+          },
+          {
+            "url": "https://cbsnews.com/video/google-parent-alphabet-sees-massive-stock-plunge-shockwaves-after-binance-hack",
+            "title": "CBS News: Google parent Alphabet sees massive stock plunge; shockwaves after Binance hack"
+          }
+        ],
+        "inbox_file": "news/company-GOOGL-2026-10.json"
+      },
+      "result": {
+        "ticker": "GOOGL",
+        "scope": "company",
+        "url": "https://news.sky.com/story/google-parent-alphabet-takes-500bn-hit-on-ai-worries-13605428",
+        "title": "Why Google stock has plunged $500bn in a single day",
+        "published_at": "2026-10-29",
+        "news_item_id": 58,
+        "duplicate": false,
+        "source_id": 59,
+        "source_status": "unreachable",
+        "source_reason": "http_error",
+        "status": "pending",
+        "reason": "source_unreachable",
+        "message": "source fetch failed (http_error HTTP 403); retry later",
+        "title_similarity": null,
+        "matched_title": null,
+        "date_delta_hours": null,
+        "page_published_at": null,
+        "wire_copy": false,
+        "wire_agency": null,
+        "corroboration": null,
+        "references": [
+          {
+            "url": "https://bbc.co.uk/news/articles/cm9qzdqpxy48o",
+            "source_id": 60,
+            "status": "verified",
+            "reason": "ok",
+            "outlet_key": "bbc"
+          },
+          {
+            "url": "https://cbsnews.com/video/google-parent-alphabet-sees-massive-stock-plunge-shockwaves-after-binance-hack",
+            "source_id": 61,
+            "status": "verified",
+            "reason": "ok",
+            "outlet_key": "cbs"
+          }
+        ],
+        "references_without_url": 0,
+        "upgraded_items": []
+      }
+    },
+    {
+      "line": null,
+      "index": 1,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "GOOGL",
+        "url": "https://bbc.co.uk/news/articles/cm9qzdqpxy48o",
+        "title": "Google value plunges by $500bn as its own AI search hits ad sales",
+        "published_at": "2026-10-30",
+        "outlet": "BBC News",
+        "summary": "Google spooked investors so badly that its stock hit a six-month low, after it revealed its AI own search summaries were affecting ad revenue.",
+        "references": [
+          {
+            "url": "https://cbsnews.com/video/google-parent-alphabet-sees-massive-stock-plunge-shockwaves-after-binance-hack",
+            "title": "CBS News: Google parent Alphabet sees massive stock plunge; shockwaves after Binance hack"
+          },
+          {
+            "url": "https://news.sky.com/story/google-parent-alphabet-takes-500bn-hit-on-ai-worries-13605428",
+            "title": "Sky News: Why Google stock has plunged $500bn in a single day"
+          }
+        ],
+        "inbox_file": "news/company-GOOGL-2026-10.json"
+      },
+      "result": {
+        "ticker": "GOOGL",
+        "scope": "company",
+        "url": "https://bbc.co.uk/news/articles/cm9qzdqpxy48o",
+        "title": "Google value plunges by $500bn as its own AI search hits ad sales",
+        "published_at": "2026-10-30",
+        "news_item_id": 59,
+        "duplicate": false,
+        "source_id": 60,
+        "source_status": "verified",
+        "source_reason": "ok",
+        "status": "verified",
+        "reason": "ok",
+        "message": null,
+        "title_similarity": 1,
+        "matched_title": "Google value plunges by $500bn as its own AI search hits ad sales",
+        "date_delta_hours": 0,
+        "page_published_at": "2026-10-29T21:29:51.580Z",
+        "wire_copy": false,
+        "wire_agency": null,
+        "corroboration": {
+          "count": 0,
+          "independent_groups": [],
+          "source_ids": [],
+          "not_independent": []
+        },
+        "references": [
+          {
+            "url": "https://cbsnews.com/video/google-parent-alphabet-sees-massive-stock-plunge-shockwaves-after-binance-hack",
+            "source_id": 61,
+            "status": "verified",
+            "reason": "ok",
+            "outlet_key": "cbs"
+          },
+          {
+            "url": "https://news.sky.com/story/google-parent-alphabet-takes-500bn-hit-on-ai-worries-13605428",
+            "source_id": 59,
+            "status": "unreachable",
+            "reason": "http_error",
+            "outlet_key": "skynews"
+          }
+        ],
+        "references_without_url": 0,
+        "upgraded_items": []
+      }
+    },
+    {
+      "line": null,
+      "index": 2,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "GOOGL",
+        "url": "https://cbsnews.com/video/google-parent-alphabet-sees-massive-stock-plunge-shockwaves-after-binance-hack",
+        "title": "Google parent Alphabet sees massive stock plunge; shockwaves after Binance hack",
+        "published_at": "2026-10-30",
+        "outlet": "CBS News",
+        "summary": "Google parent company Alphabet saw a massive $500 billion stock plunge in its roughest day on record. Meanwhile, cryptocurrency exchange Binance was targeted in a $6.3 billion hack.",
+        "references": [
+          {
+            "url": "https://bbc.co.uk/news/articles/cm9qzdqpxy48o",
+            "title": "BBC News: Google value plunges by $500bn as its own AI search hits ad sales"
+          },
+          {
+            "url": "https://news.sky.com/story/google-parent-alphabet-takes-500bn-hit-on-ai-worries-13605428",
+            "title": "Sky News: Why Google stock has plunged $500bn in a single day"
+          }
+        ],
+        "inbox_file": "news/company-GOOGL-2026-10.json"
+      },
+      "result": {
+        "ticker": "GOOGL",
+        "scope": "company",
+        "url": "https://cbsnews.com/video/google-parent-alphabet-sees-massive-stock-plunge-shockwaves-after-binance-hack",
+        "title": "Google parent Alphabet sees massive stock plunge; shockwaves after Binance hack",
+        "published_at": "2026-10-30",
+        "news_item_id": 60,
+        "duplicate": false,
+        "source_id": 61,
+        "source_status": "verified",
+        "source_reason": "ok",
+        "status": "verified",
+        "reason": "ok",
+        "message": null,
+        "title_similarity": 1,
+        "matched_title": "Google parent Alphabet sees massive stock plunge; shockwaves after Binance hack",
+        "date_delta_hours": 0,
+        "page_published_at": "2026-10-30T11:11:00.000Z",
+        "wire_copy": false,
+        "wire_agency": null,
+        "corroboration": {
+          "count": 0,
+          "independent_groups": [],
+          "source_ids": [],
+          "not_independent": []
+        },
+        "references": [
+          {
+            "url": "https://bbc.co.uk/news/articles/cm9qzdqpxy48o",
+            "source_id": 60,
+            "status": "verified",
+            "reason": "ok",
+            "outlet_key": "bbc"
+          },
+          {
+            "url": "https://news.sky.com/story/google-parent-alphabet-takes-500bn-hit-on-ai-worries-13605428",
+            "source_id": 59,
+            "status": "unreachable",
+            "reason": "http_error",
+            "outlet_key": "skynews"
+          }
+        ],
+        "references_without_url": 0,
+        "upgraded_items": []
+      }
+    }
+  ]
+}

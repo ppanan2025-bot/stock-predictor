@@ -1,0 +1,24 @@
+# Dev/prod MySQL for stockdb on 127.0.0.1:3310 (ports 3307-3309 belong to other projects).
+# Credentials come from .env (npm run setup). Never `docker compose down -v` (it deletes the data volume).
+name: stock-predictor
+services:
+  mysql:
+    image: mysql:8.4
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${SP_DB_DATABASE:-stockdb}
+    command: ["--character-set-server=utf8mb4","--collation-server=utf8mb4_0900_ai_ci","--default-time-zone=+00:00"]
+    ports: ["127.0.0.1:${SP_DB_PORT:-3310}:3306"]
+    volumes:
+      - stockdb_data:/var/lib/mysql
+      - ./db/init:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      # Healthy only after the init scripts ran: the ro user exists and the seed is readable over TCP.
+      test: ["CMD-SHELL","mysql -h 127.0.0.1 -u$$SP_RO_USER -p$$SP_RO_PASSWORD -e 'SELECT 1 FROM companies LIMIT 1' $$MYSQL_DATABASE"]
+      interval: 3s
+      timeout: 3s
+      retries: 80
+volumes:
+  stockdb_data:

@@ -1,0 +1,7 @@
+ticker,month,trade_date,close,source_url
+AAPL,2026-09,2026-09-30,333.02,
+GOOGL,2026-08,2026-08-31,339.35,https://www.nasdaq.com/market-activity/stocks/googl/historical
+AMZN,2026-09,2026-09-30,250.00,
+GOOGL,2026-09,2026-09-15,344.08,
+AMZN,2026-07,2026-07-31,231.01,
+aapl,2026-09,2026-09-30,333.02,

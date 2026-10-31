@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stock Predictor Control Room</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&family=Fraunces:opsz,wght@9..144,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* layout: SVG status tiles, then build pipeline | build team, runtime agent roster, phases | checks, predicted line graph, timeline */
+  --bg:#f3f5f2; --panel:#ffffff; --ink:#18221d; --muted:#5d6b63; --line:#d5ddd7;
+  --accent:#0f6e5a; --accent-soft:#d8ece5;
+  --ok:#1d7f4c; --warn:#b07400; --bad:#b3362c; --idle:#9aa7a0;
+  --display:"Fraunces", Georgia, serif; --body:"IBM Plex Sans", system-ui, sans-serif; --mono:"IBM Plex Mono", ui-monospace, monospace;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#0e1512; --panel:#16201c; --ink:#e4ece7; --muted:#93a39a; --line:#2a3832;
+  --accent:#43c2a0; --accent-soft:#173a30; --ok:#4cc47f; --warn:#e2a93b; --bad:#ef6a5e; --idle:#5b6a63; color-scheme:dark; } }
+:root[data-theme="dark"]{
+  --bg:#0e1512; --panel:#16201c; --ink:#e4ece7; --muted:#93a39a; --line:#2a3832;
+  --accent:#43c2a0; --accent-soft:#173a30; --ok:#4cc47f; --warn:#e2a93b; --bad:#ef6a5e; --idle:#5b6a63; color-scheme:dark; }
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.5}
+main{max-width:1180px;margin:0 auto;padding:20px 16px 48px;display:grid;gap:16px}
+header{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px;border-bottom:2px solid var(--ink);padding-bottom:10px}
+h1{font-family:var(--display);font-size:28px;margin:0;text-wrap:balance}
+.sub{color:var(--muted);font-size:13px;font-family:var(--mono)}
+.grid2{display:grid;grid-template-columns:1.4fr 1fr;gap:16px}
+@media (max-width:860px){.grid2{grid-template-columns:1fr}}
+section{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:14px 16px}
+h2{font-size:13px;letter-spacing:.08em;text-transform:uppercase;margin:0 0 10px;color:var(--muted);font-weight:600}
+.svgwrap{overflow-x:auto}
+svg{display:block}
+svg text{font-family:var(--body);fill:var(--ink)}
+svg .mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.dynhead{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px;margin-bottom:6px}
+.dynhead h2{margin:0}
+.ctrls{display:flex;gap:6px;align-items:center;font-size:13px;flex-wrap:wrap}
+.ctrls button,.ctrls select{font:inherit;font-size:13px;color:var(--ink);background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:3px 10px;cursor:pointer}
+.ctrls button:hover{border-color:var(--accent);color:var(--accent)}
+.ctrls :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.ctrls label{color:var(--muted)}
+.caption{margin-top:8px;font-size:14px;min-height:44px;border-left:3px solid var(--accent);padding:4px 10px;background:var(--accent-soft);border-radius:0 4px 4px 0}
+.caption .mono{font-family:var(--mono);color:var(--accent)}
+@keyframes pulse{0%,100%{stroke-opacity:1}50%{stroke-opacity:.35}}
+.pulse{animation:pulse 1.1s ease-in-out infinite}
+@media (prefers-reduced-motion: reduce){.pulse{animation:none}}
+</style>
+</head>
+<body>
+<main>
+<header>
+  <div>
+    <h1>Stock Predictor Control Room</h1>
+    <div class="sub">~/Documents/stock-predictor · stockdb on 127.0.0.1:3310 · tickers GOOGL · AMZN · AAPL</div>
+  </div>
+  <div class="sub" id="updated"></div>
+</header>
+
+<section><div class="svgwrap"><svg id="tiles" viewBox="0 0 1140 92" width="100%" role="img" aria-label="Status tiles"></svg></div></section>
+
+<section>
+  <div class="dynhead"><h2>Dynamic workflow: one prediction run</h2>
+    <div class="ctrls"><button id="dPlay" type="button">Pause</button><button id="dStep" type="button">Step</button><button id="dReset" type="button">Restart</button>
+    <label for="dSpeed">Speed</label><select id="dSpeed"><option value="2600">slow</option><option value="1700" selected>normal</option><option value="900">fast</option></select></div></div>
+  <div class="svgwrap"><svg id="dyn" viewBox="0 0 1140 440" width="100%" role="img" aria-label="Animated prediction run workflow"></svg></div>
+  <div class="caption"><span id="dStepNo" class="mono"></span> <b id="dTitle"></b> <span id="dText"></span></div>
+</section>
+
+<div class="grid2">
+  <section><h2>Prediction workflow</h2><div class="svgwrap"><svg id="flow" viewBox="0 0 700 300" width="100%" role="img" aria-label="Prediction workflow"></svg></div></section>
+  <section><h2>Build team</h2><div class="svgwrap"><svg id="org" viewBox="0 0 420 300" width="100%" role="img" aria-label="Build team"></svg></div></section>
+</div>
+
+<section><h2>Runtime agents (the project's own sub-agents)</h2><div class="svgwrap"><svg id="runtime" viewBox="0 0 1140 250" width="100%" role="img" aria-label="Runtime agent roster"></svg></div></section>
+
+<div class="grid2">
+  <section><h2>Build phases</h2><div class="svgwrap"><svg id="phases" viewBox="0 0 700 250" width="100%" role="img" aria-label="Phase progress"></svg></div></section>
+  <section><h2>Validation checks</h2><div class="svgwrap"><svg id="checks" viewBox="0 0 420 250" width="100%" role="img" aria-label="Validation checks"></svg></div></section>
+</div>
+
+<section><div class="dynhead"><h2>Predicted line graph (drawer output)</h2><div class="ctrls" id="predTabs"></div></div><div class="svgwrap"><svg id="pred" viewBox="0 0 1140 300" width="100%" role="img" aria-label="Predicted month-end price line graph"></svg></div></section>
+
+<section><h2>Activity timeline</h2><div class="svgwrap"><svg id="log" viewBox="0 0 1140 100" width="100%" role="img" aria-label="Activity timeline"></svg></div></section>
+</main>
+
+<script>
+/* ===== STATE: updated by the project leader at each phase transition ===== */
+const STATE = {
+  updated: "2026-10-31 14:58",
+  agents: [
+    {name:"Leader", role:"coordinator (main session)", status:"run"},
+    {name:"Planner", role:"architecture & PLAN.md", status:"run"},
+    {name:"Project manager", role:"PROJECT_STATUS.md", status:"done"},
+    {name:"Developer", role:"implements phases", status:"run"},
+    {name:"Validator", role:"tests & acceptance", status:"run"}
+  ],
+  runtime: [
+    {name:"planner", role:"run plan · gaps", status:"todo"},
+    {name:"fundamental", role:"analyzer", status:"todo"},
+    {name:"technical", role:"analyzer", status:"todo"},
+    {name:"news-sentiment", role:"analyzer", status:"todo"},
+    {name:"macro-sector", role:"analyzer", status:"todo"},
+    {name:"risk-skeptic", role:"analyzer", status:"todo"},
+    {name:"validator", role:"authenticity gate", status:"todo"},
+    {name:"reporter-designer", role:"final report", status:"todo"},
+    {name:"drawer", role:"predicted line graph", status:"todo"},
+    {name:"project-manager", role:"monitors the run", status:"todo"}
+  ],
+  phases: [
+    {n:"P0", name:"Plan", pct:100, status:"done"},
+    {n:"P1", name:"Infra · DB · MCP", pct:100, status:"done"},
+    {n:"P2", name:"Ingest · verify hooks", pct:100, status:"done"},
+    {n:"P3", name:"Research · features", pct:95, status:"run"},
+    {n:"P4", name:"Agents · report · drawer", pct:95, status:"run"},
+    {n:"P5", name:"Tests · docs · live run", pct:85, status:"run"}
+  ],
+  flow: ["done","done","done","done","done","done","done"],
+  checks: [ /* [label, status, detail] */
+    ["DB healthy on 127.0.0.1:3310","done","healthy"],
+    ["npm test (unit + integration)","done","39 / 39"],
+    ["MCP read tools (10) respond","done","stats ok"],
+    ["stock_ro cannot INSERT","done","ERROR 1142"],
+    ["stock_app cannot DELETE","done","ERROR 1142"],
+    ["Validator P1 review","done","pass w/ issues"],
+    ["SQL guard: 25+ bypass attempts","done","all blocked"],
+    ["NYSE calendar 2024-01..2026-10","done","correct"],
+    ["Query row cap (memory)","done","fixed: +1 MB"],
+    ["DB trigger: exact last trading day","done","fixed"],
+    ["npm test after P4 fixes","done","143 / 143"],
+    ["npm run smoke","done","OK"],
+    ["npm run audit (dev DB)","done","0 violations"],
+    ["CLAUDE.md matches tools/hooks/agents","done","117 lines · 8/8"],
+    ["Inbox prices re-verified live","done","103 / 103"],
+    ["Backfill 2023 (36 months)","done","36 / 36"],
+    ["Research notes: verbatim excerpt","done","4 AMZN notes"],
+    ["Features reproducible (sha)","done","28/28 match"],
+    ["Fake excerpt via search-page echo","done","fixed · confirmed"],
+    ["CSS-hidden text as page content","done","19/19 denied"],
+    ["GOOGL research notes (≥5)","run","SEC live OK · in live run"],
+    ["Backtest range coverage (60–76%)","done","67.7%"],
+    ["Baseline beats base rate","fail","58.3% = base rate"],
+    ["Finalize gate via MCP","done","holds"],
+    ["Finalize gate via direct SQL","done","forged consensus refused"],
+    ["Report number tracing","done","47/47 + 13/13 blocked"],
+    ["Chart tamper detection","done","3/3 caught"],
+    ["Baseline recomputed independently","done","exact match"],
+    ["News items verified","done","AAPL 1 corr + 3 ok · GOOGL 2 ok"],
+    ["Fake price via any route","done","all blocked"],
+    ["guard-bash: .env via curl file://","done","fixed"],
+    ["Wire copies as independent","done","fixed"],
+    ["False corroborations in DB","done","downgraded"],
+    ["Oct 2026 closes re-verified live","done","4 / 4 · 2026-10-30"],
+    ["Re-ingest keeps verified on 403/thin","done","fixed · test added"]
+  ],
+  /* predictions: [{ticker, months, closes, target, mid, lo, hi, call}] — final 2026-11 predictions (run 1).
+     closes: stockdb price_history 2025-11..2026-10; mid/lo/hi: get_consensus price_levels; call: get_consensus formatted.
+     SPCX prediction 4 withdrawn by user decision (not shown). */
+  predictions: [
+    {ticker:"GOOGL", id:3, target:"2026-11", mid:281.10, lo:244.87, hi:322.65,
+     call:"flat · mid +0.4% [-12.5% .. +15.3%] · p_up 0.55 · conf 0.09 (low)",
+     months:["2025-11","2025-12","2026-01","2026-02","2026-03","2026-04","2026-05","2026-06","2026-07","2026-08","2026-09","2026-10"],
+     closes:[320.18,313.00,338.00,311.76,287.56,384.80,380.34,357.37,356.13,339.35,344.08,279.84]},
+    {ticker:"AMZN", id:2, target:"2026-11", mid:241.24, lo:215.23, hi:270.38,
+     call:"flat · mid +0.4% [-10.4% .. +12.5%] · p_up 0.53 · conf 0.08 (low)",
+     months:["2025-11","2025-12","2026-01","2026-02","2026-03","2026-04","2026-05","2026-06","2026-07","2026-08","2026-09","2026-10"],
+     closes:[233.22,230.82,239.30,210.00,208.27,265.06,270.64,238.34,271.58,259.77,249.15,240.35]},
+    {ticker:"AAPL", id:1, target:"2026-11", mid:346.59, lo:324.46, hi:370.22,
+     call:"flat · mid +0.6% [-5.9% .. +7.4%] · p_up 0.59 · conf 0.14 (low)",
+     months:["2025-11","2025-12","2026-01","2026-02","2026-03","2026-04","2026-05","2026-06","2026-07","2026-08","2026-09","2026-10"],
+     closes:[278.85,271.86,259.48,264.18,253.79,271.35,312.06,289.36,308.91,316.85,333.02,344.63]}
+  ],
+  log: [
+    ["10-30 23:25","leader","Surveyed sibling projects; picked port 3310"],
+    ["10-30 23:26","planner","Started architecture, schema, MCP, hooks"],
+    ["10-30 23:28","leader","Runtime roster set by user; sent to Planner"],
+    ["10-30 23:31","leader","Dashboard rebuilt: every panel in SVG"],
+    ["10-30 23:35","inbox","103 month-end closes received from stock-collector"],
+    ["10-30 23:40","inbox","12 world + 4 AAPL news items from news-collector"],
+    ["10-30 23:40","leader","Added animated dynamic workflow panel"],
+    ["10-30 23:55","developer","Phase 1 started from draft plan: Docker MySQL :3310, schema, MCP read tools"],
+    ["10-30 23:56","pm","PROJECT_STATUS.md written"],
+    ["10-31 00:07","developer","P1 built: 18 tables, 11 triggers, 10 MCP read tools, 39/39 tests"],
+    ["10-31 00:07","validator","Independent review of P1 started"],
+    ["10-31 00:07","developer","Phase 2 started: ingest, live re-fetch, verification hooks"],
+    ["10-31 00:12","validator","P1: PASS WITH ISSUES - 2 medium, 4 low findings sent to Developer"],
+    ["10-31 00:41","developer","P2 built: ingest, live re-fetch, 7 hooks, 2 skills; 85/85 tests"],
+    ["10-31 00:41","leader","Real ingest: 103 prices verified; news 4 corroborated, 8 verified, 4 pending"],
+    ["10-31 00:41","leader","Backfill 2023: 36/36 closes verified (GOOGL/AMZN/AAPL now 45 months)"],
+    ["10-31 00:41","validator","Independent review of P2 started"],
+    ["10-31 00:41","developer","Phase 3 started: research notes, SEC/IR crawl, quant features, research pack"],
+    ["10-31 00:51","validator","P2: PASS WITH ISSUES - 1 high, 3 medium, 2 low; no fake price got in"],
+    ["10-31 00:51","leader","P2 findings sent to Developer (fixing alongside Phase 3)"],
+    ["10-31 01:05","developer","P3 built: research notes, SEC/IR crawlers, features, research pack; 112/112"],
+    ["10-31 01:05","developer","P2 fixes in: curl/.env, passwords, wire copies, corroboration 0.43"],
+    ["10-31 01:05","validator","Independent review of P3 started"],
+    ["10-31 01:05","developer","Phase 4 started: 10 runtime agents, baseline, report guard, drawer"],
+    ["10-31 01:19","validator","P3: FAIL - fake quote verifies via a site search page; 9 findings sent to Developer"],
+    ["10-31 01:35","developer","P4 built: 10 runtime agents, 4 hooks, baseline, drawer; P3 fixes in; 132/132"],
+    ["10-31 01:35","developer","Backtest k=1.10: coverage 67.7%, sign hit 58.3% (no skill beyond base rate)"],
+    ["10-31 01:35","validator","Independent review of P4 + P3 fixes started"],
+    ["10-31 01:35","developer","Phase 5 started: CLAUDE.md context, docs, audit, smoke"],
+    ["10-31 01:46","validator","P4: PASS WITH ISSUES - gates hold via MCP; number tracing + SQL-level gate weak"],
+    ["10-31 01:46","developer","Fixing 10 P4 findings"],
+    ["10-31 01:47","developer","P5 built: CLAUDE.md + nested, 5 docs, README, audit/validate/smoke; 141/141"],
+    ["10-31 01:47","pm","PROJECT_STATUS.md updated: P0–P2 done, P3–P5 built; 3 new risks logged"],
+    ["10-31 02:00","developer","10 P4 findings fixed: typed sign-aware number tracing, DB final gate, task ownership; 142/142"],
+    ["10-31 02:00","validator","Final pre-live review started (P4 fixes + P5 + run readiness)"],
+    ["10-31 02:55","validator","Pre-live review: P4 fixes confirmed; 9 more findings incl. number field-binding"],
+    ["10-31 02:55","developer","Field-binding, consensus recompute, task tokens, 5-analyzer dispatch fixed; 142/142"],
+    ["10-31 02:55","leader","User decisions applied: run write tools pre-approved, SEC email set, blog.google kept"],
+    ["10-31 02:55","leader","SEC crawl live: GOOGL Q3 8-K EX-99.1 (2026-10-28) and 10-Q found"],
+    ["10-31 14:58","inbox","News-collector Oct company news: AAPL 1 corroborated + 3 verified; GOOGL 2 verified"],
+    ["10-31 14:58","developer","Fixed re-ingest db_error: transient re-fetch no longer demotes; 404 cascades; 143/143"],
+    ["10-31 14:58","inbox","Oct 2026 closes (2026-10-30) from stock-collector: 4/4 verified via Nasdaq + CNBC"],
+    ["10-31 14:58","leader","Features 2026-10 computed; ready for /predict-next-month all 2026-11"]
+  ]
+};
+/* ======================================================================== */
+const css=v=>getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const col=s=>({done:css("--ok"),run:css("--warn"),todo:css("--idle"),fail:css("--bad")}[s]||css("--idle"));
+const LBL={done:"done",run:"running",todo:"waiting",fail:"failed"};
+const NS="http://www.w3.org/2000/svg";
+function el(p,tag,a,txt){const e=document.createElementNS(NS,tag);for(const k in a)e.setAttribute(k,a[k]);if(txt!=null)e.textContent=txt;p.appendChild(e);return e;}
+function clear(id){const s=document.getElementById(id);s.innerHTML="";return s;}
+function arrowDef(s){const d=el(s,"defs",{});const m=el(d,"marker",{id:"ar"+s.id,viewBox:"0 0 10 10",refX:9,refY:5,markerWidth:7,markerHeight:7,orient:"auto"});el(m,"path",{d:"M0,0 L10,5 L0,10 z",fill:css("--muted")});return "url(#ar"+s.id+")";}
+
+function drawTiles(){
+  const s=clear("tiles");const P=STATE.phases;
+  const overall=Math.round(P.reduce((a,p)=>a+p.pct,0)/P.length);
+  const cur=(P.find(p=>p.status==="run")||{n:"—",name:""});
+  const active=STATE.agents.filter(a=>a.status==="run").length+STATE.runtime.filter(a=>a.status==="run").length;
+  const pass=STATE.checks.filter(c=>c[1]==="done").length, fail=STATE.checks.filter(c=>c[1]==="fail").length;
+  const T=[["Overall build",overall+"%",css("--accent")],["Current phase",cur.n+" "+cur.name,css("--warn")],["Agents active",String(active),css("--ink")],
+           ["Checks passing",STATE.checks.length?pass+" / "+STATE.checks.length:"none yet",fail?css("--bad"):css("--ok")],["Predictions",STATE.predictions.length?STATE.predictions.length+" final":"none yet",css("--ink")]];
+  const w=220;T.forEach((t,i)=>{const x=i*(w+10);
+    el(s,"rect",{x,y:2,width:w,height:86,rx:6,fill:css("--panel"),stroke:css("--line")});
+    el(s,"rect",{x,y:2,width:w,height:4,fill:t[2]});
+    el(s,"text",{x:x+14,y:32,"font-size":12,fill:css("--muted")},t[0]);
+    el(s,"text",{x:x+14,y:66,"font-size":t[1].length>12?17:26,"font-weight":600,class:"mono",fill:t[2]},t[1]);});
+}
+function drawFlow(){
+  const s=clear("flow");const ar=arrowDef(s);
+  const steps=[["inbox/","prices · news"],["Verify","hooks re-fetch"],["stockdb","MySQL via MCP"],["Planner","run plan"],["Research","crawl + features"],["Analyze","3–5 analyzers"],["Report + Draw","designer · drawer"]];
+  const pos=[[20,40],[200,40],[380,40],[560,40],[560,190],[380,190],[200,190]];
+  steps.forEach((st,i)=>{const [x,y]=pos[i];const c=col(STATE.flow[i]);
+    el(s,"rect",{x,y,width:120,height:62,rx:6,fill:css("--panel"),stroke:c,"stroke-width":2});
+    el(s,"rect",{x,y,width:6,height:62,fill:c});
+    el(s,"text",{x:x+16,y:y+26,"font-size":15,"font-weight":600},st[0]);
+    el(s,"text",{x:x+16,y:y+46,"font-size":12,fill:css("--muted")},st[1]);
+    if(i<steps.length-1){const [nx,ny]=pos[i+1];
+      if(ny===y){const dir=nx>x?1:-1;el(s,"line",{x1:dir>0?x+120:x,y1:y+31,x2:dir>0?nx-4:nx+124,y2:ny+31,stroke:css("--muted"),"stroke-width":1.5,"marker-end":ar});}
+      else el(s,"line",{x1:x+60,y1:y+62,x2:nx+60,y2:ny-4,stroke:css("--muted"),"stroke-width":1.5,"marker-end":ar});}});
+  el(s,"path",{d:"M200,221 C120,221 80,180 80,106",fill:"none",stroke:css("--accent"),"stroke-dasharray":"4 4","stroke-width":1.5,"marker-end":ar});
+  el(s,"text",{x:24,y:170,"font-size":11,fill:css("--accent")},"validator gate");
+  el(s,"text",{x:20,y:290,"font-size":12,fill:css("--muted")},"A report is final only after the validator passes; outcomes are scored when the next month-end arrives.");
+}
+function drawOrg(){
+  const s=clear("org");const A=STATE.agents;
+  const box=(a,x,y)=>{const c=col(a.status);el(s,"rect",{x,y,width:180,height:54,rx:6,fill:css("--panel"),stroke:c,"stroke-width":2});
+    el(s,"circle",{cx:x+16,cy:y+18,r:5,fill:c});el(s,"text",{x:x+28,y:y+23,"font-size":14,"font-weight":600},a.name);
+    el(s,"text",{x:x+12,y:y+42,"font-size":11.5,fill:css("--muted")},a.role);};
+  box(A[0],120,10);
+  [[10,120],[230,120],[10,220],[230,220]].forEach(([x,y],i)=>{el(s,"path",{d:`M210,64 V95 H${x+90} V${y}`,fill:"none",stroke:css("--line"),"stroke-width":1.5});box(A[i+1],x,y);});
+}
+function drawRuntime(){
+  const s=clear("runtime");const ar=arrowDef(s);const R=STATE.runtime;
+  const node=(a,x,y,w)=>{const c=col(a.status);el(s,"rect",{x,y,width:w,height:52,rx:6,fill:css("--panel"),stroke:c,"stroke-width":2});
+    el(s,"circle",{cx:x+14,cy:y+18,r:5,fill:c});el(s,"text",{x:x+26,y:y+23,"font-size":13.5,"font-weight":600},a.name);
+    el(s,"text",{x:x+12,y:y+42,"font-size":11,fill:css("--muted")},a.role+" · "+LBL[a.status]);};
+  const line=(x1,y1,x2,y2)=>el(s,"path",{d:`M${x1},${y1} C${(x1+x2)/2},${y1} ${(x1+x2)/2},${y2} ${x2-4},${y2}`,fill:"none",stroke:css("--muted"),"stroke-width":1.3,"marker-end":ar});
+  node(R[0],10,96,150);
+  const an=R.slice(1,6);an.forEach((a,i)=>{const y=6+i*46;node(a,230,y,170);line(160,122,230,y+26);line(400,y+26,480,122);});
+  node(R[6],480,96,160);
+  node(R[7],720,40,170);node(R[8],720,150,170);line(640,122,720,66);line(640,122,720,176);
+  node(R[9],960,96,170);line(890,66,960,122);line(890,176,960,122);
+  el(s,"text",{x:10,y:240,"font-size":11.5,fill:css("--muted")},"Analyzers run in parallel and read stockdb only. The validator checks every number and source before the reporter-designer and drawer publish.");
+}
+function drawPhases(){
+  const s=clear("phases");const P=STATE.phases;const tot=Math.round(P.reduce((a,p)=>a+p.pct,0)/P.length);
+  const r=62,cx=90,cy=120,C=2*Math.PI*r;
+  el(s,"circle",{cx,cy,r,fill:"none",stroke:css("--line"),"stroke-width":14});
+  el(s,"circle",{cx,cy,r,fill:"none",stroke:css("--accent"),"stroke-width":14,"stroke-dasharray":`${C*tot/100} ${C}`,transform:`rotate(-90 ${cx} ${cy})`});
+  el(s,"text",{x:cx,y:cy+8,"text-anchor":"middle","font-size":26,"font-weight":600,class:"mono"},tot+"%");
+  el(s,"text",{x:cx,y:cy+28,"text-anchor":"middle","font-size":11,fill:css("--muted")},"overall");
+  P.forEach((p,i)=>{const y=18+i*38,x=200,w=380;
+    el(s,"text",{x,y:y+14,"font-size":13,"font-weight":600,class:"mono"},p.n);
+    el(s,"text",{x:x+34,y:y+14,"font-size":13},p.name);
+    el(s,"rect",{x,y:y+20,width:w,height:8,rx:2,fill:css("--line")});
+    el(s,"rect",{x,y:y+20,width:w*p.pct/100,height:8,rx:2,fill:col(p.status)});
+    el(s,"text",{x:x+w+12,y:y+28,"font-size":12,class:"mono",fill:css("--muted")},p.pct+"%");});
+}
+function drawChecks(){
+  const s=clear("checks");const C=STATE.checks;
+  if(!C.length){el(s,"rect",{x:1,y:1,width:418,height:248,rx:6,fill:"none",stroke:css("--line"),"stroke-dasharray":"5 5"});
+    el(s,"text",{x:210,y:120,"text-anchor":"middle","font-size":13,fill:css("--muted")},"No validation runs yet.");
+    el(s,"text",{x:210,y:142,"text-anchor":"middle","font-size":12,fill:css("--muted")},"The Validator reports after Phase 1.");return;}
+  C.slice(0,8).forEach((c,i)=>{const y=6+i*30,k=col(c[1]);
+    el(s,"rect",{x:0,y,width:420,height:26,rx:4,fill:css("--panel"),stroke:css("--line")});
+    el(s,"rect",{x:0,y,width:5,height:26,fill:k});
+    el(s,"text",{x:14,y:y+17,"font-size":12.5},c[0]);
+    el(s,"text",{x:410,y:y+17,"font-size":11.5,"text-anchor":"end",class:"mono",fill:k},c[2]||LBL[c[1]]);});
+}
+let PSEL=0;
+function drawPredTabs(){const c=document.getElementById("predTabs");c.innerHTML="";
+  STATE.predictions.forEach((p,i)=>{const b=document.createElement("button");b.type="button";b.textContent=p.ticker;
+    b.setAttribute("aria-pressed",i===PSEL);if(i===PSEL)b.style.fontWeight="700";
+    b.onclick=()=>{PSEL=i;drawPredTabs();drawPred();};c.appendChild(b);});}
+function drawPred(){
+  const s=clear("pred");const P=STATE.predictions[PSEL];const L=70,R=1110,T=20,B=250;
+  if(!P){
+    for(let i=0;i<=4;i++){const y=T+i*(B-T)/4;el(s,"line",{x1:L,y1:y,x2:R,y2:y,stroke:css("--line")});}
+    el(s,"line",{x1:L,y1:B,x2:R,y2:B,stroke:css("--muted")});
+    el(s,"text",{x:(L+R)/2,y:(T+B)/2-6,"text-anchor":"middle","font-size":14,fill:css("--muted")},"Waiting for the first drawer run");
+    el(s,"text",{x:(L+R)/2,y:(T+B)/2+16,"text-anchor":"middle","font-size":12,fill:css("--muted")},"Month-end closes from stockdb, then next month's predicted point with its range");
+    el(s,"text",{x:L,y:285,"font-size":11.5,fill:css("--muted")},"Solid line: verified month-end closes. Dashed line and band: predicted close and range.");return;}
+  const n=P.closes.length;const all=[...P.closes,P.lo,P.hi];const mn=Math.min(...all)*0.97,mx=Math.max(...all)*1.03;
+  const X=i=>L+(R-L)*i/n, Y=v=>B-(B-T)*(v-mn)/(mx-mn);
+  for(let i=0;i<=4;i++){const v=mn+(mx-mn)*i/4,y=Y(v);el(s,"line",{x1:L,y1:y,x2:R,y2:y,stroke:css("--line")});el(s,"text",{x:L-8,y:y+4,"text-anchor":"end","font-size":11,class:"mono",fill:css("--muted")},v.toFixed(0));}
+  const pts=P.closes.map((v,i)=>`${X(i)},${Y(v)}`).join(" ");
+  el(s,"polygon",{points:`${X(0)},${B} ${pts} ${X(n-1)},${B}`,fill:css("--accent-soft")});
+  el(s,"polyline",{points:pts,fill:"none",stroke:css("--accent"),"stroke-width":2.5});
+  el(s,"polygon",{points:`${X(n-1)},${Y(P.closes[n-1])} ${X(n)},${Y(P.hi)} ${X(n)},${Y(P.lo)}`,fill:css("--warn"),opacity:0.18});
+  el(s,"line",{x1:X(n-1),y1:Y(P.closes[n-1]),x2:X(n),y2:Y(P.mid),stroke:css("--warn"),"stroke-width":2.5,"stroke-dasharray":"6 5"});
+  el(s,"circle",{cx:X(n),cy:Y(P.mid),r:5,fill:css("--warn")});
+  el(s,"text",{x:X(n)-8,y:Y(P.mid)-10,"text-anchor":"end","font-size":12,class:"mono",fill:css("--warn")},`${P.target} ${P.mid} (${P.lo}–${P.hi})`);
+  P.months.forEach((m,i)=>{if(i%3===0||i===n-1)el(s,"text",{x:X(i),y:B+18,"text-anchor":"middle","font-size":11,class:"mono",fill:css("--muted")},m);});
+  el(s,"text",{x:L,y:T-4,"font-size":13,"font-weight":600},`${P.ticker} · prediction ${P.id} · ${P.target}: ${P.call}`);
+}
+function drawLog(){
+  const s=document.getElementById("log");s.innerHTML="";const L=STATE.log.slice(-8);
+  s.setAttribute("viewBox",`0 0 1140 ${24+L.length*28}`);
+  el(s,"line",{x1:118,y1:10,x2:118,y2:14+L.length*28,stroke:css("--line"),"stroke-width":2});
+  L.slice().reverse().forEach((l,i)=>{const y=22+i*28;
+    el(s,"text",{x:0,y:y+4,"font-size":12,class:"mono",fill:css("--muted")},l[0]);
+    el(s,"circle",{cx:118,cy:y,r:5,fill:i===0?css("--accent"):css("--panel"),stroke:css("--accent"),"stroke-width":1.5});
+    el(s,"text",{x:134,y:y+4,"font-size":12,class:"mono",fill:css("--accent")},l[1]);
+    el(s,"text",{x:220,y:y+4,"font-size":13},l[2]);});
+}
+/* ---------- dynamic workflow ---------- */
+const DN={ /* id: [x,y,w,label,sub,kind] kind: data|hook|db|agent|out */
+  inbox:[20,40,130,"inbox/","prices · news","data"],
+  crawl:[20,150,130,"Crawl","SEC · IR · web","data"],
+  vhook:[200,95,140,"Verify hooks","re-fetch · hash","hook"],
+  db:[390,95,130,"stockdb","MySQL · MCP","db"],
+  plan:[570,20,140,"planner","run plan · gaps","agent"],
+  feat:[570,170,140,"quant features","momentum · vol","data"],
+  a1:[760,6,150,"fundamental","analyzer","agent"], a2:[760,66,150,"technical","analyzer","agent"],
+  a3:[760,126,150,"news-sentiment","analyzer","agent"], a4:[760,186,150,"macro-sector","analyzer","agent"],
+  a5:[760,246,150,"risk-skeptic","analyzer","agent"],
+  val:[960,126,160,"validator","authenticity gate","agent"],
+  rep:[760,330,150,"reporter-designer","final report","agent"], drw:[570,330,140,"drawer","predicted line graph","agent"],
+  fin:[390,330,130,"Final report","md + svg","out"], pm:[200,330,140,"project-manager","run summary","agent"],
+  score:[20,330,130,"Score outcome","next month-end","out"]
+};
+const DE=[["inbox","vhook"],["crawl","vhook"],["vhook","db"],["db","plan"],["db","feat"],["plan","a1"],["plan","a2"],["plan","a3"],["plan","a4"],["plan","a5"],["feat","a2"],
+  ["a1","val"],["a2","val"],["a3","val"],["a4","val"],["a5","val"],["val","a3",1],["val","rep"],["val","drw"],["rep","fin"],["drw","fin"],["fin","val",1],["fin","pm"],["pm","score"],["score","db",1]];
+const DSTEPS=[
+ {on:["inbox","crawl"],t:"Resources arrive",x:"Month-end closes and news land in inbox/; the research crawler pulls filings and company pages."},
+ {on:["vhook"],e:[0,1],t:"Verification hooks",x:"Hooks re-fetch every price from Nasdaq and CNBC, re-open every URL, hash the page and check quoted text appears verbatim."},
+ {on:["db"],e:[2],t:"Stored in stockdb",x:"Only verified rows are written, through the MCP server. Rejected items are logged with a reason."},
+ {on:["plan","feat"],e:[3,4],t:"Planner and quant baseline",x:"The planner picks tickers and the target month and lists missing resources; deterministic features are computed from the DB."},
+ {on:["a1","a2","a3","a4","a5"],e:[5,6,7,8,9,10],t:"Analyzers in parallel",x:"Five analyzers query stockdb directly and each save a direction, return range, confidence and cited source ids."},
+ {on:["val"],e:[11,12,13,14,15],t:"Validator gate",x:"Every number must trace to a DB value and every citation to a verified source. Failures go back to the analyzer."},
+ {on:["a3"],e:[16],t:"Rework (when rejected)",x:"Example: a news claim cited an unverified article, so news-sentiment revises its analysis and resubmits.",loop:1},
+ {on:["rep","drw"],e:[17,18],t:"Report and graph",x:"The reporter-designer writes the report; the drawer plots verified closes plus the predicted next-month point and range."},
+ {on:["fin","val"],e:[19,20,21],t:"Final check",x:"The report guard hook and the validator check the finished report and chart before it is marked final."},
+ {on:["pm"],e:[22],t:"Project manager",x:"The PM records each agent's status, timings and issues, and updates PROJECT_STATUS.md and this dashboard."},
+ {on:["score","db"],e:[23,24],t:"Score the outcome",x:"When the next month-end close arrives, the prediction is scored and calibration is stored for the next run."}
+];
+const D={i:0,playing:!matchMedia("(prefers-reduced-motion: reduce)").matches,timer:null,raf:null};
+function dynKindCol(k){return {data:css("--muted"),hook:css("--warn"),db:css("--accent"),agent:css("--ink"),out:css("--ok")}[k];}
+function edgePath(a,b,loop){const A=DN[a],B=DN[b];
+  const ac=[A[0]+A[2]/2,A[1]+26],bc=[B[0]+B[2]/2,B[1]+26];
+  const ax=bc[0]>ac[0]+A[2]/2?A[0]+A[2]:(bc[0]<ac[0]-A[2]/2?A[0]:ac[0]);
+  const ay=ax===ac[0]?(bc[1]>ac[1]?A[1]+52:A[1]):ac[1];
+  const bx=ac[0]>bc[0]+B[2]/2?B[0]+B[2]:(ac[0]<bc[0]-B[2]/2?B[0]:bc[0]);
+  const by=bx===bc[0]?(ac[1]>bc[1]?B[1]+52:B[1]):bc[1];
+  if(loop){const my=Math.max(ay,by)+60>430?Math.min(ay,by)-40:Math.max(ay,by)+40;return `M${ax},${ay} C${ax},${my} ${bx},${my} ${bx},${by}`;}
+  const mx=(ax+bx)/2;return ax===ac[0]||bx===bc[0]?`M${ax},${ay} C${ax},${(ay+by)/2} ${bx},${(ay+by)/2} ${bx},${by}`:`M${ax},${ay} C${mx},${ay} ${mx},${by} ${bx},${by}`;}
+function drawDyn(){
+  const s=clear("dyn");const ar=arrowDef(s);const st=DSTEPS[D.i];const done=new Set();DSTEPS.slice(0,D.i).forEach(x=>x.on.forEach(n=>done.add(n)));
+  const paths=[];
+  DE.forEach((e,k)=>{const live=(st.e||[]).includes(k);const p=el(s,"path",{d:edgePath(e[0],e[1],e[2]),fill:"none",stroke:live?css("--accent"):css("--line"),"stroke-width":live?2.2:1.3,"stroke-dasharray":e[2]?"5 5":"none","marker-end":ar});if(live)paths.push(p);});
+  Object.entries(DN).forEach(([id,n])=>{const [x,y,w,l,sub,k]=n;const on=st.on.includes(id),was=done.has(id);
+    const stroke=on?(st.loop&&id!=="val"?css("--bad"):css("--warn")):was?css("--ok"):css("--line");
+    const g=el(s,"g",{});
+    el(g,"rect",{x,y,width:w,height:52,rx:6,fill:on?css("--accent-soft"):css("--panel"),stroke,"stroke-width":on?2.6:1.5,class:on?"pulse":""});
+    el(g,"rect",{x,y,width:5,height:52,fill:dynKindCol(k)});
+    el(g,"text",{x:x+14,y:y+22,"font-size":13.5,"font-weight":600},l);
+    el(g,"text",{x:x+14,y:y+40,"font-size":11,fill:css("--muted")},sub);
+    if(was&&!on)el(g,"path",{d:`M${x+w-20},${y+14} l4,5 l8,-9`,fill:"none",stroke:css("--ok"),"stroke-width":2});});
+  [["data / output",css("--muted")],["verification hook",css("--warn")],["database",css("--accent")],["agent",css("--ink")]].forEach((L,i)=>{
+    el(s,"rect",{x:960+0,y:330+i*22,width:10,height:10,fill:L[1]});el(s,"text",{x:976,y:339+i*22,"font-size":11.5,fill:css("--muted")},L[0]);});
+  document.getElementById("dStepNo").textContent=`Step ${D.i+1}/${DSTEPS.length}`;
+  document.getElementById("dTitle").textContent=st.t+".";document.getElementById("dText").textContent=st.x;
+  cancelAnimationFrame(D.raf);
+  if(matchMedia("(prefers-reduced-motion: reduce)").matches||!paths.length)return;
+  const dots=paths.map(p=>[p,p.getTotalLength(),el(s,"circle",{r:4.5,fill:css("--accent")})]);const t0=performance.now();
+  const tick=t=>{const f=((t-t0)/1100)%1;dots.forEach(([p,L,c])=>{const q=p.getPointAtLength(f*L);c.setAttribute("cx",q.x);c.setAttribute("cy",q.y);});D.raf=requestAnimationFrame(tick);};
+  D.raf=requestAnimationFrame(tick);
+}
+function dynSchedule(){clearInterval(D.timer);if(D.playing)D.timer=setInterval(()=>{D.i=(D.i+1)%DSTEPS.length;drawDyn();},+document.getElementById("dSpeed").value);
+  document.getElementById("dPlay").textContent=D.playing?"Pause":"Play";}
+document.getElementById("dPlay").onclick=()=>{D.playing=!D.playing;dynSchedule();};
+document.getElementById("dStep").onclick=()=>{D.playing=false;dynSchedule();D.i=(D.i+1)%DSTEPS.length;drawDyn();};
+document.getElementById("dReset").onclick=()=>{D.i=0;drawDyn();dynSchedule();};
+document.getElementById("dSpeed").onchange=dynSchedule;
+
+function render(){document.getElementById("updated").textContent="updated "+STATE.updated;drawDyn();dynSchedule();
+  drawTiles();drawFlow();drawOrg();drawRuntime();drawPhases();drawChecks();drawPredTabs();drawPred();drawLog();}
+render();
+matchMedia("(prefers-color-scheme: dark)").addEventListener("change",render);
+new MutationObserver(render).observe(document.documentElement,{attributes:true,attributeFilter:["data-theme"]});
+</script>
+</body>
+</html>

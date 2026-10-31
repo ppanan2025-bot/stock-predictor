@@ -1,0 +1,86 @@
+[
+  {
+    "ticker": "GOOGL",
+    "title": "Why Google stock has plunged $500bn in a single day",
+    "url": "https://news.sky.com/story/google-parent-alphabet-takes-500bn-hit-on-ai-worries-13605428",
+    "published_at": "2026-10-29",
+    "outlet": "Sky News",
+    "author": null,
+    "summary": "Shares in Google's parent company Alphabet have suffered their worst-ever day on the US stock market, falling more than 12% and knocking around half a trillion dollars off its value.",
+    "references": [
+      {
+        "url": "https://bbc.co.uk/news/articles/cm9qzdqpxy48o",
+        "title": "BBC News: Google value plunges by $500bn as its own AI search hits ad sales"
+      },
+      {
+        "url": "https://cbsnews.com/video/google-parent-alphabet-sees-massive-stock-plunge-shockwaves-after-binance-hack",
+        "title": "CBS News: Google parent Alphabet sees massive stock plunge; shockwaves after Binance hack"
+      }
+    ],
+    "basis": "company_event",
+    "verification": {
+      "status": "corroborated",
+      "independent_outlets": [
+        "BBC News",
+        "CBS News"
+      ],
+      "verified_at": "2026-10-30T16:33:42.000Z"
+    }
+  },
+  {
+    "ticker": "GOOGL",
+    "title": "Google value plunges by $500bn as its own AI search hits ad sales",
+    "url": "https://bbc.co.uk/news/articles/cm9qzdqpxy48o",
+    "published_at": "2026-10-30",
+    "outlet": "BBC News",
+    "author": null,
+    "summary": "Google spooked investors so badly that its stock hit a six-month low, after it revealed its AI own search summaries were affecting ad revenue.",
+    "references": [
+      {
+        "url": "https://cbsnews.com/video/google-parent-alphabet-sees-massive-stock-plunge-shockwaves-after-binance-hack",
+        "title": "CBS News: Google parent Alphabet sees massive stock plunge; shockwaves after Binance hack"
+      },
+      {
+        "url": "https://news.sky.com/story/google-parent-alphabet-takes-500bn-hit-on-ai-worries-13605428",
+        "title": "Sky News: Why Google stock has plunged $500bn in a single day"
+      }
+    ],
+    "basis": "company_event",
+    "verification": {
+      "status": "corroborated",
+      "independent_outlets": [
+        "CBS News",
+        "Sky News"
+      ],
+      "verified_at": "2026-10-30T16:33:42.000Z"
+    }
+  },
+  {
+    "ticker": "GOOGL",
+    "title": "Google parent Alphabet sees massive stock plunge; shockwaves after Binance hack",
+    "url": "https://cbsnews.com/video/google-parent-alphabet-sees-massive-stock-plunge-shockwaves-after-binance-hack",
+    "published_at": "2026-10-30",
+    "outlet": "CBS News",
+    "author": null,
+    "summary": "Google parent company Alphabet saw a massive $500 billion stock plunge in its roughest day on record. Meanwhile, cryptocurrency exchange Binance was targeted in a $6.3 billion hack.",
+    "references": [
+      {
+        "url": "https://bbc.co.uk/news/articles/cm9qzdqpxy48o",
+        "title": "BBC News: Google value plunges by $500bn as its own AI search hits ad sales"
+      },
+      {
+        "url": "https://news.sky.com/story/google-parent-alphabet-takes-500bn-hit-on-ai-worries-13605428",
+        "title": "Sky News: Why Google stock has plunged $500bn in a single day"
+      }
+    ],
+    "basis": "company_event",
+    "verification": {
+      "status": "corroborated",
+      "independent_outlets": [
+        "BBC News",
+        "Sky News"
+      ],
+      "verified_at": "2026-10-30T16:33:42.000Z"
+    }
+  }
+]

@@ -1,0 +1,4859 @@
+{
+  "file": "prices/ria-month-end-2024-01_2026-09.csv",
+  "kind": "prices",
+  "dry_run": false,
+  "at": "2026-10-30T13:40:15.591Z",
+  "fatal": null,
+  "totals": {
+    "verified": 103,
+    "corroborated": 0,
+    "pending": 0,
+    "rejected": 0,
+    "by_reason": {
+      "verified:ok": 103
+    }
+  },
+  "items": [
+    {
+      "line": 2,
+      "index": 0,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "GOOGL",
+        "month": "2024-01",
+        "trade_date": "2024-01-31",
+        "close": "140.10",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "GOOGL",
+        "month": "2024-01",
+        "trade_date": "2024-01-31",
+        "submitted_close": "140.10",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 219,
+        "price_id": 219,
+        "close": "140.1000",
+        "detail": {
+          "expected_date": "2024-01-31",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/GOOGL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2024-01-31",
+            "close": "140.1000",
+            "fetched_at": "2026-10-30T13:40:05.878Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/GOOGL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2024-01-31",
+            "close": "140.1000",
+            "fetched_at": "2026-10-30T13:40:05.890Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "140.1000",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 3,
+      "index": 1,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AMZN",
+        "month": "2024-01",
+        "trade_date": "2024-01-31",
+        "close": "155.20",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AMZN",
+        "month": "2024-01",
+        "trade_date": "2024-01-31",
+        "submitted_close": "155.20",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 220,
+        "price_id": 220,
+        "close": "155.2000",
+        "detail": {
+          "expected_date": "2024-01-31",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AMZN/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2024-01-31",
+            "close": "155.2000",
+            "fetched_at": "2026-10-30T13:40:09.115Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AMZN/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2024-01-31",
+            "close": "155.2000",
+            "fetched_at": "2026-10-30T13:40:06.649Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "155.2000",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 4,
+      "index": 2,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AAPL",
+        "month": "2024-01",
+        "trade_date": "2024-01-31",
+        "close": "184.40",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AAPL",
+        "month": "2024-01",
+        "trade_date": "2024-01-31",
+        "submitted_close": "184.40",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 221,
+        "price_id": 221,
+        "close": "184.4000",
+        "detail": {
+          "expected_date": "2024-01-31",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AAPL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2024-01-31",
+            "close": "184.4000",
+            "fetched_at": "2026-10-30T13:40:12.308Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AAPL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2024-01-31",
+            "close": "184.4000",
+            "fetched_at": "2026-10-30T13:40:09.342Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "184.4000",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 5,
+      "index": 3,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "GOOGL",
+        "month": "2024-02",
+        "trade_date": "2024-02-29",
+        "close": "138.46",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "GOOGL",
+        "month": "2024-02",
+        "trade_date": "2024-02-29",
+        "submitted_close": "138.46",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 222,
+        "price_id": 222,
+        "close": "138.4600",
+        "detail": {
+          "expected_date": "2024-02-29",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/GOOGL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2024-02-29",
+            "close": "138.4600",
+            "fetched_at": "2026-10-30T13:40:05.878Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/GOOGL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2024-02-29",
+            "close": "138.4600",
+            "fetched_at": "2026-10-30T13:40:05.890Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "138.4600",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 6,
+      "index": 4,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AMZN",
+        "month": "2024-02",
+        "trade_date": "2024-02-29",
+        "close": "176.76",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AMZN",
+        "month": "2024-02",
+        "trade_date": "2024-02-29",
+        "submitted_close": "176.76",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 223,
+        "price_id": 223,
+        "close": "176.7600",
+        "detail": {
+          "expected_date": "2024-02-29",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AMZN/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2024-02-29",
+            "close": "176.7600",
+            "fetched_at": "2026-10-30T13:40:09.115Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AMZN/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2024-02-29",
+            "close": "176.7600",
+            "fetched_at": "2026-10-30T13:40:06.649Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "176.7600",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 7,
+      "index": 5,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AAPL",
+        "month": "2024-02",
+        "trade_date": "2024-02-29",
+        "close": "180.75",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AAPL",
+        "month": "2024-02",
+        "trade_date": "2024-02-29",
+        "submitted_close": "180.75",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 224,
+        "price_id": 224,
+        "close": "180.7500",
+        "detail": {
+          "expected_date": "2024-02-29",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AAPL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2024-02-29",
+            "close": "180.7500",
+            "fetched_at": "2026-10-30T13:40:12.308Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AAPL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2024-02-29",
+            "close": "180.7500",
+            "fetched_at": "2026-10-30T13:40:09.342Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "180.7500",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 8,
+      "index": 6,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "GOOGL",
+        "month": "2024-03",
+        "trade_date": "2024-03-28",
+        "close": "150.93",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "GOOGL",
+        "month": "2024-03",
+        "trade_date": "2024-03-28",
+        "submitted_close": "150.93",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 225,
+        "price_id": 225,
+        "close": "150.9300",
+        "detail": {
+          "expected_date": "2024-03-28",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/GOOGL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2024-03-28",
+            "close": "150.9300",
+            "fetched_at": "2026-10-30T13:40:05.878Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/GOOGL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2024-03-28",
+            "close": "150.9300",
+            "fetched_at": "2026-10-30T13:40:05.890Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "150.9300",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 9,
+      "index": 7,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AMZN",
+        "month": "2024-03",
+        "trade_date": "2024-03-28",
+        "close": "180.38",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AMZN",
+        "month": "2024-03",
+        "trade_date": "2024-03-28",
+        "submitted_close": "180.38",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 226,
+        "price_id": 226,
+        "close": "180.3800",
+        "detail": {
+          "expected_date": "2024-03-28",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AMZN/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2024-03-28",
+            "close": "180.3800",
+            "fetched_at": "2026-10-30T13:40:09.115Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AMZN/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2024-03-28",
+            "close": "180.3800",
+            "fetched_at": "2026-10-30T13:40:06.649Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "180.3800",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 10,
+      "index": 8,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AAPL",
+        "month": "2024-03",
+        "trade_date": "2024-03-28",
+        "close": "171.48",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AAPL",
+        "month": "2024-03",
+        "trade_date": "2024-03-28",
+        "submitted_close": "171.48",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 227,
+        "price_id": 227,
+        "close": "171.4800",
+        "detail": {
+          "expected_date": "2024-03-28",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AAPL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2024-03-28",
+            "close": "171.4800",
+            "fetched_at": "2026-10-30T13:40:12.308Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AAPL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2024-03-28",
+            "close": "171.4800",
+            "fetched_at": "2026-10-30T13:40:09.342Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "171.4800",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 11,
+      "index": 9,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "GOOGL",
+        "month": "2024-04",
+        "trade_date": "2024-04-30",
+        "close": "162.78",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "GOOGL",
+        "month": "2024-04",
+        "trade_date": "2024-04-30",
+        "submitted_close": "162.78",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 228,
+        "price_id": 228,
+        "close": "162.7800",
+        "detail": {
+          "expected_date": "2024-04-30",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/GOOGL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2024-04-30",
+            "close": "162.7800",
+            "fetched_at": "2026-10-30T13:40:05.878Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/GOOGL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2024-04-30",
+            "close": "162.7800",
+            "fetched_at": "2026-10-30T13:40:05.890Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "162.7800",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 12,
+      "index": 10,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AMZN",
+        "month": "2024-04",
+        "trade_date": "2024-04-30",
+        "close": "175.00",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AMZN",
+        "month": "2024-04",
+        "trade_date": "2024-04-30",
+        "submitted_close": "175.00",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 229,
+        "price_id": 229,
+        "close": "175.0000",
+        "detail": {
+          "expected_date": "2024-04-30",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AMZN/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2024-04-30",
+            "close": "175.0000",
+            "fetched_at": "2026-10-30T13:40:09.115Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AMZN/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2024-04-30",
+            "close": "175.0000",
+            "fetched_at": "2026-10-30T13:40:06.649Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "175.0000",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 13,
+      "index": 11,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AAPL",
+        "month": "2024-04",
+        "trade_date": "2024-04-30",
+        "close": "170.33",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AAPL",
+        "month": "2024-04",
+        "trade_date": "2024-04-30",
+        "submitted_close": "170.33",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 230,
+        "price_id": 230,
+        "close": "170.3300",
+        "detail": {
+          "expected_date": "2024-04-30",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AAPL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2024-04-30",
+            "close": "170.3300",
+            "fetched_at": "2026-10-30T13:40:12.308Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AAPL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2024-04-30",
+            "close": "170.3300",
+            "fetched_at": "2026-10-30T13:40:09.342Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "170.3300",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 14,
+      "index": 12,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "GOOGL",
+        "month": "2024-05",
+        "trade_date": "2024-05-31",
+        "close": "172.50",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "GOOGL",
+        "month": "2024-05",
+        "trade_date": "2024-05-31",
+        "submitted_close": "172.50",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 231,
+        "price_id": 231,
+        "close": "172.5000",
+        "detail": {
+          "expected_date": "2024-05-31",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/GOOGL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2024-05-31",
+            "close": "172.5000",
+            "fetched_at": "2026-10-30T13:40:05.878Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/GOOGL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2024-05-31",
+            "close": "172.5000",
+            "fetched_at": "2026-10-30T13:40:05.890Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "172.5000",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 15,
+      "index": 13,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AMZN",
+        "month": "2024-05",
+        "trade_date": "2024-05-31",
+        "close": "176.44",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AMZN",
+        "month": "2024-05",
+        "trade_date": "2024-05-31",
+        "submitted_close": "176.44",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 232,
+        "price_id": 232,
+        "close": "176.4400",
+        "detail": {
+          "expected_date": "2024-05-31",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AMZN/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2024-05-31",
+            "close": "176.4400",
+            "fetched_at": "2026-10-30T13:40:09.115Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AMZN/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2024-05-31",
+            "close": "176.4400",
+            "fetched_at": "2026-10-30T13:40:06.649Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "176.4400",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 16,
+      "index": 14,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AAPL",
+        "month": "2024-05",
+        "trade_date": "2024-05-31",
+        "close": "192.25",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AAPL",
+        "month": "2024-05",
+        "trade_date": "2024-05-31",
+        "submitted_close": "192.25",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 233,
+        "price_id": 233,
+        "close": "192.2500",
+        "detail": {
+          "expected_date": "2024-05-31",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AAPL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2024-05-31",
+            "close": "192.2500",
+            "fetched_at": "2026-10-30T13:40:12.308Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AAPL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2024-05-31",
+            "close": "192.2500",
+            "fetched_at": "2026-10-30T13:40:09.342Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "192.2500",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 17,
+      "index": 15,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "GOOGL",
+        "month": "2024-06",
+        "trade_date": "2024-06-28",
+        "close": "182.15",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "GOOGL",
+        "month": "2024-06",
+        "trade_date": "2024-06-28",
+        "submitted_close": "182.15",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 234,
+        "price_id": 234,
+        "close": "182.1500",
+        "detail": {
+          "expected_date": "2024-06-28",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/GOOGL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2024-06-28",
+            "close": "182.1500",
+            "fetched_at": "2026-10-30T13:40:05.878Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/GOOGL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2024-06-28",
+            "close": "182.1500",
+            "fetched_at": "2026-10-30T13:40:05.890Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "182.1500",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 18,
+      "index": 16,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AMZN",
+        "month": "2024-06",
+        "trade_date": "2024-06-28",
+        "close": "193.25",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AMZN",
+        "month": "2024-06",
+        "trade_date": "2024-06-28",
+        "submitted_close": "193.25",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 235,
+        "price_id": 235,
+        "close": "193.2500",
+        "detail": {
+          "expected_date": "2024-06-28",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AMZN/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2024-06-28",
+            "close": "193.2500",
+            "fetched_at": "2026-10-30T13:40:09.115Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AMZN/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2024-06-28",
+            "close": "193.2500",
+            "fetched_at": "2026-10-30T13:40:06.649Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "193.2500",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 19,
+      "index": 17,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AAPL",
+        "month": "2024-06",
+        "trade_date": "2024-06-28",
+        "close": "210.62",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AAPL",
+        "month": "2024-06",
+        "trade_date": "2024-06-28",
+        "submitted_close": "210.62",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 236,
+        "price_id": 236,
+        "close": "210.6200",
+        "detail": {
+          "expected_date": "2024-06-28",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AAPL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2024-06-28",
+            "close": "210.6200",
+            "fetched_at": "2026-10-30T13:40:12.308Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AAPL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2024-06-28",
+            "close": "210.6200",
+            "fetched_at": "2026-10-30T13:40:09.342Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "210.6200",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 20,
+      "index": 18,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "GOOGL",
+        "month": "2024-07",
+        "trade_date": "2024-07-31",
+        "close": "171.54",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "GOOGL",
+        "month": "2024-07",
+        "trade_date": "2024-07-31",
+        "submitted_close": "171.54",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 237,
+        "price_id": 237,
+        "close": "171.5400",
+        "detail": {
+          "expected_date": "2024-07-31",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/GOOGL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2024-07-31",
+            "close": "171.5400",
+            "fetched_at": "2026-10-30T13:40:05.878Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/GOOGL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2024-07-31",
+            "close": "171.5400",
+            "fetched_at": "2026-10-30T13:40:05.890Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "171.5400",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 21,
+      "index": 19,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AMZN",
+        "month": "2024-07",
+        "trade_date": "2024-07-31",
+        "close": "186.98",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AMZN",
+        "month": "2024-07",
+        "trade_date": "2024-07-31",
+        "submitted_close": "186.98",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 238,
+        "price_id": 238,
+        "close": "186.9800",
+        "detail": {
+          "expected_date": "2024-07-31",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AMZN/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2024-07-31",
+            "close": "186.9800",
+            "fetched_at": "2026-10-30T13:40:09.115Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AMZN/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2024-07-31",
+            "close": "186.9800",
+            "fetched_at": "2026-10-30T13:40:06.649Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "186.9800",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 22,
+      "index": 20,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AAPL",
+        "month": "2024-07",
+        "trade_date": "2024-07-31",
+        "close": "222.08",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AAPL",
+        "month": "2024-07",
+        "trade_date": "2024-07-31",
+        "submitted_close": "222.08",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 239,
+        "price_id": 239,
+        "close": "222.0800",
+        "detail": {
+          "expected_date": "2024-07-31",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AAPL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2024-07-31",
+            "close": "222.0800",
+            "fetched_at": "2026-10-30T13:40:12.308Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AAPL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2024-07-31",
+            "close": "222.0800",
+            "fetched_at": "2026-10-30T13:40:09.342Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "222.0800",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 23,
+      "index": 21,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "GOOGL",
+        "month": "2024-08",
+        "trade_date": "2024-08-30",
+        "close": "163.38",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "GOOGL",
+        "month": "2024-08",
+        "trade_date": "2024-08-30",
+        "submitted_close": "163.38",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 240,
+        "price_id": 240,
+        "close": "163.3800",
+        "detail": {
+          "expected_date": "2024-08-30",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/GOOGL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2024-08-30",
+            "close": "163.3800",
+            "fetched_at": "2026-10-30T13:40:05.878Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/GOOGL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2024-08-30",
+            "close": "163.3800",
+            "fetched_at": "2026-10-30T13:40:05.890Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "163.3800",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 24,
+      "index": 22,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AMZN",
+        "month": "2024-08",
+        "trade_date": "2024-08-30",
+        "close": "178.50",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AMZN",
+        "month": "2024-08",
+        "trade_date": "2024-08-30",
+        "submitted_close": "178.50",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 241,
+        "price_id": 241,
+        "close": "178.5000",
+        "detail": {
+          "expected_date": "2024-08-30",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AMZN/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2024-08-30",
+            "close": "178.5000",
+            "fetched_at": "2026-10-30T13:40:09.115Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AMZN/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2024-08-30",
+            "close": "178.5000",
+            "fetched_at": "2026-10-30T13:40:06.649Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "178.5000",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 25,
+      "index": 23,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AAPL",
+        "month": "2024-08",
+        "trade_date": "2024-08-30",
+        "close": "229.00",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AAPL",
+        "month": "2024-08",
+        "trade_date": "2024-08-30",
+        "submitted_close": "229.00",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 242,
+        "price_id": 242,
+        "close": "229.0000",
+        "detail": {
+          "expected_date": "2024-08-30",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AAPL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2024-08-30",
+            "close": "229.0000",
+            "fetched_at": "2026-10-30T13:40:12.308Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AAPL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2024-08-30",
+            "close": "229.0000",
+            "fetched_at": "2026-10-30T13:40:09.342Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "229.0000",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 26,
+      "index": 24,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "GOOGL",
+        "month": "2024-09",
+        "trade_date": "2024-09-30",
+        "close": "165.85",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "GOOGL",
+        "month": "2024-09",
+        "trade_date": "2024-09-30",
+        "submitted_close": "165.85",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 243,
+        "price_id": 243,
+        "close": "165.8500",
+        "detail": {
+          "expected_date": "2024-09-30",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/GOOGL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2024-09-30",
+            "close": "165.8500",
+            "fetched_at": "2026-10-30T13:40:05.878Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/GOOGL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2024-09-30",
+            "close": "165.8500",
+            "fetched_at": "2026-10-30T13:40:05.890Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "165.8500",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 27,
+      "index": 25,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AMZN",
+        "month": "2024-09",
+        "trade_date": "2024-09-30",
+        "close": "186.33",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AMZN",
+        "month": "2024-09",
+        "trade_date": "2024-09-30",
+        "submitted_close": "186.33",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 244,
+        "price_id": 244,
+        "close": "186.3300",
+        "detail": {
+          "expected_date": "2024-09-30",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AMZN/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2024-09-30",
+            "close": "186.3300",
+            "fetched_at": "2026-10-30T13:40:09.115Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AMZN/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2024-09-30",
+            "close": "186.3300",
+            "fetched_at": "2026-10-30T13:40:06.649Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "186.3300",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 28,
+      "index": 26,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AAPL",
+        "month": "2024-09",
+        "trade_date": "2024-09-30",
+        "close": "233.00",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AAPL",
+        "month": "2024-09",
+        "trade_date": "2024-09-30",
+        "submitted_close": "233.00",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 245,
+        "price_id": 245,
+        "close": "233.0000",
+        "detail": {
+          "expected_date": "2024-09-30",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AAPL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2024-09-30",
+            "close": "233.0000",
+            "fetched_at": "2026-10-30T13:40:12.308Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AAPL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2024-09-30",
+            "close": "233.0000",
+            "fetched_at": "2026-10-30T13:40:09.342Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "233.0000",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 29,
+      "index": 27,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "GOOGL",
+        "month": "2024-10",
+        "trade_date": "2024-10-31",
+        "close": "171.11",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "GOOGL",
+        "month": "2024-10",
+        "trade_date": "2024-10-31",
+        "submitted_close": "171.11",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 246,
+        "price_id": 246,
+        "close": "171.1100",
+        "detail": {
+          "expected_date": "2024-10-31",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/GOOGL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2024-10-31",
+            "close": "171.1100",
+            "fetched_at": "2026-10-30T13:40:05.878Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/GOOGL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2024-10-31",
+            "close": "171.1100",
+            "fetched_at": "2026-10-30T13:40:05.890Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "171.1100",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 30,
+      "index": 28,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AMZN",
+        "month": "2024-10",
+        "trade_date": "2024-10-31",
+        "close": "186.40",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AMZN",
+        "month": "2024-10",
+        "trade_date": "2024-10-31",
+        "submitted_close": "186.40",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 247,
+        "price_id": 247,
+        "close": "186.4000",
+        "detail": {
+          "expected_date": "2024-10-31",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AMZN/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2024-10-31",
+            "close": "186.4000",
+            "fetched_at": "2026-10-30T13:40:09.115Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AMZN/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2024-10-31",
+            "close": "186.4000",
+            "fetched_at": "2026-10-30T13:40:06.649Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "186.4000",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 31,
+      "index": 29,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AAPL",
+        "month": "2024-10",
+        "trade_date": "2024-10-31",
+        "close": "225.91",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AAPL",
+        "month": "2024-10",
+        "trade_date": "2024-10-31",
+        "submitted_close": "225.91",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 248,
+        "price_id": 248,
+        "close": "225.9100",
+        "detail": {
+          "expected_date": "2024-10-31",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AAPL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2024-10-31",
+            "close": "225.9100",
+            "fetched_at": "2026-10-30T13:40:12.308Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AAPL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2024-10-31",
+            "close": "225.9100",
+            "fetched_at": "2026-10-30T13:40:09.342Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "225.9100",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 32,
+      "index": 30,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "GOOGL",
+        "month": "2024-11",
+        "trade_date": "2024-11-29",
+        "close": "168.95",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "GOOGL",
+        "month": "2024-11",
+        "trade_date": "2024-11-29",
+        "submitted_close": "168.95",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 249,
+        "price_id": 249,
+        "close": "168.9500",
+        "detail": {
+          "expected_date": "2024-11-29",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/GOOGL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2024-11-29",
+            "close": "168.9500",
+            "fetched_at": "2026-10-30T13:40:05.878Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/GOOGL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2024-11-29",
+            "close": "168.9500",
+            "fetched_at": "2026-10-30T13:40:05.890Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "168.9500",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 33,
+      "index": 31,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AMZN",
+        "month": "2024-11",
+        "trade_date": "2024-11-29",
+        "close": "207.89",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AMZN",
+        "month": "2024-11",
+        "trade_date": "2024-11-29",
+        "submitted_close": "207.89",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 250,
+        "price_id": 250,
+        "close": "207.8900",
+        "detail": {
+          "expected_date": "2024-11-29",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AMZN/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2024-11-29",
+            "close": "207.8900",
+            "fetched_at": "2026-10-30T13:40:09.115Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AMZN/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2024-11-29",
+            "close": "207.8900",
+            "fetched_at": "2026-10-30T13:40:06.649Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "207.8900",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 34,
+      "index": 32,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AAPL",
+        "month": "2024-11",
+        "trade_date": "2024-11-29",
+        "close": "237.33",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AAPL",
+        "month": "2024-11",
+        "trade_date": "2024-11-29",
+        "submitted_close": "237.33",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 251,
+        "price_id": 251,
+        "close": "237.3300",
+        "detail": {
+          "expected_date": "2024-11-29",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AAPL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2024-11-29",
+            "close": "237.3300",
+            "fetched_at": "2026-10-30T13:40:12.308Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AAPL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2024-11-29",
+            "close": "237.3300",
+            "fetched_at": "2026-10-30T13:40:09.342Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "237.3300",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 35,
+      "index": 33,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "GOOGL",
+        "month": "2024-12",
+        "trade_date": "2024-12-31",
+        "close": "189.30",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "GOOGL",
+        "month": "2024-12",
+        "trade_date": "2024-12-31",
+        "submitted_close": "189.30",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 252,
+        "price_id": 252,
+        "close": "189.3000",
+        "detail": {
+          "expected_date": "2024-12-31",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/GOOGL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2024-12-31",
+            "close": "189.3000",
+            "fetched_at": "2026-10-30T13:40:05.878Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/GOOGL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2024-12-31",
+            "close": "189.3000",
+            "fetched_at": "2026-10-30T13:40:05.890Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "189.3000",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 36,
+      "index": 34,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AMZN",
+        "month": "2024-12",
+        "trade_date": "2024-12-31",
+        "close": "219.39",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AMZN",
+        "month": "2024-12",
+        "trade_date": "2024-12-31",
+        "submitted_close": "219.39",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 253,
+        "price_id": 253,
+        "close": "219.3900",
+        "detail": {
+          "expected_date": "2024-12-31",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AMZN/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2024-12-31",
+            "close": "219.3900",
+            "fetched_at": "2026-10-30T13:40:09.115Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AMZN/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2024-12-31",
+            "close": "219.3900",
+            "fetched_at": "2026-10-30T13:40:06.649Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "219.3900",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 37,
+      "index": 35,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AAPL",
+        "month": "2024-12",
+        "trade_date": "2024-12-31",
+        "close": "250.42",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AAPL",
+        "month": "2024-12",
+        "trade_date": "2024-12-31",
+        "submitted_close": "250.42",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 254,
+        "price_id": 254,
+        "close": "250.4200",
+        "detail": {
+          "expected_date": "2024-12-31",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AAPL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2024-12-31",
+            "close": "250.4200",
+            "fetched_at": "2026-10-30T13:40:12.308Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AAPL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2024-12-31",
+            "close": "250.4200",
+            "fetched_at": "2026-10-30T13:40:09.342Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "250.4200",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 38,
+      "index": 36,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "GOOGL",
+        "month": "2025-01",
+        "trade_date": "2025-01-31",
+        "close": "204.02",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "GOOGL",
+        "month": "2025-01",
+        "trade_date": "2025-01-31",
+        "submitted_close": "204.02",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 255,
+        "price_id": 255,
+        "close": "204.0200",
+        "detail": {
+          "expected_date": "2025-01-31",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/GOOGL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2025-01-31",
+            "close": "204.0200",
+            "fetched_at": "2026-10-30T13:40:05.878Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/GOOGL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2025-01-31",
+            "close": "204.0200",
+            "fetched_at": "2026-10-30T13:40:05.890Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "204.0200",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 39,
+      "index": 37,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AMZN",
+        "month": "2025-01",
+        "trade_date": "2025-01-31",
+        "close": "237.68",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AMZN",
+        "month": "2025-01",
+        "trade_date": "2025-01-31",
+        "submitted_close": "237.68",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 256,
+        "price_id": 256,
+        "close": "237.6800",
+        "detail": {
+          "expected_date": "2025-01-31",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AMZN/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2025-01-31",
+            "close": "237.6800",
+            "fetched_at": "2026-10-30T13:40:09.115Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AMZN/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2025-01-31",
+            "close": "237.6800",
+            "fetched_at": "2026-10-30T13:40:06.649Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "237.6800",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 40,
+      "index": 38,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AAPL",
+        "month": "2025-01",
+        "trade_date": "2025-01-31",
+        "close": "236.00",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AAPL",
+        "month": "2025-01",
+        "trade_date": "2025-01-31",
+        "submitted_close": "236.00",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 257,
+        "price_id": 257,
+        "close": "236.0000",
+        "detail": {
+          "expected_date": "2025-01-31",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AAPL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2025-01-31",
+            "close": "236.0000",
+            "fetched_at": "2026-10-30T13:40:12.308Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AAPL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2025-01-31",
+            "close": "236.0000",
+            "fetched_at": "2026-10-30T13:40:09.342Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "236.0000",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 41,
+      "index": 39,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "GOOGL",
+        "month": "2025-02",
+        "trade_date": "2025-02-28",
+        "close": "170.28",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "GOOGL",
+        "month": "2025-02",
+        "trade_date": "2025-02-28",
+        "submitted_close": "170.28",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 258,
+        "price_id": 258,
+        "close": "170.2800",
+        "detail": {
+          "expected_date": "2025-02-28",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/GOOGL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2025-02-28",
+            "close": "170.2800",
+            "fetched_at": "2026-10-30T13:40:05.878Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/GOOGL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2025-02-28",
+            "close": "170.2800",
+            "fetched_at": "2026-10-30T13:40:05.890Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "170.2800",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 42,
+      "index": 40,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AMZN",
+        "month": "2025-02",
+        "trade_date": "2025-02-28",
+        "close": "212.28",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AMZN",
+        "month": "2025-02",
+        "trade_date": "2025-02-28",
+        "submitted_close": "212.28",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 259,
+        "price_id": 259,
+        "close": "212.2800",
+        "detail": {
+          "expected_date": "2025-02-28",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AMZN/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2025-02-28",
+            "close": "212.2800",
+            "fetched_at": "2026-10-30T13:40:09.115Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AMZN/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2025-02-28",
+            "close": "212.2800",
+            "fetched_at": "2026-10-30T13:40:06.649Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "212.2800",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 43,
+      "index": 41,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AAPL",
+        "month": "2025-02",
+        "trade_date": "2025-02-28",
+        "close": "241.84",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AAPL",
+        "month": "2025-02",
+        "trade_date": "2025-02-28",
+        "submitted_close": "241.84",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 260,
+        "price_id": 260,
+        "close": "241.8400",
+        "detail": {
+          "expected_date": "2025-02-28",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AAPL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2025-02-28",
+            "close": "241.8400",
+            "fetched_at": "2026-10-30T13:40:12.308Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AAPL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2025-02-28",
+            "close": "241.8400",
+            "fetched_at": "2026-10-30T13:40:09.342Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "241.8400",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 44,
+      "index": 42,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "GOOGL",
+        "month": "2025-03",
+        "trade_date": "2025-03-31",
+        "close": "154.64",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "GOOGL",
+        "month": "2025-03",
+        "trade_date": "2025-03-31",
+        "submitted_close": "154.64",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 261,
+        "price_id": 261,
+        "close": "154.6400",
+        "detail": {
+          "expected_date": "2025-03-31",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/GOOGL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2025-03-31",
+            "close": "154.6400",
+            "fetched_at": "2026-10-30T13:40:05.878Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/GOOGL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2025-03-31",
+            "close": "154.6400",
+            "fetched_at": "2026-10-30T13:40:05.890Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "154.6400",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 45,
+      "index": 43,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AMZN",
+        "month": "2025-03",
+        "trade_date": "2025-03-31",
+        "close": "190.26",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AMZN",
+        "month": "2025-03",
+        "trade_date": "2025-03-31",
+        "submitted_close": "190.26",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 262,
+        "price_id": 262,
+        "close": "190.2600",
+        "detail": {
+          "expected_date": "2025-03-31",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AMZN/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2025-03-31",
+            "close": "190.2600",
+            "fetched_at": "2026-10-30T13:40:09.115Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AMZN/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2025-03-31",
+            "close": "190.2600",
+            "fetched_at": "2026-10-30T13:40:06.649Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "190.2600",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 46,
+      "index": 44,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AAPL",
+        "month": "2025-03",
+        "trade_date": "2025-03-31",
+        "close": "222.13",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AAPL",
+        "month": "2025-03",
+        "trade_date": "2025-03-31",
+        "submitted_close": "222.13",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 263,
+        "price_id": 263,
+        "close": "222.1300",
+        "detail": {
+          "expected_date": "2025-03-31",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AAPL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2025-03-31",
+            "close": "222.1300",
+            "fetched_at": "2026-10-30T13:40:12.308Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AAPL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2025-03-31",
+            "close": "222.1300",
+            "fetched_at": "2026-10-30T13:40:09.342Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "222.1300",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 47,
+      "index": 45,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "GOOGL",
+        "month": "2025-04",
+        "trade_date": "2025-04-30",
+        "close": "158.80",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "GOOGL",
+        "month": "2025-04",
+        "trade_date": "2025-04-30",
+        "submitted_close": "158.80",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 264,
+        "price_id": 264,
+        "close": "158.8000",
+        "detail": {
+          "expected_date": "2025-04-30",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/GOOGL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2025-04-30",
+            "close": "158.8000",
+            "fetched_at": "2026-10-30T13:40:05.878Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/GOOGL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2025-04-30",
+            "close": "158.8000",
+            "fetched_at": "2026-10-30T13:40:05.890Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "158.8000",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 48,
+      "index": 46,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AMZN",
+        "month": "2025-04",
+        "trade_date": "2025-04-30",
+        "close": "184.42",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AMZN",
+        "month": "2025-04",
+        "trade_date": "2025-04-30",
+        "submitted_close": "184.42",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 265,
+        "price_id": 265,
+        "close": "184.4200",
+        "detail": {
+          "expected_date": "2025-04-30",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AMZN/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2025-04-30",
+            "close": "184.4200",
+            "fetched_at": "2026-10-30T13:40:09.115Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AMZN/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2025-04-30",
+            "close": "184.4200",
+            "fetched_at": "2026-10-30T13:40:06.649Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "184.4200",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 49,
+      "index": 47,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AAPL",
+        "month": "2025-04",
+        "trade_date": "2025-04-30",
+        "close": "212.50",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AAPL",
+        "month": "2025-04",
+        "trade_date": "2025-04-30",
+        "submitted_close": "212.50",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 266,
+        "price_id": 266,
+        "close": "212.5000",
+        "detail": {
+          "expected_date": "2025-04-30",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AAPL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2025-04-30",
+            "close": "212.5000",
+            "fetched_at": "2026-10-30T13:40:12.308Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AAPL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2025-04-30",
+            "close": "212.5000",
+            "fetched_at": "2026-10-30T13:40:09.342Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "212.5000",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 50,
+      "index": 48,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "GOOGL",
+        "month": "2025-05",
+        "trade_date": "2025-05-30",
+        "close": "171.74",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "GOOGL",
+        "month": "2025-05",
+        "trade_date": "2025-05-30",
+        "submitted_close": "171.74",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 267,
+        "price_id": 267,
+        "close": "171.7400",
+        "detail": {
+          "expected_date": "2025-05-30",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/GOOGL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2025-05-30",
+            "close": "171.7400",
+            "fetched_at": "2026-10-30T13:40:05.878Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/GOOGL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2025-05-30",
+            "close": "171.7400",
+            "fetched_at": "2026-10-30T13:40:05.890Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "171.7400",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 51,
+      "index": 49,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AMZN",
+        "month": "2025-05",
+        "trade_date": "2025-05-30",
+        "close": "205.01",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AMZN",
+        "month": "2025-05",
+        "trade_date": "2025-05-30",
+        "submitted_close": "205.01",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 268,
+        "price_id": 268,
+        "close": "205.0100",
+        "detail": {
+          "expected_date": "2025-05-30",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AMZN/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2025-05-30",
+            "close": "205.0100",
+            "fetched_at": "2026-10-30T13:40:09.115Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AMZN/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2025-05-30",
+            "close": "205.0100",
+            "fetched_at": "2026-10-30T13:40:06.649Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "205.0100",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 52,
+      "index": 50,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AAPL",
+        "month": "2025-05",
+        "trade_date": "2025-05-30",
+        "close": "200.85",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AAPL",
+        "month": "2025-05",
+        "trade_date": "2025-05-30",
+        "submitted_close": "200.85",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 269,
+        "price_id": 269,
+        "close": "200.8500",
+        "detail": {
+          "expected_date": "2025-05-30",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AAPL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2025-05-30",
+            "close": "200.8500",
+            "fetched_at": "2026-10-30T13:40:12.308Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AAPL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2025-05-30",
+            "close": "200.8500",
+            "fetched_at": "2026-10-30T13:40:09.342Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "200.8500",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 53,
+      "index": 51,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "GOOGL",
+        "month": "2025-06",
+        "trade_date": "2025-06-30",
+        "close": "176.23",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "GOOGL",
+        "month": "2025-06",
+        "trade_date": "2025-06-30",
+        "submitted_close": "176.23",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 270,
+        "price_id": 270,
+        "close": "176.2300",
+        "detail": {
+          "expected_date": "2025-06-30",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/GOOGL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2025-06-30",
+            "close": "176.2300",
+            "fetched_at": "2026-10-30T13:40:05.878Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/GOOGL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2025-06-30",
+            "close": "176.2300",
+            "fetched_at": "2026-10-30T13:40:05.890Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "176.2300",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 54,
+      "index": 52,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AMZN",
+        "month": "2025-06",
+        "trade_date": "2025-06-30",
+        "close": "219.39",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AMZN",
+        "month": "2025-06",
+        "trade_date": "2025-06-30",
+        "submitted_close": "219.39",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 271,
+        "price_id": 271,
+        "close": "219.3900",
+        "detail": {
+          "expected_date": "2025-06-30",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AMZN/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2025-06-30",
+            "close": "219.3900",
+            "fetched_at": "2026-10-30T13:40:09.115Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AMZN/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2025-06-30",
+            "close": "219.3900",
+            "fetched_at": "2026-10-30T13:40:06.649Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "219.3900",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 55,
+      "index": 53,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AAPL",
+        "month": "2025-06",
+        "trade_date": "2025-06-30",
+        "close": "205.17",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AAPL",
+        "month": "2025-06",
+        "trade_date": "2025-06-30",
+        "submitted_close": "205.17",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 272,
+        "price_id": 272,
+        "close": "205.1700",
+        "detail": {
+          "expected_date": "2025-06-30",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AAPL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2025-06-30",
+            "close": "205.1700",
+            "fetched_at": "2026-10-30T13:40:12.308Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AAPL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2025-06-30",
+            "close": "205.1700",
+            "fetched_at": "2026-10-30T13:40:09.342Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "205.1700",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 56,
+      "index": 54,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "GOOGL",
+        "month": "2025-07",
+        "trade_date": "2025-07-31",
+        "close": "191.90",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "GOOGL",
+        "month": "2025-07",
+        "trade_date": "2025-07-31",
+        "submitted_close": "191.90",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 273,
+        "price_id": 273,
+        "close": "191.9000",
+        "detail": {
+          "expected_date": "2025-07-31",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/GOOGL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2025-07-31",
+            "close": "191.9000",
+            "fetched_at": "2026-10-30T13:40:05.878Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/GOOGL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2025-07-31",
+            "close": "191.9000",
+            "fetched_at": "2026-10-30T13:40:05.890Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "191.9000",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 57,
+      "index": 55,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AMZN",
+        "month": "2025-07",
+        "trade_date": "2025-07-31",
+        "close": "234.11",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AMZN",
+        "month": "2025-07",
+        "trade_date": "2025-07-31",
+        "submitted_close": "234.11",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 274,
+        "price_id": 274,
+        "close": "234.1100",
+        "detail": {
+          "expected_date": "2025-07-31",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AMZN/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2025-07-31",
+            "close": "234.1100",
+            "fetched_at": "2026-10-30T13:40:09.115Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AMZN/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2025-07-31",
+            "close": "234.1100",
+            "fetched_at": "2026-10-30T13:40:06.649Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "234.1100",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 58,
+      "index": 56,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AAPL",
+        "month": "2025-07",
+        "trade_date": "2025-07-31",
+        "close": "207.57",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AAPL",
+        "month": "2025-07",
+        "trade_date": "2025-07-31",
+        "submitted_close": "207.57",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 275,
+        "price_id": 275,
+        "close": "207.5700",
+        "detail": {
+          "expected_date": "2025-07-31",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AAPL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2025-07-31",
+            "close": "207.5700",
+            "fetched_at": "2026-10-30T13:40:12.308Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AAPL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2025-07-31",
+            "close": "207.5700",
+            "fetched_at": "2026-10-30T13:40:09.342Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "207.5700",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 59,
+      "index": 57,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "GOOGL",
+        "month": "2025-08",
+        "trade_date": "2025-08-29",
+        "close": "212.91",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "GOOGL",
+        "month": "2025-08",
+        "trade_date": "2025-08-29",
+        "submitted_close": "212.91",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 276,
+        "price_id": 276,
+        "close": "212.9100",
+        "detail": {
+          "expected_date": "2025-08-29",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/GOOGL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2025-08-29",
+            "close": "212.9100",
+            "fetched_at": "2026-10-30T13:40:05.878Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/GOOGL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2025-08-29",
+            "close": "212.9100",
+            "fetched_at": "2026-10-30T13:40:05.890Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "212.9100",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 60,
+      "index": 58,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AMZN",
+        "month": "2025-08",
+        "trade_date": "2025-08-29",
+        "close": "229.00",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AMZN",
+        "month": "2025-08",
+        "trade_date": "2025-08-29",
+        "submitted_close": "229.00",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 277,
+        "price_id": 277,
+        "close": "229.0000",
+        "detail": {
+          "expected_date": "2025-08-29",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AMZN/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2025-08-29",
+            "close": "229.0000",
+            "fetched_at": "2026-10-30T13:40:09.115Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AMZN/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2025-08-29",
+            "close": "229.0000",
+            "fetched_at": "2026-10-30T13:40:06.649Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "229.0000",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 61,
+      "index": 59,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AAPL",
+        "month": "2025-08",
+        "trade_date": "2025-08-29",
+        "close": "232.14",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AAPL",
+        "month": "2025-08",
+        "trade_date": "2025-08-29",
+        "submitted_close": "232.14",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 278,
+        "price_id": 278,
+        "close": "232.1400",
+        "detail": {
+          "expected_date": "2025-08-29",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AAPL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2025-08-29",
+            "close": "232.1400",
+            "fetched_at": "2026-10-30T13:40:12.308Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AAPL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2025-08-29",
+            "close": "232.1400",
+            "fetched_at": "2026-10-30T13:40:09.342Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "232.1400",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 62,
+      "index": 60,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "GOOGL",
+        "month": "2025-09",
+        "trade_date": "2025-09-30",
+        "close": "243.10",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "GOOGL",
+        "month": "2025-09",
+        "trade_date": "2025-09-30",
+        "submitted_close": "243.10",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 279,
+        "price_id": 279,
+        "close": "243.1000",
+        "detail": {
+          "expected_date": "2025-09-30",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/GOOGL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2025-09-30",
+            "close": "243.1000",
+            "fetched_at": "2026-10-30T13:40:05.878Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/GOOGL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2025-09-30",
+            "close": "243.1000",
+            "fetched_at": "2026-10-30T13:40:05.890Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "243.1000",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 63,
+      "index": 61,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AMZN",
+        "month": "2025-09",
+        "trade_date": "2025-09-30",
+        "close": "219.57",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AMZN",
+        "month": "2025-09",
+        "trade_date": "2025-09-30",
+        "submitted_close": "219.57",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 280,
+        "price_id": 280,
+        "close": "219.5700",
+        "detail": {
+          "expected_date": "2025-09-30",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AMZN/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2025-09-30",
+            "close": "219.5700",
+            "fetched_at": "2026-10-30T13:40:09.115Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AMZN/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2025-09-30",
+            "close": "219.5700",
+            "fetched_at": "2026-10-30T13:40:06.649Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "219.5700",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 64,
+      "index": 62,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AAPL",
+        "month": "2025-09",
+        "trade_date": "2025-09-30",
+        "close": "254.63",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AAPL",
+        "month": "2025-09",
+        "trade_date": "2025-09-30",
+        "submitted_close": "254.63",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 281,
+        "price_id": 281,
+        "close": "254.6300",
+        "detail": {
+          "expected_date": "2025-09-30",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AAPL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2025-09-30",
+            "close": "254.6300",
+            "fetched_at": "2026-10-30T13:40:12.308Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AAPL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2025-09-30",
+            "close": "254.6300",
+            "fetched_at": "2026-10-30T13:40:09.342Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "254.6300",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 65,
+      "index": 63,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "GOOGL",
+        "month": "2025-10",
+        "trade_date": "2025-10-31",
+        "close": "281.19",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "GOOGL",
+        "month": "2025-10",
+        "trade_date": "2025-10-31",
+        "submitted_close": "281.19",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 282,
+        "price_id": 282,
+        "close": "281.1900",
+        "detail": {
+          "expected_date": "2025-10-31",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/GOOGL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2025-10-31",
+            "close": "281.1900",
+            "fetched_at": "2026-10-30T13:40:05.878Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/GOOGL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2025-10-31",
+            "close": "281.1900",
+            "fetched_at": "2026-10-30T13:40:05.890Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "281.1900",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 66,
+      "index": 64,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AMZN",
+        "month": "2025-10",
+        "trade_date": "2025-10-31",
+        "close": "244.22",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AMZN",
+        "month": "2025-10",
+        "trade_date": "2025-10-31",
+        "submitted_close": "244.22",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 283,
+        "price_id": 283,
+        "close": "244.2200",
+        "detail": {
+          "expected_date": "2025-10-31",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AMZN/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2025-10-31",
+            "close": "244.2200",
+            "fetched_at": "2026-10-30T13:40:09.115Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AMZN/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2025-10-31",
+            "close": "244.2200",
+            "fetched_at": "2026-10-30T13:40:06.649Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "244.2200",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 67,
+      "index": 65,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AAPL",
+        "month": "2025-10",
+        "trade_date": "2025-10-31",
+        "close": "270.37",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AAPL",
+        "month": "2025-10",
+        "trade_date": "2025-10-31",
+        "submitted_close": "270.37",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 284,
+        "price_id": 284,
+        "close": "270.3700",
+        "detail": {
+          "expected_date": "2025-10-31",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AAPL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2025-10-31",
+            "close": "270.3700",
+            "fetched_at": "2026-10-30T13:40:12.308Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AAPL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2025-10-31",
+            "close": "270.3700",
+            "fetched_at": "2026-10-30T13:40:09.342Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "270.3700",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 68,
+      "index": 66,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "GOOGL",
+        "month": "2025-11",
+        "trade_date": "2025-11-28",
+        "close": "320.18",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "GOOGL",
+        "month": "2025-11",
+        "trade_date": "2025-11-28",
+        "submitted_close": "320.18",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 285,
+        "price_id": 285,
+        "close": "320.1800",
+        "detail": {
+          "expected_date": "2025-11-28",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/GOOGL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2025-11-28",
+            "close": "320.1800",
+            "fetched_at": "2026-10-30T13:40:05.878Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/GOOGL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2025-11-28",
+            "close": "320.1800",
+            "fetched_at": "2026-10-30T13:40:05.890Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "320.1800",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 69,
+      "index": 67,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AMZN",
+        "month": "2025-11",
+        "trade_date": "2025-11-28",
+        "close": "233.22",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AMZN",
+        "month": "2025-11",
+        "trade_date": "2025-11-28",
+        "submitted_close": "233.22",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 286,
+        "price_id": 286,
+        "close": "233.2200",
+        "detail": {
+          "expected_date": "2025-11-28",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AMZN/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2025-11-28",
+            "close": "233.2200",
+            "fetched_at": "2026-10-30T13:40:09.115Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AMZN/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2025-11-28",
+            "close": "233.2200",
+            "fetched_at": "2026-10-30T13:40:06.649Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "233.2200",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 70,
+      "index": 68,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AAPL",
+        "month": "2025-11",
+        "trade_date": "2025-11-28",
+        "close": "278.85",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AAPL",
+        "month": "2025-11",
+        "trade_date": "2025-11-28",
+        "submitted_close": "278.85",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 287,
+        "price_id": 287,
+        "close": "278.8500",
+        "detail": {
+          "expected_date": "2025-11-28",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AAPL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2025-11-28",
+            "close": "278.8500",
+            "fetched_at": "2026-10-30T13:40:12.308Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AAPL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2025-11-28",
+            "close": "278.8500",
+            "fetched_at": "2026-10-30T13:40:09.342Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "278.8500",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 71,
+      "index": 69,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "GOOGL",
+        "month": "2025-12",
+        "trade_date": "2025-12-31",
+        "close": "313.00",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "GOOGL",
+        "month": "2025-12",
+        "trade_date": "2025-12-31",
+        "submitted_close": "313.00",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 288,
+        "price_id": 288,
+        "close": "313.0000",
+        "detail": {
+          "expected_date": "2025-12-31",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/GOOGL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2025-12-31",
+            "close": "313.0000",
+            "fetched_at": "2026-10-30T13:40:05.878Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/GOOGL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2025-12-31",
+            "close": "313.0000",
+            "fetched_at": "2026-10-30T13:40:05.890Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "313.0000",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 72,
+      "index": 70,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AMZN",
+        "month": "2025-12",
+        "trade_date": "2025-12-31",
+        "close": "230.82",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AMZN",
+        "month": "2025-12",
+        "trade_date": "2025-12-31",
+        "submitted_close": "230.82",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 289,
+        "price_id": 289,
+        "close": "230.8200",
+        "detail": {
+          "expected_date": "2025-12-31",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AMZN/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2025-12-31",
+            "close": "230.8200",
+            "fetched_at": "2026-10-30T13:40:09.115Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AMZN/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2025-12-31",
+            "close": "230.8200",
+            "fetched_at": "2026-10-30T13:40:06.649Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "230.8200",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 73,
+      "index": 71,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AAPL",
+        "month": "2025-12",
+        "trade_date": "2025-12-31",
+        "close": "271.86",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AAPL",
+        "month": "2025-12",
+        "trade_date": "2025-12-31",
+        "submitted_close": "271.86",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 290,
+        "price_id": 290,
+        "close": "271.8600",
+        "detail": {
+          "expected_date": "2025-12-31",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AAPL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2025-12-31",
+            "close": "271.8600",
+            "fetched_at": "2026-10-30T13:40:12.308Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AAPL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2025-12-31",
+            "close": "271.8600",
+            "fetched_at": "2026-10-30T13:40:09.342Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "271.8600",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 74,
+      "index": 72,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "GOOGL",
+        "month": "2026-01",
+        "trade_date": "2026-01-30",
+        "close": "338.00",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "GOOGL",
+        "month": "2026-01",
+        "trade_date": "2026-01-30",
+        "submitted_close": "338.00",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 291,
+        "price_id": 291,
+        "close": "338.0000",
+        "detail": {
+          "expected_date": "2026-01-30",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/GOOGL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2026-01-30",
+            "close": "338.0000",
+            "fetched_at": "2026-10-30T13:40:05.878Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/GOOGL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2026-01-30",
+            "close": "338.0000",
+            "fetched_at": "2026-10-30T13:40:05.890Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "338.0000",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 75,
+      "index": 73,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AMZN",
+        "month": "2026-01",
+        "trade_date": "2026-01-30",
+        "close": "239.30",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AMZN",
+        "month": "2026-01",
+        "trade_date": "2026-01-30",
+        "submitted_close": "239.30",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 292,
+        "price_id": 292,
+        "close": "239.3000",
+        "detail": {
+          "expected_date": "2026-01-30",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AMZN/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2026-01-30",
+            "close": "239.3000",
+            "fetched_at": "2026-10-30T13:40:09.115Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AMZN/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2026-01-30",
+            "close": "239.3000",
+            "fetched_at": "2026-10-30T13:40:06.649Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "239.3000",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 76,
+      "index": 74,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AAPL",
+        "month": "2026-01",
+        "trade_date": "2026-01-30",
+        "close": "259.48",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AAPL",
+        "month": "2026-01",
+        "trade_date": "2026-01-30",
+        "submitted_close": "259.48",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 293,
+        "price_id": 293,
+        "close": "259.4800",
+        "detail": {
+          "expected_date": "2026-01-30",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AAPL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2026-01-30",
+            "close": "259.4800",
+            "fetched_at": "2026-10-30T13:40:12.308Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AAPL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2026-01-30",
+            "close": "259.4800",
+            "fetched_at": "2026-10-30T13:40:09.342Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "259.4800",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 77,
+      "index": 75,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "GOOGL",
+        "month": "2026-02",
+        "trade_date": "2026-02-27",
+        "close": "311.76",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "GOOGL",
+        "month": "2026-02",
+        "trade_date": "2026-02-27",
+        "submitted_close": "311.76",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 294,
+        "price_id": 294,
+        "close": "311.7600",
+        "detail": {
+          "expected_date": "2026-02-27",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/GOOGL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2026-02-27",
+            "close": "311.7600",
+            "fetched_at": "2026-10-30T13:40:05.878Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/GOOGL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2026-02-27",
+            "close": "311.7600",
+            "fetched_at": "2026-10-30T13:40:05.890Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "311.7600",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 78,
+      "index": 76,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AMZN",
+        "month": "2026-02",
+        "trade_date": "2026-02-27",
+        "close": "210.00",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AMZN",
+        "month": "2026-02",
+        "trade_date": "2026-02-27",
+        "submitted_close": "210.00",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 295,
+        "price_id": 295,
+        "close": "210.0000",
+        "detail": {
+          "expected_date": "2026-02-27",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AMZN/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2026-02-27",
+            "close": "210.0000",
+            "fetched_at": "2026-10-30T13:40:09.115Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AMZN/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2026-02-27",
+            "close": "210.0000",
+            "fetched_at": "2026-10-30T13:40:06.649Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "210.0000",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 79,
+      "index": 77,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AAPL",
+        "month": "2026-02",
+        "trade_date": "2026-02-27",
+        "close": "264.18",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AAPL",
+        "month": "2026-02",
+        "trade_date": "2026-02-27",
+        "submitted_close": "264.18",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 296,
+        "price_id": 296,
+        "close": "264.1800",
+        "detail": {
+          "expected_date": "2026-02-27",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AAPL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2026-02-27",
+            "close": "264.1800",
+            "fetched_at": "2026-10-30T13:40:12.308Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AAPL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2026-02-27",
+            "close": "264.1800",
+            "fetched_at": "2026-10-30T13:40:09.342Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "264.1800",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 80,
+      "index": 78,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "GOOGL",
+        "month": "2026-03",
+        "trade_date": "2026-03-31",
+        "close": "287.56",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "GOOGL",
+        "month": "2026-03",
+        "trade_date": "2026-03-31",
+        "submitted_close": "287.56",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 297,
+        "price_id": 297,
+        "close": "287.5600",
+        "detail": {
+          "expected_date": "2026-03-31",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/GOOGL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2026-03-31",
+            "close": "287.5600",
+            "fetched_at": "2026-10-30T13:40:05.878Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/GOOGL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2026-03-31",
+            "close": "287.5600",
+            "fetched_at": "2026-10-30T13:40:05.890Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "287.5600",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 81,
+      "index": 79,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AMZN",
+        "month": "2026-03",
+        "trade_date": "2026-03-31",
+        "close": "208.27",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AMZN",
+        "month": "2026-03",
+        "trade_date": "2026-03-31",
+        "submitted_close": "208.27",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 298,
+        "price_id": 298,
+        "close": "208.2700",
+        "detail": {
+          "expected_date": "2026-03-31",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AMZN/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2026-03-31",
+            "close": "208.2700",
+            "fetched_at": "2026-10-30T13:40:09.115Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AMZN/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2026-03-31",
+            "close": "208.2700",
+            "fetched_at": "2026-10-30T13:40:06.649Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "208.2700",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 82,
+      "index": 80,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AAPL",
+        "month": "2026-03",
+        "trade_date": "2026-03-31",
+        "close": "253.79",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AAPL",
+        "month": "2026-03",
+        "trade_date": "2026-03-31",
+        "submitted_close": "253.79",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 299,
+        "price_id": 299,
+        "close": "253.7900",
+        "detail": {
+          "expected_date": "2026-03-31",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AAPL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2026-03-31",
+            "close": "253.7900",
+            "fetched_at": "2026-10-30T13:40:12.308Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AAPL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2026-03-31",
+            "close": "253.7900",
+            "fetched_at": "2026-10-30T13:40:09.342Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "253.7900",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 83,
+      "index": 81,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "GOOGL",
+        "month": "2026-04",
+        "trade_date": "2026-04-30",
+        "close": "384.80",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "GOOGL",
+        "month": "2026-04",
+        "trade_date": "2026-04-30",
+        "submitted_close": "384.80",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 300,
+        "price_id": 300,
+        "close": "384.8000",
+        "detail": {
+          "expected_date": "2026-04-30",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/GOOGL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2026-04-30",
+            "close": "384.8000",
+            "fetched_at": "2026-10-30T13:40:05.878Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/GOOGL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2026-04-30",
+            "close": "384.8000",
+            "fetched_at": "2026-10-30T13:40:05.890Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "384.8000",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 84,
+      "index": 82,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AMZN",
+        "month": "2026-04",
+        "trade_date": "2026-04-30",
+        "close": "265.06",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AMZN",
+        "month": "2026-04",
+        "trade_date": "2026-04-30",
+        "submitted_close": "265.06",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 301,
+        "price_id": 301,
+        "close": "265.0600",
+        "detail": {
+          "expected_date": "2026-04-30",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AMZN/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2026-04-30",
+            "close": "265.0600",
+            "fetched_at": "2026-10-30T13:40:09.115Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AMZN/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2026-04-30",
+            "close": "265.0600",
+            "fetched_at": "2026-10-30T13:40:06.649Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "265.0600",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 85,
+      "index": 83,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AAPL",
+        "month": "2026-04",
+        "trade_date": "2026-04-30",
+        "close": "271.35",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AAPL",
+        "month": "2026-04",
+        "trade_date": "2026-04-30",
+        "submitted_close": "271.35",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 302,
+        "price_id": 302,
+        "close": "271.3500",
+        "detail": {
+          "expected_date": "2026-04-30",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AAPL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2026-04-30",
+            "close": "271.3500",
+            "fetched_at": "2026-10-30T13:40:12.308Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AAPL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2026-04-30",
+            "close": "271.3500",
+            "fetched_at": "2026-10-30T13:40:09.342Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "271.3500",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 86,
+      "index": 84,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "GOOGL",
+        "month": "2026-05",
+        "trade_date": "2026-05-29",
+        "close": "380.34",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "GOOGL",
+        "month": "2026-05",
+        "trade_date": "2026-05-29",
+        "submitted_close": "380.34",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 303,
+        "price_id": 303,
+        "close": "380.3400",
+        "detail": {
+          "expected_date": "2026-05-29",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/GOOGL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2026-05-29",
+            "close": "380.3400",
+            "fetched_at": "2026-10-30T13:40:05.878Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/GOOGL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2026-05-29",
+            "close": "380.3400",
+            "fetched_at": "2026-10-30T13:40:05.890Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "380.3400",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 87,
+      "index": 85,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AMZN",
+        "month": "2026-05",
+        "trade_date": "2026-05-29",
+        "close": "270.64",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AMZN",
+        "month": "2026-05",
+        "trade_date": "2026-05-29",
+        "submitted_close": "270.64",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 304,
+        "price_id": 304,
+        "close": "270.6400",
+        "detail": {
+          "expected_date": "2026-05-29",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AMZN/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2026-05-29",
+            "close": "270.6400",
+            "fetched_at": "2026-10-30T13:40:09.115Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AMZN/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2026-05-29",
+            "close": "270.6400",
+            "fetched_at": "2026-10-30T13:40:06.649Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "270.6400",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 88,
+      "index": 86,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AAPL",
+        "month": "2026-05",
+        "trade_date": "2026-05-29",
+        "close": "312.06",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AAPL",
+        "month": "2026-05",
+        "trade_date": "2026-05-29",
+        "submitted_close": "312.06",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 305,
+        "price_id": 305,
+        "close": "312.0600",
+        "detail": {
+          "expected_date": "2026-05-29",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AAPL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2026-05-29",
+            "close": "312.0600",
+            "fetched_at": "2026-10-30T13:40:12.308Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AAPL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2026-05-29",
+            "close": "312.0600",
+            "fetched_at": "2026-10-30T13:40:09.342Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "312.0600",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 89,
+      "index": 87,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "GOOGL",
+        "month": "2026-06",
+        "trade_date": "2026-06-30",
+        "close": "357.37",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "GOOGL",
+        "month": "2026-06",
+        "trade_date": "2026-06-30",
+        "submitted_close": "357.37",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 306,
+        "price_id": 306,
+        "close": "357.3700",
+        "detail": {
+          "expected_date": "2026-06-30",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/GOOGL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2026-06-30",
+            "close": "357.3700",
+            "fetched_at": "2026-10-30T13:40:05.878Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/GOOGL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2026-06-30",
+            "close": "357.3700",
+            "fetched_at": "2026-10-30T13:40:05.890Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "357.3700",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 90,
+      "index": 88,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AMZN",
+        "month": "2026-06",
+        "trade_date": "2026-06-30",
+        "close": "238.34",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AMZN",
+        "month": "2026-06",
+        "trade_date": "2026-06-30",
+        "submitted_close": "238.34",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 307,
+        "price_id": 307,
+        "close": "238.3400",
+        "detail": {
+          "expected_date": "2026-06-30",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AMZN/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2026-06-30",
+            "close": "238.3400",
+            "fetched_at": "2026-10-30T13:40:09.115Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AMZN/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2026-06-30",
+            "close": "238.3400",
+            "fetched_at": "2026-10-30T13:40:06.649Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "238.3400",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 91,
+      "index": 89,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AAPL",
+        "month": "2026-06",
+        "trade_date": "2026-06-30",
+        "close": "289.36",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AAPL",
+        "month": "2026-06",
+        "trade_date": "2026-06-30",
+        "submitted_close": "289.36",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 308,
+        "price_id": 308,
+        "close": "289.3600",
+        "detail": {
+          "expected_date": "2026-06-30",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AAPL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2026-06-30",
+            "close": "289.3600",
+            "fetched_at": "2026-10-30T13:40:12.308Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AAPL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2026-06-30",
+            "close": "289.3600",
+            "fetched_at": "2026-10-30T13:40:09.342Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "289.3600",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 92,
+      "index": 90,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "SPCX",
+        "month": "2026-06",
+        "trade_date": "2026-06-30",
+        "close": "170.86",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "SPCX",
+        "month": "2026-06",
+        "trade_date": "2026-06-30",
+        "submitted_close": "170.86",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 309,
+        "price_id": 309,
+        "close": "170.8600",
+        "detail": {
+          "expected_date": "2026-06-30",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/SPCX/historical?assetclass=stocks&fromdate=2026-06-01&todate=2026-10-30&limit=157",
+            "date": "2026-06-30",
+            "close": "170.8600",
+            "fetched_at": "2026-10-30T13:40:15.392Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/SPCX/1D/20260601000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2026-06-30",
+            "close": "170.8600",
+            "fetched_at": "2026-10-30T13:40:12.925Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "170.8600",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 93,
+      "index": 91,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "GOOGL",
+        "month": "2026-07",
+        "trade_date": "2026-07-31",
+        "close": "356.13",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "GOOGL",
+        "month": "2026-07",
+        "trade_date": "2026-07-31",
+        "submitted_close": "356.13",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 310,
+        "price_id": 310,
+        "close": "356.1300",
+        "detail": {
+          "expected_date": "2026-07-31",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/GOOGL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2026-07-31",
+            "close": "356.1300",
+            "fetched_at": "2026-10-30T13:40:05.878Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/GOOGL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2026-07-31",
+            "close": "356.1300",
+            "fetched_at": "2026-10-30T13:40:05.890Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "356.1300",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 94,
+      "index": 92,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AMZN",
+        "month": "2026-07",
+        "trade_date": "2026-07-31",
+        "close": "271.58",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AMZN",
+        "month": "2026-07",
+        "trade_date": "2026-07-31",
+        "submitted_close": "271.58",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 311,
+        "price_id": 311,
+        "close": "271.5800",
+        "detail": {
+          "expected_date": "2026-07-31",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AMZN/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2026-07-31",
+            "close": "271.5800",
+            "fetched_at": "2026-10-30T13:40:09.115Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AMZN/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2026-07-31",
+            "close": "271.5800",
+            "fetched_at": "2026-10-30T13:40:06.649Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "271.5800",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 95,
+      "index": 93,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AAPL",
+        "month": "2026-07",
+        "trade_date": "2026-07-31",
+        "close": "308.91",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AAPL",
+        "month": "2026-07",
+        "trade_date": "2026-07-31",
+        "submitted_close": "308.91",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 312,
+        "price_id": 312,
+        "close": "308.9100",
+        "detail": {
+          "expected_date": "2026-07-31",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AAPL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2026-07-31",
+            "close": "308.9100",
+            "fetched_at": "2026-10-30T13:40:12.308Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AAPL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2026-07-31",
+            "close": "308.9100",
+            "fetched_at": "2026-10-30T13:40:09.342Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "308.9100",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 96,
+      "index": 94,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "SPCX",
+        "month": "2026-07",
+        "trade_date": "2026-07-31",
+        "close": "108.37",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "SPCX",
+        "month": "2026-07",
+        "trade_date": "2026-07-31",
+        "submitted_close": "108.37",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 313,
+        "price_id": 313,
+        "close": "108.3700",
+        "detail": {
+          "expected_date": "2026-07-31",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/SPCX/historical?assetclass=stocks&fromdate=2026-06-01&todate=2026-10-30&limit=157",
+            "date": "2026-07-31",
+            "close": "108.3700",
+            "fetched_at": "2026-10-30T13:40:15.392Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/SPCX/1D/20260601000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2026-07-31",
+            "close": "108.3700",
+            "fetched_at": "2026-10-30T13:40:12.925Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "108.3700",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 97,
+      "index": 95,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "GOOGL",
+        "month": "2026-08",
+        "trade_date": "2026-08-31",
+        "close": "339.35",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "GOOGL",
+        "month": "2026-08",
+        "trade_date": "2026-08-31",
+        "submitted_close": "339.35",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 314,
+        "price_id": 314,
+        "close": "339.3500",
+        "detail": {
+          "expected_date": "2026-08-31",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/GOOGL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2026-08-31",
+            "close": "339.3500",
+            "fetched_at": "2026-10-30T13:40:05.878Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/GOOGL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2026-08-31",
+            "close": "339.3500",
+            "fetched_at": "2026-10-30T13:40:05.890Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "339.3500",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 98,
+      "index": 96,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AMZN",
+        "month": "2026-08",
+        "trade_date": "2026-08-31",
+        "close": "259.77",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AMZN",
+        "month": "2026-08",
+        "trade_date": "2026-08-31",
+        "submitted_close": "259.77",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 315,
+        "price_id": 315,
+        "close": "259.7700",
+        "detail": {
+          "expected_date": "2026-08-31",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AMZN/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2026-08-31",
+            "close": "259.7700",
+            "fetched_at": "2026-10-30T13:40:09.115Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AMZN/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2026-08-31",
+            "close": "259.7700",
+            "fetched_at": "2026-10-30T13:40:06.649Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "259.7700",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 99,
+      "index": 97,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AAPL",
+        "month": "2026-08",
+        "trade_date": "2026-08-31",
+        "close": "316.85",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AAPL",
+        "month": "2026-08",
+        "trade_date": "2026-08-31",
+        "submitted_close": "316.85",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 316,
+        "price_id": 316,
+        "close": "316.8500",
+        "detail": {
+          "expected_date": "2026-08-31",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AAPL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2026-08-31",
+            "close": "316.8500",
+            "fetched_at": "2026-10-30T13:40:12.308Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AAPL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2026-08-31",
+            "close": "316.8500",
+            "fetched_at": "2026-10-30T13:40:09.342Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "316.8500",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 100,
+      "index": 98,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "SPCX",
+        "month": "2026-08",
+        "trade_date": "2026-08-31",
+        "close": "143.69",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "SPCX",
+        "month": "2026-08",
+        "trade_date": "2026-08-31",
+        "submitted_close": "143.69",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 317,
+        "price_id": 317,
+        "close": "143.6900",
+        "detail": {
+          "expected_date": "2026-08-31",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/SPCX/historical?assetclass=stocks&fromdate=2026-06-01&todate=2026-10-30&limit=157",
+            "date": "2026-08-31",
+            "close": "143.6900",
+            "fetched_at": "2026-10-30T13:40:15.392Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/SPCX/1D/20260601000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2026-08-31",
+            "close": "143.6900",
+            "fetched_at": "2026-10-30T13:40:12.925Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "143.6900",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 101,
+      "index": 99,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "GOOGL",
+        "month": "2026-09",
+        "trade_date": "2026-09-30",
+        "close": "344.08",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "GOOGL",
+        "month": "2026-09",
+        "trade_date": "2026-09-30",
+        "submitted_close": "344.08",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 318,
+        "price_id": 318,
+        "close": "344.0800",
+        "detail": {
+          "expected_date": "2026-09-30",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/GOOGL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2026-09-30",
+            "close": "344.0800",
+            "fetched_at": "2026-10-30T13:40:05.878Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/GOOGL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2026-09-30",
+            "close": "344.0800",
+            "fetched_at": "2026-10-30T13:40:05.890Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "344.0800",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 102,
+      "index": 100,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AMZN",
+        "month": "2026-09",
+        "trade_date": "2026-09-30",
+        "close": "249.15",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AMZN",
+        "month": "2026-09",
+        "trade_date": "2026-09-30",
+        "submitted_close": "249.15",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 319,
+        "price_id": 319,
+        "close": "249.1500",
+        "detail": {
+          "expected_date": "2026-09-30",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AMZN/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2026-09-30",
+            "close": "249.1500",
+            "fetched_at": "2026-10-30T13:40:09.115Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AMZN/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2026-09-30",
+            "close": "249.1500",
+            "fetched_at": "2026-10-30T13:40:06.649Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "249.1500",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 103,
+      "index": 101,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AAPL",
+        "month": "2026-09",
+        "trade_date": "2026-09-30",
+        "close": "333.02",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "AAPL",
+        "month": "2026-09",
+        "trade_date": "2026-09-30",
+        "submitted_close": "333.02",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 320,
+        "price_id": 320,
+        "close": "333.0200",
+        "detail": {
+          "expected_date": "2026-09-30",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/AAPL/historical?assetclass=stocks&fromdate=2024-01-01&todate=2026-10-30&limit=1039",
+            "date": "2026-09-30",
+            "close": "333.0200",
+            "fetched_at": "2026-10-30T13:40:12.308Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/AAPL/1D/20240101000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2026-09-30",
+            "close": "333.0200",
+            "fetched_at": "2026-10-30T13:40:09.342Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "333.0200",
+          "submitted_diff": "0.0000"
+        }
+      }
+    },
+    {
+      "line": 104,
+      "index": 102,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "SPCX",
+        "month": "2026-09",
+        "trade_date": "2026-09-30",
+        "close": "150.86",
+        "origin": "inbox",
+        "inbox_file": "prices/ria-month-end-2024-01_2026-09.csv"
+      },
+      "result": {
+        "ticker": "SPCX",
+        "month": "2026-09",
+        "trade_date": "2026-09-30",
+        "submitted_close": "150.86",
+        "origin": "inbox",
+        "status": "verified",
+        "reason": "ok",
+        "submission_id": 321,
+        "price_id": 321,
+        "close": "150.8600",
+        "detail": {
+          "expected_date": "2026-09-30",
+          "source_a": {
+            "name": "nasdaq",
+            "url": "https://api.nasdaq.com/api/quote/SPCX/historical?assetclass=stocks&fromdate=2026-06-01&todate=2026-10-30&limit=157",
+            "date": "2026-09-30",
+            "close": "150.8600",
+            "fetched_at": "2026-10-30T13:40:15.392Z"
+          },
+          "source_b": {
+            "name": "cnbc",
+            "url": "https://ts-api.cnbc.com/harmony/app/bars/SPCX/1D/20260601000000/20260930235959/adjusted/EST5EDT.json",
+            "date": "2026-09-30",
+            "close": "150.8600",
+            "fetched_at": "2026-10-30T13:40:12.925Z"
+          },
+          "abs_diff": "0.0000",
+          "tolerance_abs": "0.0100",
+          "submitted_close": "150.8600",
+          "submitted_diff": "0.0000"
+        }
+      }
+    }
+  ]
+}

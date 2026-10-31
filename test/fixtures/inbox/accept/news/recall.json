@@ -1,0 +1,10 @@
+[
+  {"ticker":"AAPL","title":"Apple recalls iPhone Duo chargers over overheating risk","url":"https://www.reuters.com/technology/apple-recalls-iphone-duo-chargers-2026-10-20?utm_source=x","published_at":"2026-10-20","outlet":"Reuters","author":"A. Reporter","note":"extra field ignored",
+   "references":[{"url":"https://apnews.com/article/apple-iphone-duo-charger-recall","title":"AP"},{"title":"BBC News"}]},
+  {"ticker":"AAPL","title":"Apple recalls iPhone Duo chargers over overheating fears","url":"https://bbc.co.uk/news/articles/apple-charger-recall","published_at":"2026-10-21T08:00:00Z"},
+  {"ticker":"AAPL","title":"Apple recalls iPhone Duo chargers after overheating reports","url":"https://abcnews.com/Technology/wireStory/apple-recalls-iphone-duo-chargers-overheating-123456","published_at":"2026-10-20"},
+  {"ticker":"AAPL","title":"Apple recalls iPhone Duo chargers","url":"https://theverge.com/2026/10/20/pixel-11-launch","published_at":"2026-10-20"},
+  {"ticker":"AAPL","title":"Apple recalls iPhone Duo chargers","url":"https://medium.com/@someone/apple-recall","published_at":"2026-10-20"},
+  {"ticker":null,"scope":"macro","title":"Federal Reserve issues FOMC statement holding rates steady","url":"https://federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm","published_at":"2026-10-28","references":[{"title":"Reuters"},{"title":"AP"}]},
+  {"ticker":null,"title":"No scope and no ticker","url":"https://reuters.com/x","published_at":"2026-10-20"}
+]

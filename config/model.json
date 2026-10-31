@@ -1,0 +1,48 @@
+{
+  "_comment": "Prediction model (PLAN §6, Phase 4). Baseline = deterministic blend of base rate, momentum and 1-month mean reversion over verified month-end closes (src/quant/baseline.mjs). range_k is FROZEN from the walk-forward backtest (npm run backtest, 2024-01..2026-09 baseline-only, coverage target 60-76%); changing any value here changes baseline code_version semantics and needs a re-run of the backtest. Consensus = confidence-weighted analyzer views anchored on the baseline (src/quant/consensus.mjs).",
+  "baseline": {
+    "code_version": "baseline-v1",
+    "weights": { "base_rate": 0.45, "momentum": 0.25, "mean_reversion": 0.10, "prior": 0.20 },
+    "momentum_slope": 0.35,
+    "mean_reversion_slope": 0.25,
+    "mu_weights": { "mean36": 0.5, "momentum": 0.3, "mean_reversion": 0.2 },
+    "mu_momentum_scale": 0.25,
+    "mu_mean_reversion_scale": 0.10,
+    "range_k": 1.1,
+    "range_k_frozen_at": "2026-10-31: npm run backtest -- --calibrate over target months 2024-01..2026-09 (96 baseline rows, GOOGL/AMZN/AAPL): k=1.10 -> lo-hi coverage 67.7% (k=1.00 gave 60.4%). In-sample choice; re-check as live outcomes are scored.",
+    "flat_band": 0.01,
+    "up_threshold": 0.55,
+    "down_threshold": 0.45,
+    "confidence_max": 0.9,
+    "full_data_months": 36
+  },
+  "consensus": {
+    "min_accepted_analyses": 3,
+    "baseline_weight": 1.0,
+    "max_p_adj": 0.15,
+    "overlay_max_sigma": 1.5,
+    "confidence_floor": 0.05,
+    "confidence_cap": 0.9,
+    "label_thresholds": { "low": 0.40, "medium": 0.65 }
+  },
+  "analysis": {
+    "min_rationale_chars": 40,
+    "no_evidence_max_confidence": 0.2,
+    "pack_field_evidence_agents": ["technical", "macro_sector"],
+    "min_dispatched_single": 4,
+    "return_bounds": [-0.9, 2.0],
+    "max_attempts": 3
+  },
+  "short_history": {
+    "sigma_floor": 0.15,
+    "max_confidence": 0.4,
+    "min_range_width": 0.30
+  },
+  "validator": {
+    "max_redo_rounds": 2,
+    "confidence_adj_bounds": [-0.3, 0.1]
+  },
+  "project_manager": {
+    "stall_minutes": 20
+  }
+}

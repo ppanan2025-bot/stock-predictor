@@ -1,0 +1,127 @@
+{
+  "https://abcnews.com/Technology/wireStory/apple-recalls-iphone-duo-chargers-overheating-123456": {
+    "file": "pages/abc-wire-recall.html",
+    "status": 200
+  },
+  "https://api.nasdaq.com/api/quote/AAPL/historical?assetclass=stocks&fromdate=2026-08-01&todate=2026-08-31&limit=36": {
+    "file": "nasdaq/a9ca2fe8fe3d.json",
+    "status": 200
+  },
+  "https://api.nasdaq.com/api/quote/AAPL/historical?assetclass=stocks&fromdate=2026-09-01&todate=2026-09-30&limit=35": {
+    "file": "nasdaq/59d1049e1d9e.json",
+    "status": 200
+  },
+  "https://api.nasdaq.com/api/quote/AMZN/historical?assetclass=stocks&fromdate=2026-08-01&todate=2026-08-31&limit=36": {
+    "file": "nasdaq/c7d1e45bafb5.json",
+    "status": 200
+  },
+  "https://api.nasdaq.com/api/quote/AMZN/historical?assetclass=stocks&fromdate=2026-09-01&todate=2026-09-30&limit=35": {
+    "file": "nasdaq/48df3c026ea9.json",
+    "status": 200
+  },
+  "https://api.nasdaq.com/api/quote/GOOGL/historical?assetclass=stocks&fromdate=2026-08-01&todate=2026-08-31&limit=36": {
+    "file": "nasdaq/23c0829d2452.json",
+    "status": 200
+  },
+  "https://api.nasdaq.com/api/quote/GOOGL/historical?assetclass=stocks&fromdate=2026-09-01&todate=2026-09-30&limit=35": {
+    "file": "nasdaq/3633fcc46402.json",
+    "status": 200
+  },
+  "https://apnews.com/article/apple-iphone-duo-charger-recall": {
+    "file": "pages/ap-recall.html",
+    "status": 200
+  },
+  "https://apple.com/newsroom/2026/10/apple-reports-fourth-quarter-results": {
+    "file": "pages/apple-q4-results.html",
+    "status": 200
+  },
+  "https://apple.com/newsroom/rss-feed.rss": {
+    "file": "ir/apple-newsroom.rss",
+    "status": 200,
+    "content_type": "application/rss+xml"
+  },
+  "https://bbc.co.uk/news/articles/apple-charger-recall": {
+    "status": 301,
+    "location": "https://www.bbc.co.uk/news/articles/apple-charger-recall"
+  },
+  "https://cnbc.com/2026/10/20/apple-recall-chargers.html": {
+    "file": "pages/cnbc-recall-old.html",
+    "status": 200
+  },
+  "https://cnn.com/2026/10/20/tech/apple-recall": {
+    "status": 301,
+    "location": "https://bit.ly/abc123"
+  },
+  "https://data.sec.gov/submissions/CIK0001652044.json": {
+    "file": "sec/CIK0001652044.json",
+    "status": 200
+  },
+  "https://dw.com/en/google-eu-fine/a-1": {
+    "file": "pages/dw-google.html",
+    "status": 200
+  },
+  "https://federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm": {
+    "file": "pages/fed-hold.html",
+    "status": 200
+  },
+  "https://npr.org/2026/10/20/apple-recall-injection": {
+    "file": "pages/npr-injection.html",
+    "status": 200
+  },
+  "https://reuters.com/technology/apple-recalls-iphone-duo-chargers-2026-10-20": {
+    "file": "pages/reuters-recall.html",
+    "status": 200
+  },
+  "https://reuters.com/technology/missing-article": {
+    "file": "pages/notfound.html",
+    "status": 404
+  },
+  "https://sec.gov/Archives/edgar/data/1652044/000165204426000080/googexhibit991q32026.htm": {
+    "file": "pages/sec-googl-ex991.html",
+    "status": 200
+  },
+  "https://techcrunch.com/2026/10/20/apple-chargers-recall-nodate": {
+    "file": "pages/tc-nodate.html",
+    "status": 200
+  },
+  "https://theverge.com/2026/10/20/pixel-11-launch": {
+    "file": "pages/verge-mismatch.html",
+    "status": 200
+  },
+  "https://ts-api.cnbc.com/harmony/app/bars/AAPL/1D/20260801000000/20260831235959/adjusted/EST5EDT.json": {
+    "file": "cnbc/dcd6c44ec530.json",
+    "status": 200
+  },
+  "https://ts-api.cnbc.com/harmony/app/bars/AAPL/1D/20260901000000/20260930235959/adjusted/EST5EDT.json": {
+    "file": "cnbc/3adbc0a288cd.json",
+    "status": 200
+  },
+  "https://ts-api.cnbc.com/harmony/app/bars/AMZN/1D/20260801000000/20260831235959/adjusted/EST5EDT.json": {
+    "file": "cnbc/644e69c3fb4c.json",
+    "status": 200
+  },
+  "https://ts-api.cnbc.com/harmony/app/bars/AMZN/1D/20260901000000/20260930235959/adjusted/EST5EDT.json": {
+    "file": "cnbc/fc94a8fc8e31.json",
+    "status": 200
+  },
+  "https://ts-api.cnbc.com/harmony/app/bars/GOOGL/1D/20260801000000/20260831235959/adjusted/EST5EDT.json": {
+    "file": "cnbc/89c7f6a2e3dd.json",
+    "status": 200
+  },
+  "https://ts-api.cnbc.com/harmony/app/bars/GOOGL/1D/20260901000000/20260930235959/adjusted/EST5EDT.json": {
+    "file": "cnbc/bd5349a959e3.json",
+    "status": 200
+  },
+  "https://wsj.com/tech/apple-recall-chargers": {
+    "file": "pages/wsj-paywall.html",
+    "status": 200
+  },
+  "https://www.bbc.co.uk/news/articles/apple-charger-recall": {
+    "file": "pages/bbc-recall.html",
+    "status": 200
+  },
+  "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/0001652044-26-000080-index.htm": {
+    "file": "sec/0001652044-26-000080-index.htm",
+    "status": 200
+  }
+}

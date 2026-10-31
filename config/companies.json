@@ -1,0 +1,76 @@
+{
+  "history_from": "2023-01",
+  "companies": [
+    {
+      "ticker": "GOOGL",
+      "name": "Alphabet Inc. Class A",
+      "exchange": "NASDAQ",
+      "sector": "Communication Services",
+      "industry": "Interactive Media & Services",
+      "cik": "0001652044",
+      "ir_domains": [
+        "abc.xyz",
+        "blog.google"
+      ],
+      "peers": [
+        "AMZN",
+        "AAPL"
+      ],
+      "role": "target",
+      "listed_on": "2004-08-19",
+      "active": true
+    },
+    {
+      "ticker": "AMZN",
+      "name": "Amazon.com, Inc.",
+      "exchange": "NASDAQ",
+      "sector": "Consumer Discretionary",
+      "industry": "Broadline Retail",
+      "cik": "0001018724",
+      "ir_domains": [
+        "aboutamazon.com",
+        "ir.aboutamazon.com"
+      ],
+      "peers": [
+        "GOOGL",
+        "AAPL"
+      ],
+      "role": "target",
+      "listed_on": "1997-05-15",
+      "active": true
+    },
+    {
+      "ticker": "AAPL",
+      "name": "Apple Inc.",
+      "exchange": "NASDAQ",
+      "sector": "Information Technology",
+      "industry": "Technology Hardware, Storage & Peripherals",
+      "cik": "0000320193",
+      "ir_domains": [
+        "apple.com",
+        "investor.apple.com"
+      ],
+      "peers": [
+        "GOOGL",
+        "AMZN"
+      ],
+      "role": "target",
+      "listed_on": "1980-12-12",
+      "active": true
+    },
+    {
+      "ticker": "SPCX",
+      "name": "Space Exploration Technologies Corp.",
+      "exchange": "NASDAQ",
+      "sector": "Industrials",
+      "industry": "Aerospace & Defense",
+      "cik": null,
+      "ir_domains": [],
+      "peers": [],
+      "role": "target",
+      "listed_on": "2026-06-12",
+      "active": true,
+      "note": "Listed 2026-06-12: no price or news data before 2026-06; short history (n_months < 13) until mid-2027."
+    }
+  ]
+}

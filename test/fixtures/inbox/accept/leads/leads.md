@@ -1,0 +1,1 @@
+- GOOGL: unverified lead https://news.sky.com/x

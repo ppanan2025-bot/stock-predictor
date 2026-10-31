@@ -1,0 +1,429 @@
+{
+  "file": "news/company-AAPL-2026-10.json",
+  "kind": "news",
+  "dry_run": false,
+  "at": "2026-10-30T16:36:07.017Z",
+  "fatal": null,
+  "totals": {
+    "verified": 3,
+    "corroborated": 1,
+    "pending": 1,
+    "rejected": 0,
+    "by_reason": {
+      "corroborated:corroborated": 1,
+      "verified:ok": 3,
+      "pending:source_unreachable": 1
+    }
+  },
+  "items": [
+    {
+      "line": null,
+      "index": 0,
+      "status": "corroborated",
+      "reason": "corroborated",
+      "input": {
+        "ticker": "AAPL",
+        "url": "https://theguardian.com/technology/2026/oct/26/iphone-duo-owners-cracks-apple-first-foldable-handset",
+        "title": "iPhone Duo owners report cracks in Apple’s first foldable handset",
+        "published_at": "2026-10-26",
+        "outlet": "The Guardian",
+        "author": "Dan Milmo Global technology editor",
+        "summary": "Company says small number of devices affected by display glitch after posts appear on Reddit and social media Owners of the new foldable iPhone are reporting cracks in the device’s screen, as Apple confirmed an issue with a “small number” of units. Reports of cracks have emerged on Reddit and social media platforms since the handset went on general sale globally on Friday. Experts said there had been too few examples to determine whether there was a more serious problem with Apple’s first foldable device, which retails from $1,999 (£1,499).",
+        "references": [
+          {
+            "url": "https://bbc.co.uk/news/articles/c893zwlev2xpo",
+            "title": "BBC News: Apple to replace iPhone Duos affected by screen problem"
+          },
+          {
+            "url": "https://cbsnews.com/news/iphone-duo-owners-report-cracked-screens-apple-foldable",
+            "title": "CBS News: Apple's first foldable phone broke within hours, some owners say"
+          },
+          {
+            "url": "https://cbsnews.com/video/apples-new-foldable-iphone-hits-a-snag",
+            "title": "CBS News: Apple's new foldable iPhone hits a snag"
+          },
+          {
+            "url": "https://news.sky.com/story/users-reporting-problems-with-apples-first-foldable-iphone-just-days-after-going-on-sale-13604220",
+            "title": "Sky News: Users reporting problems with Apple's first foldable iPhone"
+          }
+        ],
+        "inbox_file": "news/company-AAPL-2026-10.json"
+      },
+      "result": {
+        "ticker": "AAPL",
+        "scope": "company",
+        "url": "https://theguardian.com/technology/2026/oct/26/iphone-duo-owners-cracks-apple-first-foldable-handset",
+        "title": "iPhone Duo owners report cracks in Apple’s first foldable handset",
+        "published_at": "2026-10-26",
+        "news_item_id": 37,
+        "duplicate": true,
+        "source_id": 37,
+        "source_status": "corroborated",
+        "source_reason": "ok",
+        "status": "corroborated",
+        "reason": "corroborated",
+        "message": null,
+        "title_similarity": 1,
+        "matched_title": "iPhone Duo owners report cracks in Apple's first foldable handset",
+        "date_delta_hours": 0,
+        "page_published_at": "2026-10-26T19:15:37.000Z",
+        "wire_copy": false,
+        "wire_agency": null,
+        "corroboration": {
+          "count": 2,
+          "independent_groups": [
+            "bbc",
+            "paramount"
+          ],
+          "source_ids": [
+            39,
+            40,
+            58
+          ],
+          "not_independent": []
+        },
+        "references": [
+          {
+            "url": "https://bbc.co.uk/news/articles/c893zwlev2xpo",
+            "source_id": 40,
+            "status": "verified",
+            "reason": "ok",
+            "outlet_key": "bbc"
+          },
+          {
+            "url": "https://cbsnews.com/news/iphone-duo-owners-report-cracked-screens-apple-foldable",
+            "source_id": 58,
+            "status": "verified",
+            "reason": "ok",
+            "outlet_key": "cbs"
+          },
+          {
+            "url": "https://cbsnews.com/video/apples-new-foldable-iphone-hits-a-snag",
+            "source_id": 39,
+            "status": "verified",
+            "reason": "ok",
+            "outlet_key": "cbs"
+          },
+          {
+            "url": "https://news.sky.com/story/users-reporting-problems-with-apples-first-foldable-iphone-just-days-after-going-on-sale-13604220",
+            "source_id": 38,
+            "status": "unreachable",
+            "reason": "http_error",
+            "outlet_key": "skynews"
+          }
+        ],
+        "references_without_url": 0,
+        "upgraded_items": []
+      }
+    },
+    {
+      "line": null,
+      "index": 1,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AAPL",
+        "url": "https://bbc.co.uk/news/articles/c893zwlev2xpo",
+        "title": "Apple to replace iPhone Duos affected by screen problem",
+        "published_at": "2026-10-27",
+        "outlet": "BBC News",
+        "summary": "Photos shared online showed faults appearing on the screens of Apple's first foldable device.",
+        "references": [
+          {
+            "url": "https://news.sky.com/story/users-reporting-problems-with-apples-first-foldable-iphone-just-days-after-going-on-sale-13604220",
+            "title": "Sky News: Users reporting problems with Apple's first foldable iPhone"
+          },
+          {
+            "url": "https://theguardian.com/technology/2026/oct/26/iphone-duo-owners-cracks-apple-first-foldable-handset",
+            "title": "The Guardian: iPhone Duo owners report cracks in Apple’s first foldable handset"
+          }
+        ],
+        "inbox_file": "news/company-AAPL-2026-10.json"
+      },
+      "result": {
+        "ticker": "AAPL",
+        "scope": "company",
+        "url": "https://bbc.co.uk/news/articles/c893zwlev2xpo",
+        "title": "Apple to replace iPhone Duos affected by screen problem",
+        "published_at": "2026-10-27",
+        "news_item_id": 39,
+        "duplicate": true,
+        "source_id": 40,
+        "source_status": "verified",
+        "source_reason": "ok",
+        "status": "verified",
+        "reason": "ok",
+        "message": null,
+        "title_similarity": 1,
+        "matched_title": "Apple to replace iPhone Duos affected by screen problem",
+        "date_delta_hours": 0,
+        "page_published_at": "2026-10-27T01:16:22.824Z",
+        "wire_copy": false,
+        "wire_agency": null,
+        "corroboration": {
+          "count": 1,
+          "independent_groups": [
+            "guardian-media-group"
+          ],
+          "source_ids": [
+            37
+          ],
+          "not_independent": []
+        },
+        "references": [
+          {
+            "url": "https://news.sky.com/story/users-reporting-problems-with-apples-first-foldable-iphone-just-days-after-going-on-sale-13604220",
+            "source_id": 38,
+            "status": "unreachable",
+            "reason": "http_error",
+            "outlet_key": "skynews"
+          },
+          {
+            "url": "https://theguardian.com/technology/2026/oct/26/iphone-duo-owners-cracks-apple-first-foldable-handset",
+            "source_id": 37,
+            "status": "corroborated",
+            "reason": "ok",
+            "outlet_key": "guardian"
+          }
+        ],
+        "references_without_url": 0,
+        "upgraded_items": []
+      }
+    },
+    {
+      "line": null,
+      "index": 2,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AAPL",
+        "url": "https://cbsnews.com/video/apples-new-foldable-iphone-hits-a-snag",
+        "title": "Apple's new foldable iPhone hits a snag",
+        "published_at": "2026-10-27",
+        "outlet": "CBS News",
+        "summary": "Some users are reporting cracks in Apple's new foldable iPhone, which was released last week. Jo Ling Kent reports.",
+        "references": [
+          {
+            "url": "https://news.sky.com/story/users-reporting-problems-with-apples-first-foldable-iphone-just-days-after-going-on-sale-13604220",
+            "title": "Sky News: Users reporting problems with Apple's first foldable iPhone"
+          },
+          {
+            "url": "https://theguardian.com/technology/2026/oct/26/iphone-duo-owners-cracks-apple-first-foldable-handset",
+            "title": "The Guardian: iPhone Duo owners report cracks in Apple’s first foldable handset"
+          }
+        ],
+        "inbox_file": "news/company-AAPL-2026-10.json"
+      },
+      "result": {
+        "ticker": "AAPL",
+        "scope": "company",
+        "url": "https://cbsnews.com/video/apples-new-foldable-iphone-hits-a-snag",
+        "title": "Apple's new foldable iPhone hits a snag",
+        "published_at": "2026-10-27",
+        "news_item_id": 40,
+        "duplicate": true,
+        "source_id": 39,
+        "source_status": "verified",
+        "source_reason": "ok",
+        "status": "verified",
+        "reason": "ok",
+        "message": null,
+        "title_similarity": 1,
+        "matched_title": "Apple's new foldable iPhone hits a snag",
+        "date_delta_hours": 0,
+        "page_published_at": "2026-10-27T12:35:00.000Z",
+        "wire_copy": false,
+        "wire_agency": null,
+        "corroboration": {
+          "count": 1,
+          "independent_groups": [
+            "guardian-media-group"
+          ],
+          "source_ids": [
+            37
+          ],
+          "not_independent": []
+        },
+        "references": [
+          {
+            "url": "https://news.sky.com/story/users-reporting-problems-with-apples-first-foldable-iphone-just-days-after-going-on-sale-13604220",
+            "source_id": 38,
+            "status": "unreachable",
+            "reason": "http_error",
+            "outlet_key": "skynews"
+          },
+          {
+            "url": "https://theguardian.com/technology/2026/oct/26/iphone-duo-owners-cracks-apple-first-foldable-handset",
+            "source_id": 37,
+            "status": "corroborated",
+            "reason": "ok",
+            "outlet_key": "guardian"
+          }
+        ],
+        "references_without_url": 0,
+        "upgraded_items": []
+      }
+    },
+    {
+      "line": null,
+      "index": 3,
+      "status": "pending",
+      "reason": "source_unreachable",
+      "input": {
+        "ticker": "AAPL",
+        "url": "https://news.sky.com/story/users-reporting-problems-with-apples-first-foldable-iphone-just-days-after-going-on-sale-13604220",
+        "title": "Users reporting problems with Apple's first foldable iPhone",
+        "published_at": "2026-10-27",
+        "outlet": "Sky News",
+        "summary": "Owners of Apple's first foldable iPhone have reported problems with the device's screen - just days after the product went on sale.",
+        "references": [
+          {
+            "url": "https://bbc.co.uk/news/articles/c893zwlev2xpo",
+            "title": "BBC News: Apple to replace iPhone Duos affected by screen problem"
+          },
+          {
+            "url": "https://cbsnews.com/news/iphone-duo-owners-report-cracked-screens-apple-foldable",
+            "title": "CBS News: Apple's first foldable phone broke within hours, some owners say"
+          },
+          {
+            "url": "https://cbsnews.com/video/apples-new-foldable-iphone-hits-a-snag",
+            "title": "CBS News: Apple's new foldable iPhone hits a snag"
+          },
+          {
+            "url": "https://theguardian.com/technology/2026/oct/26/iphone-duo-owners-cracks-apple-first-foldable-handset",
+            "title": "The Guardian: iPhone Duo owners report cracks in Apple’s first foldable handset"
+          }
+        ],
+        "inbox_file": "news/company-AAPL-2026-10.json"
+      },
+      "result": {
+        "ticker": "AAPL",
+        "scope": "company",
+        "url": "https://news.sky.com/story/users-reporting-problems-with-apples-first-foldable-iphone-just-days-after-going-on-sale-13604220",
+        "title": "Users reporting problems with Apple's first foldable iPhone",
+        "published_at": "2026-10-27",
+        "news_item_id": 38,
+        "duplicate": true,
+        "source_id": 38,
+        "source_status": "unreachable",
+        "source_reason": "http_error",
+        "status": "pending",
+        "reason": "source_unreachable",
+        "message": "source fetch failed (http_error HTTP 403); retry later",
+        "title_similarity": null,
+        "matched_title": null,
+        "date_delta_hours": null,
+        "page_published_at": null,
+        "wire_copy": false,
+        "wire_agency": null,
+        "corroboration": null,
+        "references": [
+          {
+            "url": "https://bbc.co.uk/news/articles/c893zwlev2xpo",
+            "source_id": 40,
+            "status": "verified",
+            "reason": "ok",
+            "outlet_key": "bbc"
+          },
+          {
+            "url": "https://cbsnews.com/news/iphone-duo-owners-report-cracked-screens-apple-foldable",
+            "source_id": 58,
+            "status": "verified",
+            "reason": "ok",
+            "outlet_key": "cbs"
+          },
+          {
+            "url": "https://cbsnews.com/video/apples-new-foldable-iphone-hits-a-snag",
+            "source_id": 39,
+            "status": "verified",
+            "reason": "ok",
+            "outlet_key": "cbs"
+          },
+          {
+            "url": "https://theguardian.com/technology/2026/oct/26/iphone-duo-owners-cracks-apple-first-foldable-handset",
+            "source_id": 37,
+            "status": "corroborated",
+            "reason": "ok",
+            "outlet_key": "guardian"
+          }
+        ],
+        "references_without_url": 0,
+        "upgraded_items": []
+      }
+    },
+    {
+      "line": null,
+      "index": 4,
+      "status": "verified",
+      "reason": "ok",
+      "input": {
+        "ticker": "AAPL",
+        "url": "https://cbsnews.com/news/iphone-duo-owners-report-cracked-screens-apple-foldable",
+        "title": "Apple's first foldable phone broke within hours, some owners say",
+        "published_at": "2026-10-28",
+        "outlet": "CBS News",
+        "summary": "\"I didn't even make it through setup,\" one consumer said after his new iPhone Duo cracked shortly after he bought it.",
+        "references": [
+          {
+            "url": "https://news.sky.com/story/users-reporting-problems-with-apples-first-foldable-iphone-just-days-after-going-on-sale-13604220",
+            "title": "Sky News: Users reporting problems with Apple's first foldable iPhone"
+          },
+          {
+            "url": "https://theguardian.com/technology/2026/oct/26/iphone-duo-owners-cracks-apple-first-foldable-handset",
+            "title": "The Guardian: iPhone Duo owners report cracks in Apple’s first foldable handset"
+          }
+        ],
+        "inbox_file": "news/company-AAPL-2026-10.json"
+      },
+      "result": {
+        "ticker": "AAPL",
+        "scope": "company",
+        "url": "https://cbsnews.com/news/iphone-duo-owners-report-cracked-screens-apple-foldable",
+        "title": "Apple's first foldable phone broke within hours, some owners say",
+        "published_at": "2026-10-28",
+        "news_item_id": 57,
+        "duplicate": false,
+        "source_id": 58,
+        "source_status": "verified",
+        "source_reason": "ok",
+        "status": "verified",
+        "reason": "ok",
+        "message": null,
+        "title_similarity": 0.729,
+        "matched_title": "iPhone Duo owners say Apple's new foldable phone broke within hours of purchase",
+        "date_delta_hours": 0,
+        "page_published_at": "2026-10-28T19:30:00.000Z",
+        "wire_copy": false,
+        "wire_agency": null,
+        "corroboration": {
+          "count": 1,
+          "independent_groups": [
+            "guardian-media-group"
+          ],
+          "source_ids": [
+            37
+          ],
+          "not_independent": []
+        },
+        "references": [
+          {
+            "url": "https://news.sky.com/story/users-reporting-problems-with-apples-first-foldable-iphone-just-days-after-going-on-sale-13604220",
+            "source_id": 38,
+            "status": "unreachable",
+            "reason": "http_error",
+            "outlet_key": "skynews"
+          },
+          {
+            "url": "https://theguardian.com/technology/2026/oct/26/iphone-duo-owners-cracks-apple-first-foldable-handset",
+            "source_id": 37,
+            "status": "corroborated",
+            "reason": "ok",
+            "outlet_key": "guardian"
+          }
+        ],
+        "references_without_url": 0,
+        "upgraded_items": []
+      }
+    }
+  ]
+}

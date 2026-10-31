@@ -1,0 +1,39 @@
+{
+  "name": "stock-predictor",
+  "version": "0.1.0",
+  "description": "Next-month direction/range predictions for GOOGL, AMZN, AAPL, SPCX from verified month-end closes, verified news and research notes, stored in MySQL through the stockdb MCP server",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "setup": "node scripts/init-env.mjs && docker compose up -d --wait",
+    "db:up": "docker compose up -d --wait",
+    "db:down": "docker compose down",
+    "db:migrate": "node scripts/migrate.mjs",
+    "db:test:up": "bash scripts/test-db.sh up",
+    "db:test:down": "bash scripts/test-db.sh down",
+    "mcp": "node mcp-server/index.mjs",
+    "ingest": "node scripts/ingest.mjs",
+    "backfill": "node scripts/backfill.mjs",
+    "crawl": "node scripts/crawl.mjs",
+    "features": "node scripts/features.mjs",
+    "context": "node scripts/context.mjs",
+    "baseline": "node scripts/baseline.mjs",
+    "backtest": "node scripts/backtest.mjs",
+    "draw": "node scripts/draw.mjs",
+    "run-status": "node scripts/run-status.mjs",
+    "test": "node --test --test-concurrency=1 test/*.test.mjs",
+    "test:live": "node --test test/live/*.live.test.mjs",
+    "audit": "node scripts/audit.mjs",
+    "validate": "node scripts/validate.mjs",
+    "smoke": "bash scripts/smoke.sh"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "cheerio": "^1.0.0",
+    "mysql2": "^3.24.6",
+    "zod": "^3.25.76"
+  }
+}

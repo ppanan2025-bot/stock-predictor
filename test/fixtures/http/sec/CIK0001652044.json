@@ -1,0 +1,10 @@
+{"cik":"0001652044","name":"Alphabet Inc.","_comment":"SYNTHETIC TEST FIXTURE in the data.sec.gov submissions format (column-oriented filings.recent); accession numbers and documents are invented","tickers":["GOOGL","GOOG"],
+ "filings":{"recent":{
+  "accessionNumber":["0001652044-26-000090","0001652044-26-000088","0001652044-26-000080","0001652044-26-000070","0001652044-26-000050","0001652044-26-000010","0001652044-25-000099"],
+  "filingDate":["2026-10-30","2026-10-29","2026-10-29","2026-09-15","2026-07-24","2026-02-04","2025-06-01"],
+  "reportDate":["2026-10-30","2026-09-30","2026-10-29","2026-09-12","2026-06-30","2025-12-31","2025-06-01"],
+  "form":["4","10-Q","8-K","8-K","10-Q","10-K","8-K"],
+  "items":["","","2.02,9.01","5.07","","","2.02,9.01"],
+  "primaryDocument":["xslF345X05/form4.xml","goog-20260930.htm","goog-20261029.htm","goog-20260915.htm","goog-20260630.htm","goog-20251231.htm","goog-20250601.htm"],
+  "primaryDocDescription":["FORM 4","10-Q","8-K","8-K","10-Q","10-K","8-K"]
+ }}}

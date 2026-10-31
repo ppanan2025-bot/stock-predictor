@@ -1,0 +1,106 @@
+{
+  "chart_code_version": "chart-v1",
+  "generated_from": "stockdb",
+  "ticker": "SPCX",
+  "as_of_month": "2026-10",
+  "target_month": "2026-11",
+  "run_id": 1,
+  "values_source": "prediction",
+  "prediction": {
+    "prediction_id": 4,
+    "version": 1,
+    "pack_id": 6,
+    "report_sha256": "a182d69956494b2fa29f9d35b53f187b4fe804e5d0d363e726e0ca7b7fc49930"
+  },
+  "call": {
+    "direction": "flat",
+    "p_up": "0.5000",
+    "low": "-0.177563",
+    "mid": "-0.002206",
+    "high": "0.173151",
+    "confidence_label": "low"
+  },
+  "analyses": [
+    {
+      "analysis_id": 11,
+      "agent": "fundamental",
+      "lo": "-0.150000",
+      "hi": "0.150000",
+      "mid": "0.000000",
+      "confidence": "0.150"
+    },
+    {
+      "analysis_id": 13,
+      "agent": "technical",
+      "lo": "-0.180000",
+      "hi": "0.170000",
+      "mid": "-0.005000",
+      "confidence": "0.150"
+    },
+    {
+      "analysis_id": 22,
+      "agent": "news_sentiment",
+      "lo": "-0.200000",
+      "hi": "0.200000",
+      "mid": "0.000000",
+      "confidence": "0.100"
+    },
+    {
+      "analysis_id": 23,
+      "agent": "macro_sector",
+      "lo": "-0.180000",
+      "hi": "0.180000",
+      "mid": "0.000000",
+      "confidence": "0.150"
+    },
+    {
+      "analysis_id": 20,
+      "agent": "risk_skeptic",
+      "lo": "-0.200000",
+      "hi": "0.160000",
+      "mid": "-0.020000",
+      "confidence": "0.150"
+    }
+  ],
+  "points": [
+    {
+      "month": "2026-06",
+      "trade_date": "2026-06-30",
+      "close": "170.8600",
+      "price_id": 309,
+      "submission_id": 309
+    },
+    {
+      "month": "2026-07",
+      "trade_date": "2026-07-31",
+      "close": "108.3700",
+      "price_id": 313,
+      "submission_id": 313
+    },
+    {
+      "month": "2026-08",
+      "trade_date": "2026-08-31",
+      "close": "143.6900",
+      "price_id": 317,
+      "submission_id": 317
+    },
+    {
+      "month": "2026-09",
+      "trade_date": "2026-09-30",
+      "close": "150.8600",
+      "price_id": 321,
+      "submission_id": 321
+    },
+    {
+      "month": "2026-10",
+      "trade_date": "2026-10-30",
+      "close": "134.7200",
+      "price_id": 365,
+      "submission_id": 365
+    }
+  ],
+  "data_as_of": "2026-10-30",
+  "svg_file": "SPCX-prediction.svg",
+  "svg_sha256": "5905c4b682603e87807b47233435233a8ba00eab1153a7619f6d517c6aaa86d5",
+  "render_input_sha256": "4048df6d92cb48d9645ffc2705f37dc4ecce825c3ca793cfa6a2e743071bc174"
+}

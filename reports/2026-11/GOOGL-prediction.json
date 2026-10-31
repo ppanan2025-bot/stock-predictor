@@ -1,0 +1,393 @@
+{
+  "chart_code_version": "chart-v1",
+  "generated_from": "stockdb",
+  "ticker": "GOOGL",
+  "as_of_month": "2026-10",
+  "target_month": "2026-11",
+  "run_id": 1,
+  "values_source": "prediction",
+  "prediction": {
+    "prediction_id": 3,
+    "version": 1,
+    "pack_id": 3,
+    "report_sha256": "fb5b76b53535b658c54f5115004d57b8c933fb2d69e94c1ef5028c72a117c7c3"
+  },
+  "call": {
+    "direction": "flat",
+    "p_up": "0.5489",
+    "low": "-0.124979",
+    "mid": "0.004496",
+    "high": "0.152971",
+    "confidence_label": "low"
+  },
+  "analyses": [
+    {
+      "analysis_id": 15,
+      "agent": "fundamental",
+      "lo": "-0.060000",
+      "hi": "0.080000",
+      "mid": "0.010000",
+      "confidence": "0.350"
+    },
+    {
+      "analysis_id": 5,
+      "agent": "technical",
+      "lo": "-0.080000",
+      "hi": "0.100000",
+      "mid": "0.010000",
+      "confidence": "0.300"
+    },
+    {
+      "analysis_id": 3,
+      "agent": "news_sentiment",
+      "lo": "-0.080000",
+      "hi": "0.060000",
+      "mid": "-0.010000",
+      "confidence": "0.250"
+    },
+    {
+      "analysis_id": 9,
+      "agent": "macro_sector",
+      "lo": "-0.080000",
+      "hi": "0.080000",
+      "mid": "0.000000",
+      "confidence": "0.250"
+    },
+    {
+      "analysis_id": 24,
+      "agent": "risk_skeptic",
+      "lo": "-0.160000",
+      "hi": "0.120000",
+      "mid": "-0.020000",
+      "confidence": "0.250"
+    }
+  ],
+  "points": [
+    {
+      "month": "2023-01",
+      "trade_date": "2023-01-31",
+      "close": "98.8400",
+      "price_id": 346,
+      "submission_id": 346
+    },
+    {
+      "month": "2023-02",
+      "trade_date": "2023-02-28",
+      "close": "90.0600",
+      "price_id": 347,
+      "submission_id": 347
+    },
+    {
+      "month": "2023-03",
+      "trade_date": "2023-03-31",
+      "close": "103.7300",
+      "price_id": 348,
+      "submission_id": 348
+    },
+    {
+      "month": "2023-04",
+      "trade_date": "2023-04-28",
+      "close": "107.3400",
+      "price_id": 349,
+      "submission_id": 349
+    },
+    {
+      "month": "2023-05",
+      "trade_date": "2023-05-31",
+      "close": "122.8700",
+      "price_id": 350,
+      "submission_id": 350
+    },
+    {
+      "month": "2023-06",
+      "trade_date": "2023-06-30",
+      "close": "119.7000",
+      "price_id": 351,
+      "submission_id": 351
+    },
+    {
+      "month": "2023-07",
+      "trade_date": "2023-07-31",
+      "close": "132.7200",
+      "price_id": 352,
+      "submission_id": 352
+    },
+    {
+      "month": "2023-08",
+      "trade_date": "2023-08-31",
+      "close": "136.1700",
+      "price_id": 353,
+      "submission_id": 353
+    },
+    {
+      "month": "2023-09",
+      "trade_date": "2023-09-29",
+      "close": "130.8600",
+      "price_id": 354,
+      "submission_id": 354
+    },
+    {
+      "month": "2023-10",
+      "trade_date": "2023-10-31",
+      "close": "124.0800",
+      "price_id": 355,
+      "submission_id": 355
+    },
+    {
+      "month": "2023-11",
+      "trade_date": "2023-11-30",
+      "close": "132.5300",
+      "price_id": 356,
+      "submission_id": 356
+    },
+    {
+      "month": "2023-12",
+      "trade_date": "2023-12-29",
+      "close": "139.6900",
+      "price_id": 357,
+      "submission_id": 357
+    },
+    {
+      "month": "2024-01",
+      "trade_date": "2024-01-31",
+      "close": "140.1000",
+      "price_id": 219,
+      "submission_id": 219
+    },
+    {
+      "month": "2024-02",
+      "trade_date": "2024-02-29",
+      "close": "138.4600",
+      "price_id": 222,
+      "submission_id": 222
+    },
+    {
+      "month": "2024-03",
+      "trade_date": "2024-03-28",
+      "close": "150.9300",
+      "price_id": 225,
+      "submission_id": 225
+    },
+    {
+      "month": "2024-04",
+      "trade_date": "2024-04-30",
+      "close": "162.7800",
+      "price_id": 228,
+      "submission_id": 228
+    },
+    {
+      "month": "2024-05",
+      "trade_date": "2024-05-31",
+      "close": "172.5000",
+      "price_id": 231,
+      "submission_id": 231
+    },
+    {
+      "month": "2024-06",
+      "trade_date": "2024-06-28",
+      "close": "182.1500",
+      "price_id": 234,
+      "submission_id": 234
+    },
+    {
+      "month": "2024-07",
+      "trade_date": "2024-07-31",
+      "close": "171.5400",
+      "price_id": 237,
+      "submission_id": 237
+    },
+    {
+      "month": "2024-08",
+      "trade_date": "2024-08-30",
+      "close": "163.3800",
+      "price_id": 240,
+      "submission_id": 240
+    },
+    {
+      "month": "2024-09",
+      "trade_date": "2024-09-30",
+      "close": "165.8500",
+      "price_id": 243,
+      "submission_id": 243
+    },
+    {
+      "month": "2024-10",
+      "trade_date": "2024-10-31",
+      "close": "171.1100",
+      "price_id": 246,
+      "submission_id": 246
+    },
+    {
+      "month": "2024-11",
+      "trade_date": "2024-11-29",
+      "close": "168.9500",
+      "price_id": 249,
+      "submission_id": 249
+    },
+    {
+      "month": "2024-12",
+      "trade_date": "2024-12-31",
+      "close": "189.3000",
+      "price_id": 252,
+      "submission_id": 252
+    },
+    {
+      "month": "2025-01",
+      "trade_date": "2025-01-31",
+      "close": "204.0200",
+      "price_id": 255,
+      "submission_id": 255
+    },
+    {
+      "month": "2025-02",
+      "trade_date": "2025-02-28",
+      "close": "170.2800",
+      "price_id": 258,
+      "submission_id": 258
+    },
+    {
+      "month": "2025-03",
+      "trade_date": "2025-03-31",
+      "close": "154.6400",
+      "price_id": 261,
+      "submission_id": 261
+    },
+    {
+      "month": "2025-04",
+      "trade_date": "2025-04-30",
+      "close": "158.8000",
+      "price_id": 264,
+      "submission_id": 264
+    },
+    {
+      "month": "2025-05",
+      "trade_date": "2025-05-30",
+      "close": "171.7400",
+      "price_id": 267,
+      "submission_id": 267
+    },
+    {
+      "month": "2025-06",
+      "trade_date": "2025-06-30",
+      "close": "176.2300",
+      "price_id": 270,
+      "submission_id": 270
+    },
+    {
+      "month": "2025-07",
+      "trade_date": "2025-07-31",
+      "close": "191.9000",
+      "price_id": 273,
+      "submission_id": 273
+    },
+    {
+      "month": "2025-08",
+      "trade_date": "2025-08-29",
+      "close": "212.9100",
+      "price_id": 276,
+      "submission_id": 276
+    },
+    {
+      "month": "2025-09",
+      "trade_date": "2025-09-30",
+      "close": "243.1000",
+      "price_id": 279,
+      "submission_id": 279
+    },
+    {
+      "month": "2025-10",
+      "trade_date": "2025-10-31",
+      "close": "281.1900",
+      "price_id": 282,
+      "submission_id": 282
+    },
+    {
+      "month": "2025-11",
+      "trade_date": "2025-11-28",
+      "close": "320.1800",
+      "price_id": 285,
+      "submission_id": 285
+    },
+    {
+      "month": "2025-12",
+      "trade_date": "2025-12-31",
+      "close": "313.0000",
+      "price_id": 288,
+      "submission_id": 288
+    },
+    {
+      "month": "2026-01",
+      "trade_date": "2026-01-30",
+      "close": "338.0000",
+      "price_id": 291,
+      "submission_id": 291
+    },
+    {
+      "month": "2026-02",
+      "trade_date": "2026-02-27",
+      "close": "311.7600",
+      "price_id": 294,
+      "submission_id": 294
+    },
+    {
+      "month": "2026-03",
+      "trade_date": "2026-03-31",
+      "close": "287.5600",
+      "price_id": 297,
+      "submission_id": 297
+    },
+    {
+      "month": "2026-04",
+      "trade_date": "2026-04-30",
+      "close": "384.8000",
+      "price_id": 300,
+      "submission_id": 300
+    },
+    {
+      "month": "2026-05",
+      "trade_date": "2026-05-29",
+      "close": "380.3400",
+      "price_id": 303,
+      "submission_id": 303
+    },
+    {
+      "month": "2026-06",
+      "trade_date": "2026-06-30",
+      "close": "357.3700",
+      "price_id": 306,
+      "submission_id": 306
+    },
+    {
+      "month": "2026-07",
+      "trade_date": "2026-07-31",
+      "close": "356.1300",
+      "price_id": 310,
+      "submission_id": 310
+    },
+    {
+      "month": "2026-08",
+      "trade_date": "2026-08-31",
+      "close": "339.3500",
+      "price_id": 314,
+      "submission_id": 314
+    },
+    {
+      "month": "2026-09",
+      "trade_date": "2026-09-30",
+      "close": "344.0800",
+      "price_id": 318,
+      "submission_id": 318
+    },
+    {
+      "month": "2026-10",
+      "trade_date": "2026-10-30",
+      "close": "279.8400",
+      "price_id": 362,
+      "submission_id": 362
+    }
+  ],
+  "data_as_of": "2026-10-30",
+  "svg_file": "GOOGL-prediction.svg",
+  "svg_sha256": "2752150b4b18c040badfef1bb5af49169afb8454c2bccb8db0805cdc0c7ba3d1",
+  "render_input_sha256": "75a5a2a342cbb67445f138f78137dcbbe4c6a9d64537b72ce57204a9658e3ee2"
+}

@@ -1,0 +1,35 @@
+{
+  "price": {
+    "tolerance_abs": 0.01,
+    "submitted_tolerance_abs": 0.01,
+    "required_sources": ["nasdaq", "cnbc"],
+    "canonical_source": "nasdaq",
+    "cnbc_basis": "adjusted",
+    "reject_zero_volume": true,
+    "settle_minutes_after_close": 90,
+    "stale_grace_trading_days": 2,
+    "extra_closures": ["2025-01-09"]
+  },
+  "news": {
+    "title_similarity_min": 0.6,
+    "date_tolerance_hours": 48,
+    "min_text_len": 300,
+    "fetch": { "timeout_ms": 15000, "max_bytes": 3145728, "max_redirects": 3 },
+    "ticker_aliases": {
+      "GOOGL": ["Alphabet", "Google"],
+      "AMZN": ["Amazon"],
+      "AAPL": ["Apple"],
+      "SPCX": ["SpaceX", "Space Exploration Technologies"]
+    },
+    "corroboration": { "window_hours": 72, "min_score": 0.43, "relaxed_min_score": 0.35, "body_keyword_top": 25, "body_keyword_jaccard_min": 0.3,
+                       "min_shared_salient_tokens": 2,
+                       "min_independent_outlets": 2, "syndication_threshold": 0.85 }
+  },
+  "excerpt": { "min_len": 40, "max_len": 1200, "numbers_in_claim_must_be_in_excerpt": true },
+  "report": { "required_sections": ["Summary", "Baseline vs Consensus", "Analyzer Views", "Bull & Bear Case", "Risks",
+              "What Would Change the Call", "References", "Data As Of", "Disclaimer"],
+              "number_tolerance_pct": 0.05, "exempt_small_integers_max": 10,
+              "forbidden_phrases": ["guaranteed", "certain to", "will definitely", "can't lose", "cannot lose", "price target", "risk-free",
+                                    "buy", "sell", "strong buy", "upside of", "analysts expect"],
+              "disclaimer": "This report is an automated statistical and research summary, not investment advice." }
+}

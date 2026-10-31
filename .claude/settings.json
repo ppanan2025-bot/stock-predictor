@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "enabledMcpjsonServers": ["stockdb"],
+  "permissions": {
+    "allow": [
+      "mcp__stockdb__stats", "mcp__stockdb__list_companies", "mcp__stockdb__price_history", "mcp__stockdb__get_features",
+      "mcp__stockdb__search_resources", "mcp__stockdb__get_source", "mcp__stockdb__get_research_pack", "mcp__stockdb__get_consensus", "mcp__stockdb__get_prediction", "mcp__stockdb__list_predictions",
+      "mcp__stockdb__run_status", "mcp__stockdb__run_readonly_sql",
+      "mcp__stockdb__start_run", "mcp__stockdb__update_agent_task", "mcp__stockdb__save_analysis", "mcp__stockdb__save_review",
+      "mcp__stockdb__save_prediction", "mcp__stockdb__withdraw_prediction", "mcp__stockdb__finalize_report",
+      "WebSearch", "WebFetch", "Bash(npm run:*)", "Bash(npm test)"
+    ],
+    "deny": ["Read(./.env)", "Edit(./.env)", "Write(./.env)", "Read(./.env.*)", "Edit(./.env.*)", "Write(./.env.*)"]
+  },
+  "hooks": {
+    "SessionStart": [
+      { "hooks": [{ "type": "command", "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/session-status.mjs\"", "timeout": 15 }] }
+    ],
+    "PreToolUse": [
+      { "matcher": "Bash",
+        "hooks": [{ "type": "command", "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/guard-bash.mjs\"", "timeout": 10 }] },
+      { "matcher": "Write|Edit|MultiEdit|NotebookEdit",
+        "hooks": [{ "type": "command", "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/guard-protected-files.mjs\"", "timeout": 10 }] },
+      { "matcher": "mcp__stockdb__ingest_price",
+        "hooks": [{ "type": "command", "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/verify-price-ingest.mjs\"", "timeout": 120 }] },
+      { "matcher": "mcp__stockdb__add_news_item|mcp__stockdb__add_source",
+        "hooks": [{ "type": "command", "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/verify-news-source.mjs\"", "timeout": 90 }] },
+      { "matcher": "mcp__stockdb__add_research_note",
+        "hooks": [{ "type": "command", "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/verify-research-excerpt.mjs\"", "timeout": 90 }] },
+      { "matcher": "Write|Edit|MultiEdit",
+        "hooks": [{ "type": "command", "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/guard-report-write.mjs\"", "timeout": 30 }] },
+      { "matcher": "mcp__stockdb__save_analysis",
+        "hooks": [{ "type": "command", "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/verify-analysis.mjs\"", "timeout": 30 }] },
+      { "matcher": "mcp__stockdb__save_prediction",
+        "hooks": [{ "type": "command", "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/check-prediction.mjs\"", "timeout": 30 }] },
+      { "matcher": "mcp__stockdb__finalize_report",
+        "hooks": [{ "type": "command", "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/check-finalize.mjs\"", "timeout": 30 }] }
+    ],
+    "PostToolUse": [
+      { "matcher": "WebFetch|mcp__stockdb__get_source|mcp__stockdb__get_research_pack|mcp__stockdb__get_consensus|mcp__stockdb__search_resources|mcp__stockdb__get_prediction",
+        "hooks": [{ "type": "command", "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/flag-untrusted-content.mjs\"", "timeout": 10 }] },
+      { "matcher": "mcp__stockdb__.*|WebFetch|WebSearch",
+        "hooks": [{ "type": "command", "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/log-tool-audit.mjs\"", "timeout": 10 }] }
+    ]
+  }
+}

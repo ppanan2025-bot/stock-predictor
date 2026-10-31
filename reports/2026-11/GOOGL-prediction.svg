@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="520" viewBox="0 0 960 520" font-family="Helvetica, Arial, sans-serif" font-size="12">
+<rect x="0" y="0" width="960" height="520" fill="#ffffff"/>
+<text x="80" y="28" font-size="18" font-weight="bold">GOOGL: verified month-end closes and 2026-11 prediction</text>
+<text x="80" y="48" fill="#444">Consensus flat: mid +0.4% [-12.5% .. +15.3%], p_up 0.55, confidence low (prediction 3 v1)</text>
+<line x1="80" y1="418.20" x2="750" y2="418.20" stroke="#e5e5e5"/>
+<text x="72" y="422.20" text-anchor="end" fill="#333">$100.00</text>
+<line x1="80" y1="303.09" x2="750" y2="303.09" stroke="#e5e5e5"/>
+<text x="72" y="307.09" text-anchor="end" fill="#333">$200.00</text>
+<line x1="80" y1="187.97" x2="750" y2="187.97" stroke="#e5e5e5"/>
+<text x="72" y="191.97" text-anchor="end" fill="#333">$300.00</text>
+<line x1="80" y1="72.86" x2="750" y2="72.86" stroke="#e5e5e5"/>
+<text x="72" y="76.86" text-anchor="end" fill="#333">$400.00</text>
+<line x1="80" y1="70" x2="80" y2="450" stroke="#333"/><line x1="80" y1="450" x2="750" y2="450" stroke="#333"/>
+<text x="18" y="260.00" transform="rotate(-90 18 260.00)" text-anchor="middle" fill="#333">Month-end close (USD, unadjusted)</text>
+<line x1="80.00" y1="450" x2="80.00" y2="455" stroke="#333"/>
+<text x="80.00" y="470" text-anchor="middle" fill="#333">2023-01</text>
+<line x1="167.39" y1="450" x2="167.39" y2="455" stroke="#333"/>
+<text x="167.39" y="470" text-anchor="middle" fill="#333">2023-07</text>
+<line x1="254.78" y1="450" x2="254.78" y2="455" stroke="#333"/>
+<text x="254.78" y="470" text-anchor="middle" fill="#333">2024-01</text>
+<line x1="342.17" y1="450" x2="342.17" y2="455" stroke="#333"/>
+<text x="342.17" y="470" text-anchor="middle" fill="#333">2024-07</text>
+<line x1="429.57" y1="450" x2="429.57" y2="455" stroke="#333"/>
+<text x="429.57" y="470" text-anchor="middle" fill="#333">2025-01</text>
+<line x1="516.96" y1="450" x2="516.96" y2="455" stroke="#333"/>
+<text x="516.96" y="470" text-anchor="middle" fill="#333">2025-07</text>
+<line x1="604.35" y1="450" x2="604.35" y2="455" stroke="#333"/>
+<text x="604.35" y="470" text-anchor="middle" fill="#333">2026-01</text>
+<line x1="691.74" y1="450" x2="691.74" y2="455" stroke="#333"/>
+<text x="691.74" y="470" text-anchor="middle" fill="#333">2026-07</text>
+<line x1="735.43" y1="450" x2="735.43" y2="455" stroke="#333"/>
+<text x="735.43" y="470" text-anchor="middle" fill="#333">2026-10</text>
+<line x1="750.00" y1="450" x2="750.00" y2="455" stroke="#333"/>
+<text x="750.00" y="470" text-anchor="middle" fill="#333">2026-11</text>
+<text x="415.00" y="498" text-anchor="middle" fill="#333">Month</text>
+<polygon points="735.43,211.18 750.00,161.90 750.00,251.44" fill="#1f77b4" fill-opacity="0.15" stroke="none"/>
+<line x1="750.00" y1="161.90" x2="750.00" y2="251.44" stroke="#1f77b4" stroke-width="2"/>
+<line x1="735.43" y1="211.18" x2="750.00" y2="209.73" stroke="#1f77b4" stroke-width="2" stroke-dasharray="6 4"/>
+<polyline points="80.00,419.54 94.57,429.64 109.13,413.91 123.70,409.75 138.26,391.87 152.83,395.52 167.39,380.54 181.96,376.56 196.52,382.68 211.09,390.48 225.65,380.75 240.22,372.51 254.78,372.04 269.35,373.93 283.91,359.57 298.48,345.93 313.04,334.74 327.61,323.63 342.17,335.85 356.74,345.24 371.30,342.40 385.87,336.34 400.43,338.83 415.00,315.40 429.57,298.46 444.13,337.30 458.70,355.30 473.26,350.51 487.83,335.62 502.39,330.45 516.96,312.41 531.52,288.23 546.09,253.47 560.65,209.63 575.22,164.74 589.78,173.01 604.35,144.23 618.91,174.44 633.48,202.29 648.04,90.36 662.61,95.49 677.17,121.93 691.74,123.36 706.30,142.68 720.87,137.23 735.43,211.18" fill="none" stroke="#222" stroke-width="2"/>
+<circle cx="80.00" cy="419.54" r="2.5" fill="#222"/>
+<circle cx="94.57" cy="429.64" r="2.5" fill="#222"/>
+<circle cx="109.13" cy="413.91" r="2.5" fill="#222"/>
+<circle cx="123.70" cy="409.75" r="2.5" fill="#222"/>
+<circle cx="138.26" cy="391.87" r="2.5" fill="#222"/>
+<circle cx="152.83" cy="395.52" r="2.5" fill="#222"/>
+<circle cx="167.39" cy="380.54" r="2.5" fill="#222"/>
+<circle cx="181.96" cy="376.56" r="2.5" fill="#222"/>
+<circle cx="196.52" cy="382.68" r="2.5" fill="#222"/>
+<circle cx="211.09" cy="390.48" r="2.5" fill="#222"/>
+<circle cx="225.65" cy="380.75" r="2.5" fill="#222"/>
+<circle cx="240.22" cy="372.51" r="2.5" fill="#222"/>
+<circle cx="254.78" cy="372.04" r="2.5" fill="#222"/>
+<circle cx="269.35" cy="373.93" r="2.5" fill="#222"/>
+<circle cx="283.91" cy="359.57" r="2.5" fill="#222"/>
+<circle cx="298.48" cy="345.93" r="2.5" fill="#222"/>
+<circle cx="313.04" cy="334.74" r="2.5" fill="#222"/>
+<circle cx="327.61" cy="323.63" r="2.5" fill="#222"/>
+<circle cx="342.17" cy="335.85" r="2.5" fill="#222"/>
+<circle cx="356.74" cy="345.24" r="2.5" fill="#222"/>
+<circle cx="371.30" cy="342.40" r="2.5" fill="#222"/>
+<circle cx="385.87" cy="336.34" r="2.5" fill="#222"/>
+<circle cx="400.43" cy="338.83" r="2.5" fill="#222"/>
+<circle cx="415.00" cy="315.40" r="2.5" fill="#222"/>
+<circle cx="429.57" cy="298.46" r="2.5" fill="#222"/>
+<circle cx="444.13" cy="337.30" r="2.5" fill="#222"/>
+<circle cx="458.70" cy="355.30" r="2.5" fill="#222"/>
+<circle cx="473.26" cy="350.51" r="2.5" fill="#222"/>
+<circle cx="487.83" cy="335.62" r="2.5" fill="#222"/>
+<circle cx="502.39" cy="330.45" r="2.5" fill="#222"/>
+<circle cx="516.96" cy="312.41" r="2.5" fill="#222"/>
+<circle cx="531.52" cy="288.23" r="2.5" fill="#222"/>
+<circle cx="546.09" cy="253.47" r="2.5" fill="#222"/>
+<circle cx="560.65" cy="209.63" r="2.5" fill="#222"/>
+<circle cx="575.22" cy="164.74" r="2.5" fill="#222"/>
+<circle cx="589.78" cy="173.01" r="2.5" fill="#222"/>
+<circle cx="604.35" cy="144.23" r="2.5" fill="#222"/>
+<circle cx="618.91" cy="174.44" r="2.5" fill="#222"/>
+<circle cx="633.48" cy="202.29" r="2.5" fill="#222"/>
+<circle cx="648.04" cy="90.36" r="2.5" fill="#222"/>
+<circle cx="662.61" cy="95.49" r="2.5" fill="#222"/>
+<circle cx="677.17" cy="121.93" r="2.5" fill="#222"/>
+<circle cx="691.74" cy="123.36" r="2.5" fill="#222"/>
+<circle cx="706.30" cy="142.68" r="2.5" fill="#222"/>
+<circle cx="720.87" cy="137.23" r="2.5" fill="#222"/>
+<circle cx="735.43" cy="211.18" r="2.5" fill="#222"/>
+<circle cx="750.00" cy="209.73" r="5" fill="#ffffff" stroke="#1f77b4" stroke-width="2"/>
+<text x="760.00" y="165.90" fill="#1f77b4">hi $322.65 (+15.3%)</text>
+<text x="760.00" y="213.73" fill="#1f77b4" font-weight="bold">mid $281.10 (+0.4%)</text>
+<text x="760.00" y="255.44" fill="#1f77b4">lo $244.87 (-12.5%)</text>
+<text x="735.43" y="201.18" text-anchor="end" fill="#222">$279.84 (2026-10)</text>
+<circle cx="736.00" cy="207.96" r="5" fill="#1f77b4"/>
+<rect x="722.00" y="202.96" width="10" height="10" fill="#ff7f0e"/>
+<polygon points="718.00,208.40 724.00,214.40 718.00,220.40 712.00,214.40" fill="#2ca02c"/>
+<polygon points="709.00,205.18 715.00,216.18 703.00,216.18" fill="#9467bd"/>
+<path d="M695.00,212.62 L705.00,222.62 M695.00,222.62 L705.00,212.62" stroke="#d62728" stroke-width="2"/>
+<text x="820" y="76" font-weight="bold">Legend</text>
+<line x1="820" y1="90" x2="842" y2="90" stroke="#222" stroke-width="2"/><text x="848" y="94">verified close</text>
+<line x1="820" y1="108" x2="842" y2="108" stroke="#1f77b4" stroke-width="2" stroke-dasharray="6 4"/><text x="848" y="112">predicted mid</text>
+<rect x="820" y="120" width="22" height="10" fill="#1f77b4" fill-opacity="0.15"/><text x="848" y="130">lo-hi range</text>
+<circle cx="831.00" cy="148.00" r="5" fill="#1f77b4"/>
+<text x="848" y="152">fundamental +1.0%</text>
+<rect x="826.00" y="161.00" width="10" height="10" fill="#ff7f0e"/>
+<text x="848" y="170">technical +1.0%</text>
+<polygon points="831.00,178.00 837.00,184.00 831.00,190.00 825.00,184.00" fill="#2ca02c"/>
+<text x="848" y="188">news_sentiment -1.0%</text>
+<polygon points="831.00,196.00 837.00,207.00 825.00,207.00" fill="#9467bd"/>
+<text x="848" y="206">macro_sector 0.0%</text>
+<path d="M826.00,215.00 L836.00,225.00 M826.00,225.00 L836.00,215.00" stroke="#d62728" stroke-width="2"/>
+<text x="848" y="224">risk_skeptic -2.0%</text>
+<text x="80" y="514" fill="#666" font-size="11">Data as of 2026-10-30 (stockdb verified closes: Nasdaq, cross-checked with CNBC). Not investment advice.</text>
+</svg>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.w3.org/2005/Atom"><!-- SYNTHETIC TEST FIXTURE in the Apple Newsroom Atom format -->
+<title><![CDATA[Apple Newsroom]]></title><id>https://www.apple.com/newsroom/</id><updated>2026-10-29T20:30:00Z</updated>
+<entry><updated>2026-10-29T20:30:00Z</updated><title><![CDATA[Apple reports fourth quarter results]]></title><link href="https://www.apple.com/newsroom/2026/10/apple-reports-fourth-quarter-results/"/><id>https://www.apple.com/newsroom/2026/10/apple-reports-fourth-quarter-results/</id></entry>
+<entry><updated>2026-10-27T12:59:00Z</updated><title><![CDATA[Apple unveils new iMac with M6]]></title><link href="https://www.apple.com/newsroom/2026/10/apple-unveils-new-imac-with-m6/?utm_source=rss"/><id>x</id></entry>
+<entry><updated>2026-10-26T12:00:00Z</updated><title><![CDATA[Image tile]]></title><link href="https://www.apple.com/newsroom/images/2026/10/tile.jpg"/><id>y</id></entry>
+<entry><updated>2026-10-25T12:00:00Z</updated><title><![CDATA[Off-domain link]]></title><link href="https://bit.ly/apple-q4"/><id>z</id></entry>
+<entry><updated>2026-10-24T12:00:00Z</updated><title><![CDATA[Unlisted domain]]></title><link href="https://example.com/newsroom/2026/10/x/"/><id>w</id></entry>
+<entry><updated>2025-01-10T12:00:00Z</updated><title><![CDATA[Old release]]></title><link href="https://www.apple.com/newsroom/2025/01/old-release/"/><id>v</id></entry>
+</feed>

@@ -1,0 +1,25 @@
+{
+  "_comment": "Per-ticker crawl sources for npm run crawl (PLAN §1 feeds.json). Discovery only: candidates become evidence only via add_source / add_research_note. Every listing URL, redirect hop and candidate link must pass config/domain-policy.json + company ir_domains (config/companies.json). SEC needs SP_HTTP_UA (your contact) in .env; it is never stored here.",
+  "sec": { "forms": ["10-K", "10-Q", "8-K"], "limit": 12, "since_days": 400 },
+  "ir": {
+    "since_days": 120,
+    "limit": 20,
+    "tickers": {
+      "AAPL": [
+        { "type": "atom", "url": "https://www.apple.com/newsroom/rss-feed.rss", "link_pattern": "^https://(www\\.)?apple\\.com/newsroom/\\d{4}/\\d{2}/[^/?#]+/?$",
+          "note": "Apple Newsroom (press releases incl. quarterly results) on apple.com (AAPL IR domain)" }
+      ],
+      "AMZN": [
+        { "type": "rss", "url": "https://www.aboutamazon.com/rss/feed.rss", "link_pattern": "^https://(www\\.)?aboutamazon\\.com/news/[^?#]+$",
+          "note": "About Amazon news (company news incl. quarterly results); ir.aboutamazon.com answered 403 to automated requests on 2026-10-31" }
+      ],
+      "GOOGL": [
+        { "type": "html", "url": "https://abc.xyz/investor/", "link_pattern": "^https://(www\\.)?abc\\.xyz/",
+          "note": "Alphabet investor relations; answered 403 (bot wall) to automated requests on 2026-10-31. Earnings releases are PDFs (not citable as pages); use SEC 8-K EX-99.1 once SP_HTTP_UA is set" },
+        { "type": "rss", "url": "https://blog.google/rss/", "link_pattern": "^https://blog\\.google/[^?#]+$",
+          "note": "Google's official blog (blog.google, a GOOGL IR domain in companies.json since abc.xyz returns 403): product, AI and earnings-call posts" }
+      ],
+      "SPCX": []
+    }
+  }
+}
